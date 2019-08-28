@@ -5,7 +5,7 @@
             <h4 class="card-title">Tambah Profilweb</h4>
             <form class="form-material m-t-40" method="post" action="<?php echo base_url().$action ?>">
 	  <div class="form-group">
-            <label>judul_perusahaan</label>
+            <label>Judul Perusahaan</label>
             <input type="text" name="judul_perusahaan" class="form-control" placeholder="">
     </div>
 	  <div class="form-group">
@@ -152,8 +152,8 @@
             <label>chosee_deskripsi4</label>
             <input type="text" name="chosee_deskripsi4" class="form-control" placeholder="">
     </div>
-	    <input type="hidden" name="id_profil" /> 
-	
+	    <input type="hidden" name="id_profil" />
+
                 <div class="form-group">
                   <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
                 </div>

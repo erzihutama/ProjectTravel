@@ -9,11 +9,11 @@
                     <input type="text" name="id_profil" class="form-control" placeholder="" value="<?php echo $dataedit->id_profil?>" readonly>
             </div>
 	  <div class="form-group">
-            <label>judul_perusahaan</label>
+            <label>Nama Perusahaan</label>
             <input type="text" name="judul_perusahaan" class="form-control" value="<?php echo $dataedit->judul_perusahaan?>">
     </div>
 	  <div class="form-group">
-            <label>deskripsi_perusahaan</label>
+            <label>Deskripsi Perusahaan</label>
             <input type="text" name="deskripsi_perusahaan" class="form-control" value="<?php echo $dataedit->deskripsi_perusahaan?>">
     </div>
 	  <div class="form-group">
@@ -156,7 +156,7 @@
             <label>chosee_deskripsi4</label>
             <input type="text" name="chosee_deskripsi4" class="form-control" value="<?php echo $dataedit->chosee_deskripsi4?>">
     </div>
-	
+
                 <div class="form-group">
                   <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
                 </div>
