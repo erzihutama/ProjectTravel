@@ -1,71 +1,89 @@
-<div class="row">
-  <div class="col-12">
-    <div class="card">
+<section class="card">
+      <div class="card-header">
+        <h4 class="card-title">Edit profilweb</h4>
+      </div>
+      <div class="card-content">
         <div class="card-body">
-            <h4 class="card-title">Tambah Profilweb</h4>
-            <form class="form-material m-t-40" method="post" action="<?php echo base_url().$action ?>">
-	  <div class="form-group">
-                    <label>id_profil</label>
-                    <input type="text" name="id_profil" class="form-control" placeholder="" value="<?php echo $dataedit->id_profil?>" readonly>
+          <form method="post" action="<?php echo base_url().$action ?>" enctype="multipart/form-data">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">id_profil</label>
+              <div class="col-sm-10">
+                <input type="text" name="id_profil" class="form-control" placeholder="" value="<?php echo $dataedit->id_profil?>" readonly>
+              </div>
             </div>
-	  <div class="form-group">
-            <label>id_config</label>
-            <input type="text" name="id_config" class="form-control" value="<?php echo $dataedit->id_config?>">
-    </div>
-	  <div class="form-group">
-            <label>id_alamat</label>
-            <input type="text" name="id_alamat" class="form-control" value="<?php echo $dataedit->id_alamat?>">
-    </div>
-	  <div class="form-group">
-            <label>judul_perusahaan</label>
-            <input type="text" name="judul_perusahaan" class="form-control" value="<?php echo $dataedit->judul_perusahaan?>">
-    </div>
-	  <div class="form-group">
-            <label>deskripsi_perusahaan</label>
-            <input type="text" name="deskripsi_perusahaan" class="form-control" value="<?php echo $dataedit->deskripsi_perusahaan?>">
-    </div>
-	  <div class="form-group">
-            <label>taglineweb1</label>
-            <input type="text" name="taglineweb1" class="form-control" value="<?php echo $dataedit->taglineweb1?>">
-    </div>
-	  <div class="form-group">
-            <label>taglineweb2</label>
-            <input type="text" name="taglineweb2" class="form-control" value="<?php echo $dataedit->taglineweb2?>">
-    </div>
-	  <div class="form-group">
-            <label>taglineweb3</label>
-            <input type="text" name="taglineweb3" class="form-control" value="<?php echo $dataedit->taglineweb3?>">
-    </div>
-	  <div class="form-group">
-            <label>taglineimage1</label>
-            <input type="text" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>">
-    </div>
-	  <div class="form-group">
-            <label>taglineimage2</label>
-            <input type="text" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>">
-    </div>
-	  <div class="form-group">
-            <label>taglineimage3</label>
-            <input type="text" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>">
-    </div>
-	  <div class="form-group">
-            <label>visi</label>
-            <input type="text" name="visi" class="form-control" value="<?php echo $dataedit->visi?>">
-    </div>
-	  <div class="form-group">
-            <label>misi</label>
-            <input type="text" name="misi" class="form-control" value="<?php echo $dataedit->misi?>">
-    </div>
-	  <div class="form-group">
-            <label>website</label>
-            <input type="text" name="website" class="form-control" value="<?php echo $dataedit->website?>">
-    </div>
-	
-                <div class="form-group">
-                  <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
-                </div>
-            </form>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">judul_perusahaan</label>
+              <div class="col-sm-10">
+                <input type="text" name="judul_perusahaan" class="form-control" value="<?php echo $dataedit->judul_perusahaan?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">deskripsi_perusahaan</label>
+              <div class="col-sm-10">
+                <input type="text" name="deskripsi_perusahaan" class="form-control" value="<?php echo $dataedit->deskripsi_perusahaan?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">taglineweb1</label>
+              <div class="col-sm-10">
+                <input type="text" name="taglineweb1" class="form-control" value="<?php echo $dataedit->taglineweb1?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">taglineweb2</label>
+              <div class="col-sm-10">
+                <input type="text" name="taglineweb2" class="form-control" value="<?php echo $dataedit->taglineweb2?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">taglineweb3</label>
+              <div class="col-sm-10">
+                <input type="text" name="taglineweb3" class="form-control" value="<?php echo $dataedit->taglineweb3?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage1</label>
+              <div class="col-sm-10">
+                <input type="text" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage2</label>
+              <div class="col-sm-10">
+                <input type="text" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage3</label>
+              <div class="col-sm-10">
+                <input type="text" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">visi</label>
+              <div class="col-sm-10">
+                <input type="text" name="visi" class="form-control" value="<?php echo $dataedit->visi?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">misi</label>
+              <div class="col-sm-10">
+                <input type="text" name="misi" class="form-control" value="<?php echo $dataedit->misi?>">
+              </div>
+              </div>
+						<div class="form-group row">
+              <label for="example-text-input" class="col-sm-2 col-form-label">website</label>
+              <div class="col-sm-10">
+                <input type="text" name="website" class="form-control" value="<?php echo $dataedit->website?>">
+              </div>
+              </div>
+
         </div>
-    </div>
-  </div>
-</div>
+        <input type="hidden" id="deleteFiles" name="deleteFiles">
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect
+           waves-light float-right">Simpan</button>
+        </div>
+      </form>
+      </div>
+    </section>

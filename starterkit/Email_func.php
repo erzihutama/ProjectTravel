@@ -4,8 +4,8 @@
   $config['protocol'] = 'smtp';
   $config['smtp_host'] = 'ssl://smtp.gmail.com';
   $config['smtp_port'] = '465';
-  $config['smtp_user'] = 'shopagansta@gmail.com';
-  $config['smtp_pass'] = 'faztars123'; //ini pake akun pass google email
+  $config['smtp_user'] = '{email@gmail.com}';
+  $config['smtp_pass'] = '{password}'; //ini pake akun pass google email
   $config['mailtype'] = 'html';
   $config['charset'] = 'iso-8859-1';
   $config['wordwrap'] = 'TRUE';
@@ -14,7 +14,7 @@
   $this->load->library('email', $config);
   $this->email->initialize($config);
 
-  $this->email->from('shopagansta@gmail.com');
+  $this->email->from('{email@gmail.com}');
   $this->email->to($emailtujuan);
   $this->email->subject($subject);
   $this->email->message($isi);

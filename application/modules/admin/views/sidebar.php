@@ -1,23 +1,17 @@
-<nav class="sidebar-nav">
-    <ul id="sidebarnav">
-        <li class="nav-small-cap">Menu</li>
-        <!-- //BATAS SATU MENU -->
-        <!-- <li>
-            <a class="waves-effect waves-dark" href="<?php echo base_url()?>a"><i class="mdi mdi-gauge"></i><span class="hide-menu">Config Profil Web</span></a>
-        </li> -->
-        <!-- //BATAS SATU MENU -->
-
-
-
-        <li>
-            <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-pencil"></i><span class="hide-menu">Config Profil WebSite</span></a>
-            <ul aria-expanded="false" class="collapse">
-                <li><a href="<?php echo base_url()?>admin/profilweb">Profil Website</a></li>
-                <li><a href="<?php echo base_url()?>admin/Profil_alamat">Alamat</a></li>
-                <li><a href="<?php echo base_url()?>admin/profilweb_config">Tagline</a></li>
+<div class="main-menu-content">
+            <ul class="navigation navigation-main" id="sidebar" data-menu="menu-navigation">
+                <li class="nav-item"><a href="<?= base_url()?>admin"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
+                </li>
+                <!-- Jika ingin menggunakan sidebar sub menu -->
+                <li class=" nav-item"><a href="#"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="">Konfigurasi Website</span></a>
+                    <ul class="menu-content">
+                        <li class="sub-item"><a href="<?= base_url()?>admin/profilweb/edit/4"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation">General Configurasi</span></a>
+                        </li>
+                        <li class="sub-item"><a href="<?= base_url()?>admin/alamat_perusahaan"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation">Alamat Configurasi</span></a>
+                        </li>
+                        <li class="sub-item"><a href="<?= base_url()?>admin/Profilwebconfig"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation">Service Configurasi</span></a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-
-<!-- REFERENSI IKON UNTUK MENU : https://cdn.materialdesignicons.com/1.1.34/ -->
-    </ul>
-</nav>
+        </div>

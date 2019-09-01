@@ -1,56 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
+<html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
-    <title>KOSTLAB CUY</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- You can change the theme colors from here -->
-    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Kostlab admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Kostlab admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Kostlab Starterkit</title>
+    <link rel="apple-touch-icon" href="<?= base_url()?>assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url()?>assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
-<body class="fix-header card-no-border">
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
-    <section id="wrapper" class="error-page">
-        <div class="error-box">
-            <div class="error-body text-center">
-                <h1>HI SOBAT!</h1>
-                <h3 class="text-uppercase"><?php echo $name;?> Otw Nih!!</h3>
-                <p class="text-muted m-t-30 m-b-30">Please try after some time</p>
-                <a href="index.html" class="btn btn-info btn-rounded waves-effect waves-light m-b-40">Back to home</a> </div>
-            <footer class="footer text-center">© 2018 KOSTLAB.</footer>
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/themes/semi-dark-layout.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/core/colors/palette-gradient.min.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+  <body class="vertical-layout vertical-menu-modern 1-column  navbar-floating footer-static bg-full-screen-image  blank-page blank-page" data-open="click" data-menu="vertical-menu-modern" data-col="1-column">
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-header row">
         </div>
-    </section>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="assets/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!--Wave Effects -->
-    <script src="js/waves.js"></script>
-</body>
+        <div class="content-body"><!-- maintenance -->
+<section class="row flexbox-container">
+  <div class="col-xl-7 col-md-8 col-12 d-flex justify-content-center">
+    <div class="card auth-card bg-transparent shadow-none rounded-0 mb-0 w-100">
+      <div class="card-content">
+        <div class="card-body text-center">
+          <img src="<?= base_url()?>assets/images/pages/maintenance-2.png" class="img-fluid align-self-center" alt="branding logo">
+          <h1 class="font-large-2 my-1">Assalamualaikum!</h1>
+          <p class="px-2">
+            Selamat datang di KostLab Framework Starterkit<br><b>Framework</b> ini dibuat karena <b>kemalasan</b> team @kostlab dalam membuat sebuah <b>C.R.U.D</b> <br>
+            dan kami bertekad untuk memanjakan kemalasan kami dengan membuat sebuah sistem crud generator karya anak <b>Kostan</b><br>
+            Salam. <b>@kostlab</b>
+          </p>
+          <a class="btn btn-primary btn-lg mt-1" href="<?= base_url() ?>setup">Oke Mengerti</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- maintenance end -->
 
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="<?= base_url()?>assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="<?= base_url()?>assets/js/core/app-menu.min.js"></script>
+    <script src="<?= base_url()?>assets/js/core/app.min.js"></script>
+    <script src="<?= base_url()?>assets/js/scripts/components.min.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <!-- END: Page JS-->
+
+  </body>
+  <!-- END: Body-->
 </html>

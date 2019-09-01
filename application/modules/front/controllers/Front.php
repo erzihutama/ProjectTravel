@@ -11,11 +11,10 @@ class Front extends MY_Controller{
 
   function index()
   {
-      // $data['data'] = $this->Dbs->data(); // ngambil data dari database sesuai fungsi
-      // var_dump($data); die;
-      $this->load->view('front/header');
-      $this->load->view('front/index');//melempar data dari view
-      $this->load->view('front/footer');
+    // $data['name']='Kostlab';
+    $this->load->view('front/header');
+        $this->load->view('front/index');//melempar data dari view
+        $this->load->view('front/footer');
   }
 
 

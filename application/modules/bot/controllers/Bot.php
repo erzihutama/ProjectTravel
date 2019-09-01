@@ -64,13 +64,11 @@ class Bot extends MY_Controller {
     //Konfigurasi Chatbot
     $channelAccessToken = 'PLACEHERE';
     $channelSecret = 'PLACEHERE';//sesuaikan
-    $id_admin=17;
-    $id_chatbot=2;
     //Konfigurasi Chatbot END
 
     $client = new LINEBotTiny($channelAccessToken, $channelSecret);
     $send= new MessageBuilder();
-    $reg=new Register();
+    $reg= new Register();
 
         $userId   = $client->parseEvents()[0]['source']['userId'];
         $groupId    = $client->parseEvents()[0]['source']['groupId'];
@@ -90,8 +88,6 @@ class Bot extends MY_Controller {
         $pecahnama=explode(" ",$profil->displayName);
         $namapanggilan=$pecahnama[0];
         $event=$client->parseEvents() [0];
-
-        // $db = $this->Dbs->getdata($userId, 'adders')->result();
         function getRandom($length = 3) {
             $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
             $charactersLength = strlen($characters);
@@ -120,27 +116,6 @@ class Bot extends MY_Controller {
 
               }
 
-
-          //MAPPING FITUR
-          if($db[0]->flag=='register' and $groupId==null){
-
-
-          }
-          else{
-
-
-
-            //POSTBACK UNTUK MENERIMA LOKASI
-            if (substr($postback['data'],0,4)=='goto'){
-                $getpostdata=explode("#",$postback['data']);
-                $address=$getpostdata[3];
-                $lat=$getpostdata[1];
-                $long=$getpostdata[2];
-                $pre=array($send->location("Tap untuk melihat lokasi",$address,$lat,$long));
-                $output=$send->reply($replyToken,$pre);
-            }
-            //POSTBACK END
-        }  //END ELSE DARI PENGECEKAN DB FLAG
 
         if ($upPesan == 'GET@MYID'){
               $pre=array($send->text($userId));
