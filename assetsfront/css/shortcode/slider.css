@@ -28,10 +28,10 @@ Slider images
   z-index: 0;
 }
 .slider__bg--1 {
-  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/1.jpg") no-repeat scroll 0 0 / cover ;
+  background: rgba(0, 0, 0, 0) url("<?php echo $imagetagline->taglineimage1?>") no-repeat scroll 0 0 / cover ;
 }
 .slider__bg--2 {
-  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/2.jpg") no-repeat scroll 0 0 / cover ;
+  background: rgba(0, 0, 0, 0) url("../../images/slider/bg/jas.jpg") no-repeat scroll 0 0 / cover ;
 }
 .slider__bg--3 {
   background: rgba(0, 0, 0, 0) url("../../images/slider/bg/3.jpg") no-repeat scroll 0 0 / cover ;
@@ -41,7 +41,7 @@ Slider images
 }
 
 /**----------------------------------
-! 8. Background variation 
+! 8. Background variation
 -------------------------------------------**/
 .slider__full--screen {
   height: 100vh;
@@ -50,10 +50,10 @@ Slider images
 .slider__position--relative {
     position: relative;
 }
-.slider-activetion-wrap, 
-.slider-activetion-wrap .owl-stage-outer, 
-.slider-activetion-wrap .owl-item, 
-.slider-activetion-wrap .slide, 
+.slider-activetion-wrap,
+.slider-activetion-wrap .owl-stage-outer,
+.slider-activetion-wrap .owl-item,
+.slider-activetion-wrap .slide,
 .slider-activetion-wrap .owl-stage {
   height: 100%;
 }
@@ -122,24 +122,24 @@ Slider images
 /*---------------------------------------------------
    with slider animation
 ------------------------------------------------------*/
-.owl-item.active .htc__slider__animation--center .slider__inner h1, 
-.owl-item.active .htc__slider__animation--center .slider__inner h2, 
-.owl-item.active .htc__slider__animation--center .slider__inner p, 
+.owl-item.active .htc__slider__animation--center .slider__inner h1,
+.owl-item.active .htc__slider__animation--center .slider__inner h2,
+.owl-item.active .htc__slider__animation--center .slider__inner p,
 .owl-item.active .htc__slider__animation--center .slider__inner .slider__btn{
   animation: 1500ms ease-in-out 0s normal both 1 running fadeInUp;
 }
 
 
-.owl-item.active .htc__slider__animation--left .slider__inner h1, 
-.owl-item.active .htc__slider__animation--left .slider__inner h2, 
-.owl-item.active .htc__slider__animation--left .slider__inner p, 
+.owl-item.active .htc__slider__animation--left .slider__inner h1,
+.owl-item.active .htc__slider__animation--left .slider__inner h2,
+.owl-item.active .htc__slider__animation--left .slider__inner p,
 .owl-item.active .htc__slider__animation--left .slider__inner .slider__btn{
   animation: 1500ms ease-in-out 0s normal both 1 running fadeInRight;
 }
 
 .owl-item.active .htc__slider__animation--right .slider__inner h1,
-.owl-item.active .htc__slider__animation--right .slider__inner h2, 
-.owl-item.active .htc__slider__animation--right .slider__inner p, 
+.owl-item.active .htc__slider__animation--right .slider__inner h2,
+.owl-item.active .htc__slider__animation--right .slider__inner p,
 .owl-item.active .htc__slider__animation--right .slider__inner .slider__btn{
   animation: 1500ms ease-in-out 0s normal both 1 running fadeInLeft;
 }
@@ -197,14 +197,14 @@ Slider images
   top: 50%;
   transform: translateY(-50%);
 }
-.control__style--left .owl-dots .owl-dot, 
+.control__style--left .owl-dots .owl-dot,
 .control__style--right .owl-dots .owl-dot {
   display: block;
   margin: 5px 0;
   padding: 7px 0;
   position: relative;
 }
-.control__style--left .owl-dots .owl-dot span, 
+.control__style--left .owl-dots .owl-dot span,
 .control__style--right .owl-dots .owl-dot span {
   background: #fff none repeat scroll 0 0;
   bottom: 0;
@@ -214,7 +214,7 @@ Slider images
   transition: all 0.3s ease 0s;
   width: 10px;
 }
-.control__style--left .owl-dots .owl-dot.active span, 
+.control__style--left .owl-dots .owl-dot.active span,
 .control__style--right .owl-dots .owl-dot.active span {
   background: #ffb300 none repeat scroll 0 0;
   width: 30px;

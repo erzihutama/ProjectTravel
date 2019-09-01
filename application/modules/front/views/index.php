@@ -185,16 +185,14 @@
         <!-- Start Welcome Area -->
         <section class="welcome__area bg-gray">
             <div class="welcome__images">
-                <div class="info-bg" style="background-image:url(images/others/welcome/1.jpg)"></div>
+                <div class="info-bg" style="background-image:url(<?php echo $imagetagline->taglineimage1?>)"></div>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-6">
                         <div class="welcome__inner">
-                            <h2 class="title__line">welcome to <span class="text-theme">ramble</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporincidid ut labore et dolore magna aliqua. Utjij enim ad minim veniam, quis nostrud exercitatio ullamco laboris nisi utjjij aliquip ex ea commodo consequat.ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.ed do eiusmod tempor incididuenimdunt.</p>
-                            <p>Fipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempoed doeiumod tempoquis</p>
+                            <h2 class="title__line">welcome to <span class="text-theme"><?php echo $deskperusahaan->judul_perusahaan?></span></h2>
+                          <p><?php echo $deskperusahaan->deskripsi_perusahaan?></p>
                             <ul class="social__icon social--bg--color">
                                 <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
                                 <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>

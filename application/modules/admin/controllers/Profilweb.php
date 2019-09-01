@@ -127,36 +127,141 @@ public function create_action()
         }
     }
 
+    //
+    // function tampildeskcompany(){
+    //             $dml = "SELECT`judul_perusahaan`,`deskripsi_perusahaan`FROM`dbdreamworld`.`profilweb`;";
+    //             $query =$this->db->query($dml)->result();
+    //             return $query;
+    //
+    //     }
 
+      //
+      //
+      // function dropzone(){//menerima proses dari dropzone
+      //   if (!empty($_FILES)) {
+      //     $pathFolder=$this->input->get('file');//get untuk menerima nama folder dari action di view
+      //     $this->upload_foto('file',$pathFolder);
+      //
+      //   }
+      // }
 
+      public function upload_foto($formname,$pathFolder){
+      $config['upload_path']          = './xfile/'.$pathFolder;
+      $config['allowed_types']        = 'gif|jpg|png|jpeg';
+      $config['overwrite'] = FALSE;
+      $config['encrypt_name'] = FALSE;
+      //$config['max_size']             = 100;
+      //$config['max_width']            = 1024;
+      //$config['max_height']           = 768;
+      $this->load->library('upload', $config);
+      $this->upload->do_upload($formname);
+      return $this->upload->data();
+      }
 
     public function update_action()
     {
-        $this->_rules();
+      $config['upload_path']          = './assetsfront/images/slider/bg';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
+        $config['max_size']             = 30000;
+        // $config['max_width']            = 1920;
+        // $config['max_height']           = 897;
+        $config['overwrite'] = FALSE;
+        $config['encrypt_name'] = FALSE;
 
-        if ($this->form_validation->run() == FALSE) {
-            $this->edit($this->input->post('id', TRUE));
-        } else {
+        $this->load->library('upload', $config);
+
+
+        if ( ! $this->upload->do_upload('taglineimage1'))
+    {
+        $error = array('error' => $this->upload->display_errors());
+        $this->load->view('welcome_message', $error);
+    } else{
+        $upload_data1 = $this->upload->data();
+        $name = $upload_data1['file_name'];
+
+        $config2['upload_path']          = './xfile/images';
+          $config2['allowed_types']        = 'gif|jpg|png|jpeg';
+          $config2['max_size']             = 30000;
+          $config2['overwrite'] = FALSE;
+          $config2['encrypt_name'] = FALSE;
+
+          $this->load->library('upload', $config2);
+
+
+          if ( ! $this->upload->do_upload('taglineimage2'))
+      {
+          $error = array('error' => $this->upload->display_errors());
+          $this->load->view('welcome_message', $error);
+      } else{
+          $upload_data1 = $this->upload->data();
+          $name2 = $upload_data1['file_name'];
+
+          $config3['upload_path']          = './xfile/images';
+            $config3['allowed_types']        = 'gif|jpg|png|jpeg';
+            $config3['max_size']             = 30000;
+            $config3['overwrite'] = FALSE;
+            $config3['encrypt_name'] = FALSE;
+
+            $this->load->library('upload', $config3);
+
+
+            if ( ! $this->upload->do_upload('taglineimage3'))
+        {
+            $error = array('error' => $this->upload->display_errors());
+            $this->load->view('welcome_message', $error);
+        } else{
+            $upload_data1 = $this->upload->data();
+            $name3 = $upload_data1['file_name'];
+      //
+      //
+      // // $gambar = $_FILES['gambar'];
+      //   $this->_rules();
+      //   if ($this->form_validation->run() == FALSE) {
+      //       $this->edit($this->input->post('id', TRUE));
+      //   } else {
             $data = array(
 					'judul_perusahaan' => $this->input->post('judul_perusahaan',TRUE),
 					'deskripsi_perusahaan' => $this->input->post('deskripsi_perusahaan',TRUE),
 					'taglineweb1' => $this->input->post('taglineweb1',TRUE),
 					'taglineweb2' => $this->input->post('taglineweb2',TRUE),
 					'taglineweb3' => $this->input->post('taglineweb3',TRUE),
-					'taglineimage1' => $this->input->post('taglineimage1',TRUE),
-					'taglineimage2' => $this->input->post('taglineimage2',TRUE),
-					'taglineimage3' => $this->input->post('taglineimage3',TRUE),
+					'taglineimage1' => $name,
+					'taglineimage2' => $name2,
+					'taglineimage3' => $name3,
 					'visi' => $this->input->post('visi',TRUE),
 					'misi' => $this->input->post('misi',TRUE),
 					'website' => $this->input->post('website',TRUE),
-
-);
+        );
+        //Cek Untuk Image
+          // $image=$this->upload_foto('taglineimage1','images');
+          // if($image['is_image']!=1){
+          // }else{
+          //   $data['taglineimage1']=$image['file_name'];
+          // }
+          // echo $data['taglineimage1']; die();
 
             $this->Profilweb_model->update($this->input->post('id_profil', TRUE), $data);
             $this->session->set_flashdata('message', 'Update Record Success');
             redirect(site_url('admin/profilweb/edit/4'));
         }
     }
+  }
+
+}
+
+        public function summernote(){
+          $pathFolder=$this->input->post('pathFolder');
+          $config['upload_path']          = './xfile/'.$pathFolder;
+          $config['allowed_types']        = 'gif|jpg|png|jpeg';
+          $config['overwrite'] = FALSE;
+          $config['encrypt_name'] = FALSE;
+          //$config['max_size']             = 100;
+          //$config['max_width']            = 1024;
+          //$config['max_height']           = 768;
+          $this->load->library('upload', $config);
+          $this->upload->do_upload('file');
+          $json=json_encode($this->upload->data());
+          echo $json;}
 
     public function delete($id_profil)
     {

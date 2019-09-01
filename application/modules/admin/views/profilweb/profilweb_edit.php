@@ -44,19 +44,21 @@
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage1</label>
               <div class="col-sm-10">
-                <input type="text" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>">
+                    <input type="file" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>">
+                	<!-- <input type="file" id="input-file-now" name="gambar" class="dropify"> -->
+                <!-- <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url().'xfile/images'.$dataedit->photoUrl?>" name="file"> -->
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage2</label>
               <div class="col-sm-10">
-                <input type="text" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>">
+                <input type="file" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>">
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage3</label>
               <div class="col-sm-10">
-                <input type="text" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>">
+                <input type="file" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>">
               </div>
               </div>
 						<div class="form-group row">
