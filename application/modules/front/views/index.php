@@ -9,8 +9,8 @@
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                 <div class="slide__align--center">
                                     <div class="slider__inner">
-                                        <h2 class="wow">Find your special ture today</h2>
-                                        <h1 class="wow">with ramble tours</h1>
+                                        <h2 class="wow"><?php echo $tagline->taglineweb1?></h2>
+
                                         <div class="slider__btn wow">
                                             <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
                                         </div>
@@ -28,8 +28,8 @@
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                 <div class="slide__align--center">
                                     <div class="slider__inner">
-                                        <h2 class="wow">Find your special friend </h2>
-                                        <h1 class="wow">for married</h1>
+                                        <h2 class="wow"><?php echo $tagline->taglineweb2?></h2>
+
                                         <div class="slider__btn wow">
                                             <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
                                         </div>
@@ -47,8 +47,8 @@
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                 <div class="slide__align--center">
                                     <div class="slider__inner">
-                                        <h2 class="wow">Find your special ture today</h2>
-                                        <h1 class="wow">with ramble tours</h1>
+                                        <h2 class="wow"><?php echo $tagline->taglineweb3?></h2>
+
                                         <div class="slider__btn wow">
                                             <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
                                         </div>
@@ -119,7 +119,7 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="section__title text-center">
                             <h2 class="title__line">why  <span class="text-theme">choose us</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utllaf </p>
+                            <p><?php echo $whychoose->whychoose_tagline ?> </p>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,8 @@
         <!-- Start Welcome Area -->
         <section class="welcome__area bg-gray">
             <div class="welcome__images">
-                <div class="info-bg" style="background-image:url(<?php echo $imagetagline->taglineimage1?>)"></div>
+
+                <div class="info-bg" style="background-image:url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>)"></div>
             </div>
             <div class="container">
                 <div class="row">
@@ -279,88 +280,17 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 service-images">
-                            <img src="images/others/service/1.png" alt="service images">
+                            <!-- <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>" alt="service images"> -->
                         </div>
                     </div>
                 </div>
             </div>
             <div class="service__images service__feature_images">
-                <img src="images/others/service/1.png" alt="service images">
+                <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?> "style="width:600px; height:600px;" alt="service images">
             </div>
         </section>
         <!-- End Service Area -->
-        <!-- Start Funfact Area -->
-        <section class="funfact__area ptb-90 bg-1" data-black-overlay="6">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="funfact__wrap">
-                            <!-- Start Single Fact -->
-                            <div class="single__fact__flex">
-                                <div class="fact__icon">
-                                    <i class="flaticon-shape icon"></i>
-                                </div>
-                                <div class="funfact__count__inner">
-                                    <div class="fact__count">
-                                        <span class="count">94604</span>
-                                    </div>
-                                </div>
-                                <div class="fact__title">
-                                    <h2>customers</h2>
-                                </div>
-                            </div>
-                            <!-- End Single Fact -->
-                            <!-- Start Single Fact -->
-                            <div class="single__fact__flex">
-                                <div class="fact__icon">
-                                    <i class="flaticon-island-with-palm-trees icon"></i>
-                                </div>
-                                <div class="funfact__count__inner">
-                                    <div class="fact__count">
-                                        <span class="count">1020</span>
-                                    </div>
-                                </div>
-                                <div class="fact__title">
-                                    <h2>destination</h2>
-                                </div>
-                            </div>
-                            <!-- End Single Fact -->
-                            <!-- Start Single Fact -->
-                            <div class="single__fact__flex">
-                                <div class="fact__icon">
-                                    <i class="flaticon-internet icon"></i>
-                                </div>
-                                <div class="funfact__count__inner">
-                                    <div class="fact__count">
-                                        <span class="count">25465</span>
-                                    </div>
-                                </div>
-                                <div class="fact__title">
-                                    <h2>tours</h2>
-                                </div>
-                            </div>
-                            <!-- End Single Fact -->
-                            <!-- Start Single Fact -->
-                            <div class="single__fact__flex">
-                                <div class="fact__icon">
-                                    <i class="flaticon-business-man icon"></i>
-                                </div>
-                                <div class="funfact__count__inner">
-                                    <div class="fact__count">
-                                        <span class="count">15</span>
-                                    </div>
-                                </div>
-                                <div class="fact__title">
-                                    <h2>tour types</h2>
-                                </div>
-                            </div>
-                            <!-- End Single Fact -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Funfact Area -->
+
         <!-- Start Special Packages Area -->
         <section class="special__package ptb-100 bg-white">
             <div class="container">
@@ -586,7 +516,7 @@
         </section>
         <!-- End Special Packages Area -->
         <!-- Start Countdown Area -->
-        <section class="countdown__area ptb-100 bg-2" data-black-overlay="7">
+        <!-- <section class="countdown__area ptb-100 bg-2" data-black-overlay="7">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -605,93 +535,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Countdown Area -->
         <!-- Start our Team Area -->
-        <section class="team__area bg-white pt-100 pb-70">
-            <div class="container">
-                <!-- Start Our Section Title area -->
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="section__title text-center">
-                            <h2 class="title__line">meet <span class="text-theme">the guys</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utllaf </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Our Section Title area -->
-                <div class="row">
-                    <div class="team__wrap clearfix mt-50 xs--mt--20">
-                        <!-- Start Single Team -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="team">
-                                <div class="team__thumb bg-theme">
-                                    <img src="images/team/2.jpg" alt="team images">
-                                </div>
-                                <div class="team__details">
-                                    <div class="team__details__inner">
-                                        <h4><a href="#">anika mollik</a></h4>
-                                        <h6>Chief CEO Officer</h6>
-                                        <ul class="social__icon icon--position--center">
-                                            <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                            <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                            <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
-                                            <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                                            <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Team -->
-                        <!-- Start Single Team -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="team">
-                                <div class="team__thumb bg-theme">
-                                    <img src="images/team/1.jpg" alt="team images">
-                                </div>
-                                <div class="team__details">
-                                    <div class="team__details__inner">
-                                        <h4><a href="#">NIPA Bali</a></h4>
-                                        <h6>Chief CEO Officer</h6>
-                                        <ul class="social__icon icon--position--center">
-                                            <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                            <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                            <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
-                                            <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                                            <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Team -->
-                        <!-- Start Single Team -->
-                        <div class="col-md-4 col-lg-4 hidden-sm col-xs-12">
-                            <div class="team">
-                                <div class="team__thumb bg-theme">
-                                    <img src="images/team/3.jpg" alt="team images">
-                                </div>
-                                <div class="team__details">
-                                    <div class="team__details__inner">
-                                        <h4><a href="#">jon smith</a></h4>
-                                        <h6>Chief CEO Officer</h6>
-                                        <ul class="social__icon icon--position--center">
-                                            <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                            <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                            <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
-                                            <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                                            <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Team -->
-                    </div>
-                </div>
-            </div>
-        </section>
+      
         <!-- End our Team Area -->
         <!-- Start Top Destination Area -->
         <section class="top__distination__area bg-white pb-100">
@@ -955,7 +802,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <ul class="brand__list bg-white">
-                            <li><a href="#"><img src="images/brand/1.png" alt="brand images"></a></li>
+                            <li><a href="#"><img src="" alt="brand images"></a></li>
                             <li><a href="#"><img src="images/brand/2.png" alt="brand images"></a></li>
                             <li><a href="#"><img src="images/brand/3.png" alt="brand images"></a></li>
                             <li><a href="#"><img src="images/brand/4.png" alt="brand images"></a></li>
@@ -979,7 +826,9 @@
                                     <i class="zmdi zmdi-pin"></i>
                                 </div>
                                 <div class="address__details">
-                                    <p>Alcatraz Island Photo Albf dhaka ,<br>New York</p>
+                                  <?php foreach ($alamat as $a): ?>
+                                    <p><?php echo $a->alamat_perusahaan?></p>
+                                      <?php endforeach ?>
                                 </div>
                             </div>
                         </div>
@@ -991,8 +840,9 @@
                                     <i class="zmdi zmdi-email"></i>
                                 </div>
                                 <div class="address__details">
-                                    <p><a href="mailto:www.yourmail.com">www.yourmail.com</a></p>
-                                    <p><a href="mailto:www.yourmail.com">www.yourmail.com</a></p>
+                                   <?php foreach ($alamat as $a): ?>
+                                    <p><a href="mailto:www.yourmail.com"><?php echo $a->email_perusahaan?></a></p>
+                                    <?php endforeach ?>
                                 </div>
                             </div>
                         </div>
@@ -1004,24 +854,17 @@
                                     <i class="zmdi zmdi-phone"></i>
                                 </div>
                                 <div class="address__details">
-                                    <p><a href="phone:+66025644424857">+660 256444 24857</a></p>
-                                    <p><a href="phone:+66025644424857">+660 256444 24857</a></p>
+                                   <?php foreach ($alamat as $a): ?>
+                                    <p><a href="phone:+66025644424857"><?php echo $a->telepon_perusahaan?></a></p>
+                                    <?php endforeach ?>
                                 </div>
                             </div>
+
                         </div>
                         <!-- End Single Address -->
                         <!-- Start Single Address -->
-                        <div class="hidden-md hidden-lg col-sm-6 hidden-xs">
-                            <div class="contact bg-cat-1">
-                                <div class="address__icon">
-                                    <i class="zmdi zmdi-phone"></i>
-                                </div>
-                                <div class="address__details">
-                                    <p><a href="phone:+66025644424857">+660 256444 24857</a></p>
-                                    <p><a href="phone:+66025644424857">+660 256444 24857</a></p>
-                                </div>
-                            </div>
-                        </div>
+
+
                         <!-- End Single Address -->
                     </div>
                 </div>
@@ -1124,7 +967,7 @@
         </footer>
         <!-- End Footer Area -->
         <!-- Start Newsletter Letter -->
-        <div class="newsletter__area bg-cat-2">
+        <!-- <div class="newsletter__area bg-cat-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -1140,7 +983,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Newsletter Letter -->
     </div>
     <!-- Body main wrapper end -->

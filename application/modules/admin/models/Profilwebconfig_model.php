@@ -20,16 +20,20 @@
 							$this->column_order[]='service_tagline';
 							$this->column_order[]='service_judul';
 							$this->column_order[]='service_deskripsi';
+							$this->column_order[]='servicegambar';
 							$this->column_order[]='whychoose_tagline';
 							$this->column_order[]='whychoose_judul';
 							$this->column_order[]='whychoose_deskripsi';
+							$this->column_order[]='whygambar';
 							$this->column_search[]='id_profil';
 							$this->column_search[]='service_tagline';
 							$this->column_search[]='service_judul';
 							$this->column_search[]='service_deskripsi';
+							$this->column_search[]='servicegambar';
 							$this->column_search[]='whychoose_tagline';
 							$this->column_search[]='whychoose_judul';
 							$this->column_search[]='whychoose_deskripsi';
+							$this->column_search[]='whygambar';
 
         }
 
@@ -62,12 +66,10 @@
             return $this->db->get($this->table)->row();
         }
 
-        // get id profile untuk auto ditampilkan
-
-                function get_id_profil(){
-                $dml="SELECT id_profil from profilweb";
-                $query = $this->db->query($dml);
-                return $query->row();
+          function get_id_profil(){
+          $dml="SELECT id_profil from profilweb";
+          $query = $this->db->query($dml);
+          return $query->row();
                 }
 
         // insert data

@@ -1169,3 +1169,7 @@ ERROR - 2019-09-01 17:28:51 --> 404 Page Not Found: /index
 ERROR - 2019-09-01 17:28:51 --> 404 Page Not Found: /index
 ERROR - 2019-09-01 17:28:51 --> 404 Page Not Found: /index
 ERROR - 2019-09-01 17:28:51 --> 404 Page Not Found: /index
+ERROR - 2019-09-01 17:32:11 --> Severity: Notice --> Undefined property: stdClass::$photoUrl D:\wamp64\www\ProjectTravel\application\modules\admin\views\profilweb\profilweb_edit.php 49
+ERROR - 2019-09-01 17:32:12 --> 404 Page Not Found: /index
+ERROR - 2019-09-01 17:32:12 --> 404 Page Not Found: /index
+ERROR - 2019-09-01 17:32:14 --> 404 Page Not Found: /index

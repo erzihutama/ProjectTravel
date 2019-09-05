@@ -8,7 +8,7 @@
 						<div class="form-group row">
 
                 <div class="col-sm-10">
-                  <input type="hidden" name="id_profil" value="<?php echo $id_profil->id_profil ?> "class="form-control">
+                  <input type="hidden" name="id_profil" value="<?php echo $id_profil->id_profil ?>" class="form-control">
                 </div>
               </div>
 						<div class="form-group row">
@@ -30,6 +30,13 @@
                 </div>
               </div>
 						<div class="form-group row">
+                <label class="col-sm-2 col-form-label">servicegambar</label>
+                <div class="col-sm-10">
+               	<input type="file" id="input-file-now" name="servicegambar" class="dropify">
+                  <!-- <input type="file" name="servicegambar" class="dropify" > -->
+                </div>
+              </div>
+						<div class="form-group row">
                 <label class="col-sm-2 col-form-label">whychoose_tagline</label>
                 <div class="col-sm-10">
                   <input type="text" name="whychoose_tagline" class="form-control">
@@ -45,6 +52,14 @@
                 <label class="col-sm-2 col-form-label">whychoose_deskripsi</label>
                 <div class="col-sm-10">
                   <input type="text" name="whychoose_deskripsi" class="form-control">
+                </div>
+              </div>
+						<div class="form-group row">
+                <label class="col-sm-2 col-form-label">whygambar</label>
+                <div class="col-sm-10">
+                  <div class="col-sm-10">
+                  <input type="file" id="input-file-now" name="whygambar" class="dropify">
+                  <!-- <input type="text" name="whygambar" class="form-control"> -->
                 </div>
               </div>
 </div>

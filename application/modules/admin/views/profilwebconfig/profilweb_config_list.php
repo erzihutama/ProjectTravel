@@ -34,7 +34,7 @@
                                            <?php endforeach; ?>
                                            <td>
                                              <a href="<?php echo base_url().$module?>/profilwebconfig/edit/<?php echo $d->id_config ?>"><i class="m-1 feather icon-edit-2"></i></a>
-                                             <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_config ?>" href="#"><i class=" feather icon-trash "></i></a>
+                                             <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_config ?>" href="#"><i class="feather icon-trash"></i></a>
                                            </td>
 
                                          </tr>

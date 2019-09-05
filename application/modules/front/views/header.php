@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Ramble // HTML Template</title>
+    <title><?php echo $deskperusahaan->judul_perusahaan?></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,7 +50,7 @@
                     <div class="col-md-8 col-sm-12 col-lg-8">
                         <div class="header__top">
                             <div class="header__top__left">
-                                <p><span class="text-theme">Contact:</span><a href="#">0088-234-675-827</a></p>
+                                <p><span class="text-theme">Contact:</span><a href="#"><?php echo $telepon->telepon_perusahaan?></a></p>
                                 <p class="hidden-sm"><span class="text-theme">Opening Hours:</span> Mon - Sat 8.00 - 18.00. Sunday CLOSED</p>
                             </div>
                             <div class="header__top__right">

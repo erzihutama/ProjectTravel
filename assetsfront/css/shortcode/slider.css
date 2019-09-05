@@ -26,9 +26,10 @@ Slider images
   background-size: cover;
   position: relative;
   z-index: 0;
+  <?= base_url() ?>taglineimg/<?php echo "$profil->taglineimage1"; ?>
 }
 .slider__bg--1 {
-  background: rgba(0, 0, 0, 0) url("<?php echo $imagetagline->taglineimage1?>") no-repeat scroll 0 0 / cover ;
+  background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>) no-repeat scroll 0 0 / cover ;
 }
 .slider__bg--2 {
   background: rgba(0, 0, 0, 0) url("../../images/slider/bg/jas.jpg") no-repeat scroll 0 0 / cover ;

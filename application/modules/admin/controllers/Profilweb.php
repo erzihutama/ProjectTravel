@@ -160,7 +160,7 @@ public function create_action()
 
     public function update_action()
     {
-      $config['upload_path']          = './assetsfront/images/slider/bg';
+      $config['upload_path']          = './xfile/taglineimg';
         $config['allowed_types']        = 'gif|jpg|png|jpeg';
         $config['max_size']             = 30000;
         // $config['max_width']            = 1920;

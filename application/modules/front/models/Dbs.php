@@ -42,12 +42,46 @@ class Dbs extends CI_Model{
  //      return $query;
  //    }
 
-    function getimagetagline(){
-      $dml ="SELECT`taglineimage1`, `taglineimage2`, `taglineimage3`FROM`dbdreamworld`.`profilweb`;";
+    function gettagline(){
+      $dml ="SELECT`taglineweb1`, `taglineweb2`, `taglineweb3`FROM`dbdreamworld`.`profilweb`;";
       $query =$this->db->query($dml)->row();
        return$query;
   }
 
+function getwhychoose(){
+$dml =" SELECT
+    `whychoose_deskripsi`
+    , `whychoose_judul`
+    , `whychoose_tagline`
+FROM
+    `dbdreamworld`.`profilweb_config` LIMIT 4;";
+    $query =$this->db->query($dml)->row();
+     return$query;
+
+
+}
+function getprofil(){
+$dml = " SELECT * From `dbdreamworld`.`profilweb`;";
+$query =$this->db->query($dml)->result();
+return $query;
+}
+function getalamat(){
+$dml = " SELECT * From `dbdreamworld`.`profil_alamat`LIMIT 3;";
+$query =$this->db->query($dml)->result();
+return $query;
+}
+function gettelepon(){
+$dml = " SELECT `telepon_perusahaan` From `dbdreamworld`.`profil_alamat`;";
+$query =$this->db->query($dml)->row();
+return $query;
+}
+
+function gettaglineimg(){
+    $dml ="SELECT`taglineimage1`,`taglineimage2`,`taglineimage3`FROM`dbdreamworld`.`profilweb`;";
+    $query =$this->db->query($dml)->row();
+    return $query;
+
+}
       function getdeskperusahaan(){
           $dml = "SELECT`judul_perusahaan`,`deskripsi_perusahaan`FROM`dbdreamworld`.`profilweb`;";
              $query =$this->db->query($dml)->row();

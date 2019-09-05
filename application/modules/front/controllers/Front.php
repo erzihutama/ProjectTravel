@@ -15,10 +15,17 @@ class Front extends MY_Controller{
   {
 
     $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
-    $data['imagetagline'] = $this->Dbs->getimagetagline();
+    $data['tagline'] = $this->Dbs->gettagline();
+    $data['whychoose'] = $this->Dbs->getwhychoose();
+    $data['taglineimg'] = $this->Dbs->gettaglineimg();
+    $data['alamat'] = $this->Dbs->getalamat();
+    $data['title'] = $this->Dbs->getprofil();
+    $data['telepon'] = $this->Dbs->gettelepon();
+
+     // var_dump($data);die;
     // $data['name']='Kostlab';
 
-    $this->load->view('front/header');
+    $this->load->view('front/header',$data);
         $this->load->view('front/index',$data);//melempar data dari view
         $this->load->view('front/footer');
   }
