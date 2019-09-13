@@ -106,45 +106,45 @@
                                 </li>
                             </ul>
                         </div>
-                        <ul class="nav navbar-nav float-right">
-                            <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
-                            </li>
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
-                            <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i></a>
-                                <div class="search-input">
-                                    <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                    <input class="input" type="text" placeholder="Explore Kostlab..." tabindex="-1" data-search="starter-list" />
-                                    <div class="search-input-close"><i class="feather icon-x"></i></div>
-                                    <ul class="search-list"></ul>
-                                </div>
-                            </li>
-                            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
-                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                                    <li class="dropdown-menu-header">
-                                        <div class="dropdown-header m-0 p-2">
-                                            <h3 class="white">5 New</h3><span class="grey darken-2">App Notifications</span>
-                                        </div>
-                                    </li>
-                                    <li class="scrollable-container media-list">
-                                        <!-- a(href='javascript:void(0)').d-flex.justify-content-between-->
-                                        <!--   .d-flex.align-items-start-->
-                                        <!--       i.feather.icon-plus-square-->
-                                        <!--       .mx-1-->
-                                        <!--         .font-medium.block.notification-title New Message-->
-                                        <!--         small Are your going to meet me tonight?-->
-                                        <!--   small 62 Days ago--><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                            <div class="media d-flex align-items-start">
-                                                <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
-                                                <div class="media-body">
-                                                    <h6 class="primary media-heading">You have new order!</h6><small class="notification-text"> Are your going to meet me tonight?</small>
-                                                </div><small>
-                                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
-                                            </div>
-                                        </a><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                            <div class="media d-flex align-items-start">
-                                                <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
-                                                <div class="media-body">
+                          <ul class="nav navbar-nav float-right">
+                              <!-- <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                                  <!-- <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div> -->
+                              <!-- </li> -->
+                              <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
+                              <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i></a>
+                                  <div class="search-input">
+                                      <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
+                                      <input class="input" type="text" placeholder="Explore Kostlab..." tabindex="-1" data-search="starter-list" />
+                                      <div class="search-input-close"><i class="feather icon-x"></i></div>
+                                      <ul class="search-list"></ul>
+                                  </div>
+                              </li>
+                              <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
+                                  <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                      <li class="dropdown-menu-header">
+                                          <div class="dropdown-header m-0 p-2">
+                                              <h3 class="white">5 New</h3><span class="grey darken-2">App Notifications</span>
+                                          </div>
+                                      </li>
+                                      <li class="scrollable-container media-list">
+                                          <!-- a(href='javascript:void(0)').d-flex.justify-content-between-->
+                                          <!--   .d-flex.align-items-start-->
+                                          <!--       i.feather.icon-plus-square-->
+                                          <!--       .mx-1-->
+                                          <!--         .font-medium.block.notification-title New Message-->
+                                          <!--         small Are your going to meet me tonight?-->
+                                          <!--   small 62 Days ago--><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                              <div class="media d-flex align-items-start">
+                                                  <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
+                                                  <div class="media-body">
+                                                      <h6 class="primary media-heading">You have new order!</h6><small class="notification-text"> Are your going to meet me tonight?</small>
+                                                  </div><small>
+                                                      <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
+                                              </div>
+                                          </a><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                              <div class="media d-flex align-items-start">
+                                                  <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
+                                                  <div class="media-body">
                                                     <h6 class="success media-heading red darken-1">99% Server load</h6><small class="notification-text">You got new order of goods.</small>
                                                 </div><small>
                                                     <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">5 hour ago</time></small>
@@ -179,10 +179,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                                    <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">Admin</span><span class="user-status">Available</span></div><span><img class="round" src="<?= base_url() ?>assets/images/portrait/small/avatar-s-11.png" alt="avatar" height="40" width="40" /></span>
+                                    <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600"><?php echo $this->session->userdata("nama")?></span><span class="user-status">Available</span></div><span><img class="round" src="<?= base_url() ?>assets/images/portrait/small/avatar-s-11.png" alt="avatar" height="40" width="40" /></span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="#"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="feather icon-message-square"></i> Chats</a>
-                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="feather icon-power"></i> Logout</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php base_url() ?>login/logout"><i class="feather icon-power"></i> Logout</a>
                                 </div>
                             </li>
                         </ul>

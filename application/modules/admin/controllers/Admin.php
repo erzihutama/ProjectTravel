@@ -6,13 +6,17 @@
       public function __construct()
       {
         parent::__construct();
-        //KostLab : Write Less Do More
-        // if($this->session->userdata('status')!='login'){
-        //   redirect(base_url('login'));
-        // }
-        // if($this->session->userdata('role')!=1){
-        //   redirect(redirect($_SERVER['HTTP_REFERER']));
-        // }
+
+        if(!$this->session->userdata("username")){
+          redirect('login');
+        }
+        //KostLab : Write Less Do More coba
+          // if($this->session->userdata('status')!='login'){
+          //   redirect(base_url('login'));
+          // }
+          // if($this->session->userdata('role')!=1){
+          //   redirect(redirect($_SERVER['HTTP_REFERER']));
+          // }
       }
 
       function index()

@@ -22,7 +22,7 @@
     <!-- Template main style -->
     <link rel="stylesheet" href="<?php echo base_url();?>assetsfront/style.css">
     <!-- Responsive css -->
-    <link rel="stylesheet" href="<?php echo base_url();?>assetsfront/<?php echo base_url();?>assetsfront/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assetsfront/css/responsive.css">
     <!-- User style -->
     <link rel="stylesheet" href="<?php echo base_url();?>assetsfront/css/custom.css">
 

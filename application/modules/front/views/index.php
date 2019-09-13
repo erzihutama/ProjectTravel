@@ -538,7 +538,7 @@
         </section> -->
         <!-- End Countdown Area -->
         <!-- Start our Team Area -->
-      
+
         <!-- End our Team Area -->
         <!-- Start Top Destination Area -->
         <section class="top__distination__area bg-white pb-100">
@@ -1002,7 +1002,7 @@
                             <div class="text-center">
                                 <h2 class="modal-title">Login Hare</h2>
                             </div>
-                            <form method="post" action="#">
+                            <form method="post"  action="<?php base_url() ?>login/login_act">
                                 <div class="form-box">
                                     <input type="text" name="username" placeholder="User Name">
                                     <input type="password" name="pass" placeholder="Password">

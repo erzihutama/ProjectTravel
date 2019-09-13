@@ -15,6 +15,9 @@
             //     redirect(base_url('login'));
             //   }
             // }
+            if(!$this->session->userdata("username")){
+redirect('login');
+}
         }
 
         public function index()
@@ -56,6 +59,8 @@
 							$row[] = $Profilweb_model->visi;
 							$row[] = $Profilweb_model->misi;
 							$row[] = $Profilweb_model->website;
+              $row[] = $Profilwebcoba_model->id_user;
+
 
               $row[] ="
               <a href='profilweb/edit/$Profilweb_model->id_profil'><i class='m-1 feather icon-edit-2'></i></a>
@@ -75,11 +80,13 @@
 
 
         public function create(){
+          $id_user = $this->profilweb_model->getIduser();
            $data = array(
              'content'=>'admin/profilweb/profilweb_create',
              'sidebar'=>'admin/sidebar',
              'action'=>'admin/profilweb/create_action',
              'module'=>'admin',
+             'id_user' => $id_user,
              'titlePage'=>'profilweb',
              'controller'=>'profilweb'
             );
@@ -118,6 +125,8 @@ public function create_action()
 					'visi' => $this->input->post('visi',TRUE),
 					'misi' => $this->input->post('misi',TRUE),
 					'website' => $this->input->post('website',TRUE),
+          'id_user' => $this->input->post('id_user',TRUE),
+
 
 );
 
@@ -231,6 +240,8 @@ public function create_action()
 					'visi' => $this->input->post('visi',TRUE),
 					'misi' => $this->input->post('misi',TRUE),
 					'website' => $this->input->post('website',TRUE),
+          'id_user' => $this->input->post('id_user',TRUE),
+
         );
         //Cek Untuk Image
           // $image=$this->upload_foto('taglineimage1','images');
@@ -290,6 +301,7 @@ $this->form_validation->set_rules('taglineimage3', 'taglineimage3', 'trim|requir
 $this->form_validation->set_rules('visi', 'visi', 'trim|required');
 $this->form_validation->set_rules('misi', 'misi', 'trim|required');
 $this->form_validation->set_rules('website', 'website', 'trim|required');
+$this->form_validation->set_rules('id_user', 'id_user', 'trim|required');
 
 
 	$this->form_validation->set_rules('id_profil', 'id_profil', 'trim');

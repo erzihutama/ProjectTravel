@@ -14,7 +14,7 @@
 						<div class="form-group row">
                 <label class="col-sm-2 col-form-label">deskripsi_perusahaan</label>
                 <div class="col-sm-10">
-                  <input type="text" name="deskripsi_perusahaan" class="form-control">
+                  <input type="text" name="deskripsi_perusahaan" class="form-control" required  >
                 </div>
               </div>
 						<div class="form-group row">
@@ -71,6 +71,12 @@
                   <input type="text" name="website" class="form-control">
                 </div>
               </div>
+              <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">id_user</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="id_user" value="<?php echo $id_user->id_user ?> class="form-control">
+                  </div>
+            </div>
 </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect

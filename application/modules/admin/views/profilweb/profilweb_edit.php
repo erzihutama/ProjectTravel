@@ -79,6 +79,13 @@
                 <input type="text" name="website" class="form-control" value="<?php echo $dataedit->website?>">
               </div>
               </div>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-sm-2 col-form-label">id_user</label>
+                <div class="col-sm-10">
+                  <input type="text" name="id_user" class="form-control" value="<?php echo $dataedit->id_user?>">
+                </div>
+                </div>
+
 
         </div>
         <input type="hidden" id="deleteFiles" name="deleteFiles">

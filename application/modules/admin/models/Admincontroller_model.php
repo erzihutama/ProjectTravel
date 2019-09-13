@@ -3,10 +3,10 @@
     if (!defined('BASEPATH'))
         exit('No direct script access allowed');
 
-    class Profilweb_model extends CI_Model
+    class Admincontroller_model extends CI_Model
     {
-        public $table = 'profilweb';
-        public $id = 'id_profil';
+        public $table = 'admin';
+        public $id = 'id_user';
         public $order = array('id' => 'asc');
         public $select='*';
 
@@ -16,29 +16,15 @@
             $this->column_order=[];
             $this->column_search=[];
             $this->column_order[]=null;
-							$this->column_order[]='judul_perusahaan';
-							$this->column_order[]='deskripsi_perusahaan';
-							$this->column_order[]='taglineweb1';
-							$this->column_order[]='taglineweb2';
-							$this->column_order[]='taglineweb3';
-							$this->column_order[]='taglineimage1';
-							$this->column_order[]='taglineimage2';
-							$this->column_order[]='taglineimage3';
-							$this->column_order[]='visi';
-							$this->column_order[]='misi';
-							$this->column_order[]='website';
-							$this->column_search[]='judul_perusahaan';
-							$this->column_search[]='deskripsi_perusahaan';
-							$this->column_search[]='taglineweb1';
-							$this->column_search[]='taglineweb2';
-							$this->column_search[]='taglineweb3';
-							$this->column_search[]='taglineimage1';
-							$this->column_search[]='taglineimage2';
-							$this->column_search[]='taglineimage3';
-							$this->column_search[]='visi';
-							$this->column_search[]='misi';
-							$this->column_search[]='website';
-							$this->column_search[]='id_user';
+							$this->column_order[]='nama';
+							$this->column_order[]='email';
+							$this->column_order[]='username';
+							$this->column_order[]='password';
+							$this->column_search[]='nama';
+							$this->column_search[]='email';
+							$this->column_search[]='username';
+							$this->column_search[]='password';
+							
         }
 
         // get all
@@ -54,11 +40,6 @@
             return $this->db->get($this->table)->result();
         }
 
-        function getIduser(){
-        $dml="SELECT id_user from admin";
-        $query = $this->db->query($dml);
-        return $query->row();
-        }
         //get field
 
         function get_field(){

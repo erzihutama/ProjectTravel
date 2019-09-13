@@ -13,5 +13,9 @@
                         </li>
                     </ul>
                 </li>
+
+                <li class="nav-item"><a href="<?= base_url()?>admin/admincontroller"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Konfigurasi admin</span></a>
+                </li>
+
             </ul>
         </div>
