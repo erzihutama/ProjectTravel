@@ -44,7 +44,7 @@
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage1</label>
               <div class="col-sm-10">
-                    <input type="file" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>">
+                    <input type="file" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>" required>
                 	<!-- <input type="file" id="input-file-now" name="gambar" class="dropify"> -->
                 <!-- <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url().'xfile/images'.$dataedit->photoUrl?>" name="file"> -->
               </div>
@@ -52,37 +52,37 @@
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage2</label>
               <div class="col-sm-10">
-                <input type="file" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>">
+                <input type="file" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage3</label>
               <div class="col-sm-10">
-                <input type="file" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>">
+                <input type="file" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>"required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">visi</label>
               <div class="col-sm-10">
-                <input type="text" name="visi" class="form-control" value="<?php echo $dataedit->visi?>">
+                <input type="text" name="visi" class="form-control" value="<?php echo $dataedit->visi?>"required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">misi</label>
               <div class="col-sm-10">
-                <input type="text" name="misi" class="form-control" value="<?php echo $dataedit->misi?>">
+                <input type="text" name="misi" class="form-control" value="<?php echo $dataedit->misi?>"required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">website</label>
               <div class="col-sm-10">
-                <input type="text" name="website" class="form-control" value="<?php echo $dataedit->website?>">
+                <input type="text" name="website" class="form-control" value="<?php echo $dataedit->website?>"required>
               </div>
               </div>
               <div class="form-group row">
                 <label for="example-text-input" class="col-sm-2 col-form-label">id_user</label>
                 <div class="col-sm-10">
-                  <input type="text" name="id_user" class="form-control" value="<?php echo $dataedit->id_user?>">
+                  <input type="text" name="id_user" class="form-control" value="<?php echo $dataedit->id_user?>"required>
                 </div>
                 </div>
 

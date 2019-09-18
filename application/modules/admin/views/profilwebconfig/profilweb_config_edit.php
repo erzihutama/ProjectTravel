@@ -36,9 +36,9 @@
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">servicegambar</label>
+              <!-- <label for="example-text-input" class="col-sm-2 col-form-label">servicegambar</label> -->
               <div class="col-sm-10">
-                <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url().'xfile/imageconfig'.$dataedit->servicegambar?>" name="servicegambar">
+                <!-- <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url().'xfile/imageconfig'.$dataedit->servicegambar?>" name="servicegambar"> -->
                 <!-- <input type="text" name="servicegambar" class="form-control" value="<?php echo $dataedit->servicegambar?>"> -->
               </div>
               </div>
@@ -61,9 +61,9 @@
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">whygambar</label>
+              <!-- <label for="example-text-input" class="col-sm-2 col-form-label">whygambar</label> -->
               <div class="col-sm-10">
-                <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url().'xfile/imageconfig'.$dataedit->whygambar?>" name="whygambar">
+                <!-- <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?php echo base_url().'xfile/imageconfig'.$dataedit->whygambar?>" name="whygambar"> -->
 
                 <!-- <input type="text" name="whygambar" class="form-control" value="<?php echo $dataedit->whygambar?>"> -->
               </div>

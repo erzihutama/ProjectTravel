@@ -18,7 +18,7 @@
 
     <div class="wrapper">
     	<div class="container">
-    		<h1>Welcome</h1>
+    		<h1>Login Admin Dreamworld</h1>
     		<form class="form" action="<?php base_url() ?>login/login_act" method="POST">
     			<input type="text"  name="username" placeholder="Username" required>
     			<input type="password"  name="password"placeholder="Password" required>

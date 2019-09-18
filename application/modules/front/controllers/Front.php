@@ -21,11 +21,12 @@ class Front extends MY_Controller{
     $data['alamat'] = $this->Dbs->getalamat();
     $data['title'] = $this->Dbs->getprofil();
     $data['telepon'] = $this->Dbs->gettelepon();
+    // $data['imgservice'] = $this->Dbs->get_imgser();
 
      // var_dump($data);die;
     // $data['name']='Kostlab';
 
-    $this->load->view('front/header',$data);
+        $this->load->view('front/header',$data);
         $this->load->view('front/index',$data);//melempar data dari view
         $this->load->view('front/footer');
   }

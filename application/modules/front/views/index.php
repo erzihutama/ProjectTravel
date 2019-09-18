@@ -1,16 +1,32 @@
         <!-- End Header Style -->
+
+<style type="text/css">
+
+.slider__bg--1 {
+  background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage1"; ?>) no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--2 {
+  background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>) no-repeat scroll 0 0 / cover ;
+}
+
+.slider__bg--3 {
+  background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage3"; ?>) no-repeat scroll 0 0 / cover ;
+}
+
+
+</style>
         <!-- Start Slider Area -->
+
         <div class="slider__container slider__full--screen slider__position--relative">
             <div class="slider-activetion-wrap control__style--left  owl-carousel owl-theme">
                 <!-- Start Single Slide -->
-                <div class="slide slider__bg--2 htc__slider__animation--center" data-black-overlay="6">
+                <div class="slide slider__bg--1 htc__slider__animation--center" data-black-overlay="6">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                                 <div class="slide__align--center">
                                     <div class="slider__inner">
                                         <h2 class="wow"><?php echo $tagline->taglineweb1?></h2>
-
                                         <div class="slider__btn wow">
                                             <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
                                         </div>
@@ -22,7 +38,7 @@
                 </div>
                 <!-- End Single Slide -->
                 <!-- Start Single Slide -->
-                <div class="slide slider__bg--3 htc__slider__animation--center" data-black-overlay="6">
+                <div class="slide slider__bg--2 htc__slider__animation--center" data-black-overlay="6">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -41,7 +57,7 @@
                 </div>
                 <!-- End Single Slide -->
                 <!-- Start Single Slide -->
-                <div class="slide slider__bg--4 htc__slider__animation--center" data-black-overlay="6">
+                <div class="slide slider__bg--3 htc__slider__animation--center" data-black-overlay="6">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -62,49 +78,7 @@
             </div>
             <!-- End Slider Area -->
             <!-- Start Select Option -->
-            <div class="select__option__wrap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                            <div class="select__option__inner">
-                                <div class="single__option">
-                                    <input type="text" placeholder="tour name">
-                                </div>
-                                <!-- Start Single option -->
-                                <div class="single__option">
-                                    <select>
-                                        <option>tour typr</option>
-                                        <option>tour typr</option>
-                                        <option>tour typr</option>
-                                        <option>tour typr</option>
-                                    </select>
-                                </div>
-                                <!-- End Single option -->
-                                <!-- Start Single option -->
-                                <div class="single__option">
-                                    <select>
-                                        <option>destination</option>
-                                        <option>destination</option>
-                                        <option>destination</option>
-                                        <option>destination</option>
-                                    </select>
-                                </div>
-                                <!-- End Single option -->
-                                <!-- Start Single option -->
-                                <div class="single__option">
-                                    <select>
-                                        <option>month</option>
-                                        <option>janu</option>
-                                        <option>feb</option>
-                                        <option>march</option>
-                                    </select>
-                                </div>
-                                <!-- End Single option -->
-                                <!-- Start Single option -->
-                                <div class="single__option">
-                                    <a class="btn__search" href="#">search tours</a>
-                                </div>
-                                <!-- End Single option -->
+            <!--  -->
                             </div>
                         </div>
                     </div>
@@ -129,8 +103,8 @@
                         <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                             <div class="choose">
                                 <div class="choose__inner text-center">
-                                    <div class="choose__icon">
-                                        <i class="flaticon-mountain-1 icon"></i>
+                                    <div class="choose__icon" style="background-image:url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>)">
+
                                     </div>
                                     <h4><a href="#">Diverse Destination</a></h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laborelorem</p>

@@ -9,6 +9,7 @@ function __construct()
 {
 parent::__construct();
 $this->load->model('Dbs');
+$this->load->library('form_validation');
 // $this->load->library('form_validation');
 
 }
@@ -38,16 +39,15 @@ public function login_act(){
     $where=array(
     'username' => $username,
     'password' => sha1($password)
-    'nama'     => $nama
+
     );
     if($this->Dbs->cek_login("admin",$where)->num_rows()>0){// cek ke tabel user
-    $id_user = $this->Dbs->getUserId($username);
-    $id_user = $this->Dbs->getUserId($nama);
+    $nama = $this->Dbs->getUserId($username);
     $data_session = array(
     'username' => $username,
-    'nama'=>  $nama
+    'nama'=>  $nama->nama
     );
-    // var_dump($where); die;
+    // var_dump($data_session); die;
 
 
     $this->session->set_userdata($data_session);
@@ -55,7 +55,8 @@ public function login_act(){
     redirect(base_url("admin"));
     echo "berhasil login";
     }else{
-    echo "Gagal Login";
+    echo "<script type='text/javascript'>alert('Username atau password Salah!!!'); document.location='http://localhost/ProjectTravel/login' </script>";
+
     }
 }
 
@@ -66,8 +67,6 @@ $this->form_validation->set_rules('nama', 'nama', 'trim|required');
 $this->form_validation->set_rules('email', 'email', 'trim|required');
 $this->form_validation->set_rules('username', 'username', 'trim|required');
 $this->form_validation->set_rules('password', 'password', 'trim|required');
-
-
 $this->form_validation->set_rules('id_user', 'id_user', 'trim');
 $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
 

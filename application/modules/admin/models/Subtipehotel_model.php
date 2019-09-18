@@ -3,10 +3,10 @@
     if (!defined('BASEPATH'))
         exit('No direct script access allowed');
 
-    class Profilwebconfig_model extends CI_Model
+    class Subtipehotel_model extends CI_Model
     {
-        public $table = 'profilweb_config';
-        public $id = 'id_config';
+        public $table = 'subtipehotel';
+        public $id = 'id_subtipe';
         public $order = array('id' => 'asc');
         public $select='*';
 
@@ -16,25 +16,13 @@
             $this->column_order=[];
             $this->column_search=[];
             $this->column_order[]=null;
-							$this->column_order[]='id_profil';
-							$this->column_order[]='service_tagline';
-							$this->column_order[]='service_judul';
-							$this->column_order[]='service_deskripsi';
-							// $this->column_order[]='servicegambar';
-							$this->column_order[]='whychoose_tagline';
-							$this->column_order[]='whychoose_judul';
-							$this->column_order[]='whychoose_deskripsi';
-							// $this->column_order[]='whygambar';
-							$this->column_search[]='id_profil';
-							$this->column_search[]='service_tagline';
-							$this->column_search[]='service_judul';
-							$this->column_search[]='service_deskripsi';
-							// $this->column_search[]='servicegambar';
-							$this->column_search[]='whychoose_tagline';
-							$this->column_search[]='whychoose_judul';
-							$this->column_search[]='whychoose_deskripsi';
-							// $this->column_search[]='whygambar';
-
+							$this->column_order[]='nama_subtipe';
+							$this->column_order[]='hargatipe';
+							$this->column_order[]='id_tipehotel';
+							$this->column_search[]='nama_subtipe';
+							$this->column_search[]='hargatipe';
+							$this->column_search[]='id_tipehotel';
+							
         }
 
         // get all
@@ -65,15 +53,6 @@
             $this->db->where($this->id, $id);
             return $this->db->get($this->table)->row();
         }
-
-
-
-                // get id profilweb
-          function get_id_profil(){
-          $dml="SELECT id_profil from profilweb";
-          $query = $this->db->query($dml);
-          return $query->row();
-                }
 
         // insert data
         function insert($data)

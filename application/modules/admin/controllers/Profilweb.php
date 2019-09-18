@@ -224,7 +224,7 @@ public function create_action()
       //
       //
       // // $gambar = $_FILES['gambar'];
-      //   $this->_rules();
+        $this->_rules();
       //   if ($this->form_validation->run() == FALSE) {
       //       $this->edit($this->input->post('id', TRUE));
       //   } else {

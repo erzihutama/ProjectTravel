@@ -102,11 +102,12 @@ public function create_action()
         if ($this->form_validation->run() == FALSE) {
             $this->create();
         } else {
+          $password = $this->input->post('password',TRUE);
             $data = array(
 					'nama' => $this->input->post('nama',TRUE),
 					'email' => $this->input->post('email',TRUE),
 					'username' => $this->input->post('username',TRUE),
-					'password' => $this->input->post('password',TRUE),
+					'password' => sha1($password),
 
 );
 

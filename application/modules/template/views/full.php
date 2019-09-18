@@ -88,22 +88,26 @@
                                 <!-- li.nav-item.mobile-menu.d-xl-none.mr-auto-->
                                 <!--   a.nav-link.nav-menu-main.menu-toggle.hidden-xs(href='#')-->
                                 <!--     i.ficon.feather.icon-menu-->
-                                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-1-column.html" data-toggle="tooltip" data-placement="top" title="1-Column"><i class="ficon feather icon-file-text"></i></a></li>
+                                <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-1-column.html" data-toggle="tooltip" data-placement="top" title="1-Column"><i class="ficon feather icon-file-text"></i></a></li>
                                 <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-2-columns.html" data-toggle="tooltip" data-placement="top" title="2-Columns"><i class="ficon feather icon-sidebar"></i></a></li>
-                                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-static.html" data-toggle="tooltip" data-placement="top" title="Static Layout"><i class="ficon feather icon-sliders"></i></a></li>
+                                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-static.html" data-toggle="tooltip" data-placement="top" title="Static Layout"><i class="ficon feather icon-sliders"></i></a></li> -->
                             </ul>
                             <ul class="nav navbar-nav">
-                                <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a>
-                                    <div class="bookmark-input search-input">
+                              <div class="col-12">
+                                  <h2 class="content-header-title float-left mb-0">Selamat Bekerja  -</h2> <h2 class="content-header-title float-left mb-0" ><?php echo $this->session->userdata("nama")?>-</h2>
+                                  <div class="breadcrumb-wrapper col-12">
+                                <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a> -->
+                                    <!-- <div class="bookmark-input search-input">
                                         <div class="bookmark-input-icon"><i class="feather icon-search primary"></i></div>
                                         <input class="form-control input" type="text" placeholder="Explore Kostlab..." tabindex="0" data-search="starter-list" />
-                                        <ul class="search-list"></ul>
-                                    </div>
+                                        <ul class="search-list">
+                                        </ul>
+                                    </div> -->
                                     <!-- select.bookmark-select-->
                                     <!--   option 1-Column-->
                                     <!--   option 2-Column-->
                                     <!--   option Static Layout-->
-                                </li>
+                                <!-- </li> -->
                             </ul>
                         </div>
                           <ul class="nav navbar-nav float-right">
@@ -181,7 +185,7 @@
                             <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                     <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600"><?php echo $this->session->userdata("nama")?></span><span class="user-status">Available</span></div><span><img class="round" src="<?= base_url() ?>assets/images/portrait/small/avatar-s-11.png" alt="avatar" height="40" width="40" /></span>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="#"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="feather icon-message-square"></i> Chats</a>
+                                <div class="dropdown-menu dropdown-menu-right">
                                     <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php base_url() ?>login/logout"><i class="feather icon-power"></i> Logout</a>
                                 </div>
                             </li>
@@ -197,15 +201,10 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Floating Navbar</h2>
+                            <!-- <h2 class="content-header-title float-left mb-0">Selamat Bekerja</h2><h2 class="content-header-title float-left mb-0"><?php echo $this->session->userdata("nama")?></h2> -->
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
-                                    </li>
-                                    <li class="breadcrumb-item"><a href="#">Starter Kit</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">Floating Navbar
-                                    </li>
+
                                 </ol>
                             </div>
                         </div>

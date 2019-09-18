@@ -48,6 +48,15 @@ class Dbs extends CI_Model{
        return$query;
   }
 
+  // get image services
+            //
+            // function get_imgser(){
+            // $dml="SELECT servicegambar from profilweb_config";
+            // $query = $this->db->query($dml);
+            // return $query->row();
+            //       }
+
+
 function getwhychoose(){
 $dml =" SELECT
     `whychoose_deskripsi`
