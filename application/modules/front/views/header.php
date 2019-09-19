@@ -64,10 +64,10 @@
                             <div class="mainmenu__area">
                                 <nav class="mainmenu__nav">
                                     <ul class="main__menu">
-                                        <li class="drop"><a href="<?php echo base_url();?>front/index">home</a>
+                                        <li class="drop"><a href="<?php echo base_url();?>">home</a>
 
                                         </li>
-                                            <li><a href="<?php echo base_url();?>front/about">about</a></li>
+                                            <li><a href="<?php echo base_url();?>about">about</a></li>
                                         <li><a href="<?php echo base_url();?>assetsfront/service.html">services</a></li>
                                             <li><a href="<?php echo base_url();?>assetsfront/tour-details.html">tour </a></li>
 
