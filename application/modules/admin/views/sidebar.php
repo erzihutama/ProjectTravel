@@ -23,7 +23,8 @@
                 </li>
               </ul>
           </li>
-
+          <li class="nav-item"><a href="<?= base_url()?>admin/agen"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Data agen</span></a>
+          </li>
                 <!-- Jika ingin menggunakan sidebar sub menu -->
                 <li class=" nav-item"><a href="#"><i class="feather icon-zap"></i><span class="menu-title" data-i18n="">Konfigurasi Website</span></a>
                     <ul class="menu-content">
