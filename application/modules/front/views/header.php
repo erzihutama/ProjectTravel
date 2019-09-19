@@ -44,7 +44,7 @@
                 <div class="row">
                     <div class="col-md-2 col-lg-2 col-sm-12">
                         <div class="logo">
-                                <a href="index.html"><img src="<?php echo base_url();?>assetsfront/images/logo/ramble.png" alt="logo"></a>
+                                <a href="ProjectTravel.php"><img src="<?php echo base_url();?>assetsfront/images/logo/ramble.png" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-12 col-lg-8">
@@ -64,12 +64,10 @@
                             <div class="mainmenu__area">
                                 <nav class="mainmenu__nav">
                                     <ul class="main__menu">
-                                        <li class="drop"><a href="<?php echo base_url();?>assetsfront/index.html">home</a>
-                                            <ul class="dropdown">
-                                                <li><a href="<?php echo base_url();?>assetsfront/index-slider.html">home 2</a></li>
-                                            </ul>
+                                        <li class="drop"><a href="<?php echo base_url();?>front/index">home</a>
+
                                         </li>
-                                        <li><a href="<?php echo base_url();?>assetsfront/about-us.html">about</a></li>
+                                            <li><a href="<?php echo base_url();?>front/about">about</a></li>
                                         <li><a href="<?php echo base_url();?>assetsfront/service.html">services</a></li>
                                             <li><a href="<?php echo base_url();?>assetsfront/tour-details.html">tour </a></li>
 
@@ -103,7 +101,7 @@
                             <ul>
                                 <li><a href="<?php echo base_url();?>assetsfront/index.html">home</a></li>
                                 <li><a href="<?php echo base_url();?>assetsfront/index-slider.html">home 2</a></li>
-                                <li><a href="<?php echo base_url();?>assetsfront/about-us.html">about</a></li>
+                                <li><a href="<?php echo base_url();?>front/about">about</a></li>
                                 <li class="drop"><a href="<?php echo base_url();?>assetsfront/blog-details.html">blog</a>
                                 <li><a href="<?php echo base_url();?>assetsfront/package-list.html">package list</a></li>
                                 <li><a href="<?php echo base_url();?>assetsfront/service.html">services</a></li>

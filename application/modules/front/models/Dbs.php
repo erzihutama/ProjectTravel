@@ -57,6 +57,14 @@ class Dbs extends CI_Model{
             //       }
 
 
+
+
+function getmaps(){
+$dml = "SELECT`maps`FROM`dbdreamworld`.`profil_alamat`;";
+$query =$this->db->query($dml)->row();
+return $query;
+}
+
 function getwhychoose(){
 $dml =" SELECT
     `whychoose_deskripsi`
@@ -96,6 +104,17 @@ function gettaglineimg(){
              $query =$this->db->query($dml)->row();
               return$query;
 
+      }
+      function getvisimisi(){
+        $dml = "SELECT`visi`,`misi`FROM`dbdreamworld`.`profilweb`;";
+           $query =$this->db->query($dml)->row();
+            return$query;
+      }
+
+      function getconfig(){
+        $dml = "SELECT`service_judul`, `service_deskripsi`,`service_tagline`,`whychoose_judul`,`whychoose_deskripsi`,`whychoose_deskripsi`FROM`dbdreamworld`.`profilweb_config`";
+           $query =$this->db->query($dml)->row();
+            return$query;
       }
 
 
