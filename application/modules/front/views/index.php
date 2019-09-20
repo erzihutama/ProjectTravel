@@ -28,7 +28,7 @@
                                     <div class="slider__inner">
                                         <h2 class="wow"><?php echo $tagline->taglineweb1?></h2>
                                         <div class="slider__btn wow">
-                                            <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
+                                            <a class="rm__btn btn--transparent" <a href="<?php echo base_url();?>tour">View tours</a>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@
                                         <h2 class="wow"><?php echo $tagline->taglineweb2?></h2>
 
                                         <div class="slider__btn wow">
-                                            <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
+                                          <a class="rm__btn btn--transparent" <a href="<?php echo base_url();?>tour">View tours</a>
                                         </div>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                         <h2 class="wow"><?php echo $tagline->taglineweb3?></h2>
 
                                         <div class="slider__btn wow">
-                                            <a class="rm__btn btn--transparent" href="tour-details.html">view tours</a>
+                                          <a class="rm__btn btn--transparent" <a href="<?php echo base_url();?>tour">View tours</a>
                                         </div>
                                     </div>
                                 </div>
@@ -97,60 +97,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="choose__wrap clearfix mt-50 sm-mt-20">
-                        <!-- Start Single Choose -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="choose">
-                                <div class="choose__inner text-center">
-                                    <div class="choose__icon" style="background-image:url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>)">
 
-                                    </div>
-                                    <h4><a href="#">Diverse Destination</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laborelorem</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Choose -->
-                        <!-- Start Single Choose -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="choose">
-                                <div class="choose__inner text-center">
-                                    <div class="choose__icon">
-                                        <i class="flaticon-travel icon"></i>
-                                    </div>
-                                    <h4><a href="#">Value of Money</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laborelorem</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Choose -->
-                        <!-- Start Single Choose -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="choose">
-                                <div class="choose__inner text-center">
-                                    <div class="choose__icon">
-                                        <i class="flaticon-tool icon"></i>
-                                    </div>
-                                    <h4><a href="#">Passionate Travel</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laborelorem</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Choose -->
-                        <!-- Start Single Choose -->
-                        <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
-                            <div class="choose">
-                                <div class="choose__inner text-center">
-                                    <div class="choose__icon">
-                                        <i class="flaticon-mountain icon"></i>
-                                    </div>
-                                    <h4><a href="#">Beautiful Places</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laborelorem</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Choose -->
+                            <ul class="brand__list bg-white">
+
+                                                    <?php foreach ($datachose as $d): ?>
+
+                                                      <!-- Start Single Choose -->
+                                                      <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                          <div class="choose">
+                                                              <div class="choose__inner text-center">
+                                                                  <h4 class="text-theme"><a href="#"><?php echo $d->whychoose_judul ?> </a></h4>
+                                                                  <p><?php echo $d->whychoose_deskripsi?></p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <!-- End Single Choose -->
+
+                                                    <?php endforeach; ?>
+                            </ul>
+
+
                     </div>
                 </div>
             </div>
@@ -181,90 +147,38 @@
             </div>
         </section>
         <!-- End Welcome Area -->
-        <!-- Start Service Area -->
-        <section class="service__area ptb-100 bg-white">
+        <!-- Start Choose Area -->
+        <section class="choose__area bg-white ptb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="section__title text-center">
-                            <h2 class="title__line">our <span class="text-theme">services</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utllaf </p>
+                            <h2 class="title__line">OUR  <span class="text-theme">Services</span></h2>
+                            <p><?php echo $whychoose->service_tagline ?> </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="service__wrap clearfix mt-50">
-                        <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
-                            <div class="service__inner">
-                                <!-- Start Single Service -->
-                                <div class="service">
-                                    <div class="service__icon">
-                                        <i class="flaticon-telephone icon"></i>
-                                    </div>
-                                    <div class="service__details">
-                                        <h4><a href="#">Online Booking Services</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Service -->
-                                <!-- Start Single Service -->
-                                <div class="service">
-                                    <div class="service__icon">
-                                        <i class="flaticon-shape icon"></i>
-                                    </div>
-                                    <div class="service__details">
-                                        <h4><a href="#">Book Cheap Online</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Service -->
-                                <!-- Start Single Service -->
-                                <div class="service">
-                                    <div class="service__icon">
-                                        <i class="flaticon-sleeping icon"></i>
-                                    </div>
-                                    <div class="service__details">
-                                        <h4><a href="#">Hotel Booking</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Service -->
-                                <!-- Start Single Service -->
-                                <div class="service">
-                                    <div class="service__icon">
-                                        <i class="flaticon-transport icon"></i>
-                                    </div>
-                                    <div class="service__details">
-                                        <h4><a href="#">Taxi Cap Booking</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Service -->
-                                <!-- Start Single Service -->
-                                <div class="service">
-                                    <div class="service__icon">
-                                        <i class="flaticon-tool icon"></i>
-                                    </div>
-                                    <div class="service__details">
-                                        <h4><a href="#">Amazing Tour</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                    </div>
-                                </div>
-                                <!-- End Single Service -->
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 service-images">
-                            <!-- <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>" alt="service images"> -->
-                        </div>
+
+                            <ul class="brand__list bg-white">
+                                                    <?php foreach ($datachose as $d): ?>
+
+                                                      <!-- Start Single Choose -->
+                                                      <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                                                          <div class="choose">
+                                                              <div class="choose__inner text-center">
+                                                                  <h4 class="text-theme"><a href="#"><?php echo $d->service_judul ?> </a></h4>
+                                                                  <p><?php echo $d->service_deskripsi?></p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <!-- End Single Choose -->
+                                                    <?php endforeach; ?>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="service__images service__feature_images">
-                <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?> "style="width:600px; height:600px;" alt="service images">
             </div>
         </section>
-        <!-- End Service Area -->
-
+        <!-- End Choose Area -->
         <!-- Start Special Packages Area -->
         <section class="special__package ptb-100 bg-white">
             <div class="container">
@@ -514,9 +428,9 @@
         <!-- Start our Team Area -->
 
         <!-- End our Team Area -->
-        
+
         <!-- Start Brand Area -->
-        <div class="brand__area pb-100 bg-white">
+        <!-- <div class="brand__area pb-100 bg-white">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -531,7 +445,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Brand Area -->
         <!-- Start Contact Area -->
         <div class="contact__address bg-white">
@@ -590,100 +504,7 @@
             </div>
         </div>
         <!-- End Contact Area -->
-        <!-- Start Footer Area -->
-        <footer class="footer__area bg-4">
-            <div class="footer__top ptb-70" data-black-overlay="8">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer__wrap clearfix">
-                            <!-- Start Single Footer -->
-                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                                <div class="footer__wedget">
-                                    <div class="footer__logo">
-                                        <a href="#">
-                                            <img src="images/logo/ramble.png" alt="logo">
-                                        </a>
-                                    </div>
-                                    <p class="footer__dtl">Lorem ipsum dolor sit amet, consectetur adipisicing ejlit, sed do eiusmod tempor incididunt ut labore egtt dolore magna aliqua. Ut enim ad minim veniam, quisgt nostrud exercitation ullamco laboris.</p>
-                                    <ul class="footer__social__icon">
-                                        <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                        <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
-                                        <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                                        <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Single Footer -->
-                            <!-- Start Single Footer -->
-                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 xs--mt--40">
-                                <div class="footer__wedget">
-                                    <div class="footer__inner">
-                                        <h2 class="footer__title">latest tweets</h2>
-                                        <!-- Start tweets Feed -->
-                                        <div class="tweets">
-                                            <div class="tweets__icon">
-                                                <i class="zmdi zmdi-twitter"></i>
-                                            </div>
-                                            <div class="tweets__details">
-                                                <p>Lorem ipsum dolor sit am ectetur adip isicing elit, sed eiusmod ipsum dolo hgtfed</p>
-                                                <a href="#">https://tweeterhrad.com</a>
-                                            </div>
-                                        </div>
-                                        <!-- End tweets Feed -->
-                                        <!-- Start tweets Feed -->
-                                        <div class="tweets">
-                                            <div class="tweets__icon">
-                                                <i class="zmdi zmdi-twitter"></i>
-                                            </div>
-                                            <div class="tweets__details">
-                                                <p>Lorem ipsum dolor sit am ectetur adip isicing elit, sed eiusmod ipsum dolo hgtfed</p>
-                                                <a href="#">https://tweeterhrad.com</a>
-                                            </div>
-                                        </div>
-                                        <!-- End tweets Feed -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Footer -->
-                            <!-- Start Single Footer -->
-                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 xs--mt--40">
-                                <div class="footer__wedget sm--mt--40">
-                                    <div class="footer__inner">
-                                        <h2 class="footer__title">tag</h2>
-                                        <ul class="tag_menu">
-                                            <li><a href="#">Adventure</a></li>
-                                            <li><a href="#">Traveling</a></li>
-                                            <li><a href="#">Countries</a></li>
-                                            <li><a href="#">Beach</a></li>
-                                            <li><a href="#">Honeymoon</a></li>
-                                            <li><a href="#">Island</a></li>
-                                            <li><a href="#">Parks</a></li>
-                                            <li><a href="#">Family</a></li>
-                                            <li><a href="#">Travel</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Footer -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright__arera" data-black-overlay="9">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
-                            <div class="copyright__inner">
-                                <div class="copyright__text">
-                                    <p>Copyright © 2017<a href="https://devitems.com">devitems.com</a> All Right Reserved.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+
         <!-- End Footer Area -->
         <!-- Start Newsletter Letter -->
         <!-- <div class="newsletter__area bg-cat-2">

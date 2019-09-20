@@ -29,13 +29,13 @@
                   <input type="text" name="service_deskripsi" class="form-control">
                 </div>
               </div>
-						<div class="form-group row">
+						<!-- <div class="form-group row">
                 <label class="col-sm-2 col-form-label">servicegambar</label>
                 <div class="col-sm-10">
                	<input type="file" id="input-file-now" name="servicegambar" class="dropify">
-                  <!-- <input type="file" name="servicegambar" class="dropify" > -->
-                </div>
-              </div>
+                  <!-- <input type="file" name="servicegambar" class="dropify" > --> 
+                <!-- </div>
+              </div> -->
 						<div class="form-group row">
                 <label class="col-sm-2 col-form-label">whychoose_tagline</label>
                 <div class="col-sm-10">
@@ -54,14 +54,14 @@
                   <input type="text" name="whychoose_deskripsi" class="form-control">
                 </div>
               </div>
-						<div class="form-group row">
+						<!-- <div class="form-group row">
                 <label class="col-sm-2 col-form-label">whygambar</label>
                 <div class="col-sm-10">
                   <div class="col-sm-10">
                   <input type="file" id="input-file-now" name="whygambar" class="dropify">
                   <!-- <input type="text" name="whygambar" class="form-control"> -->
-                </div>
-              </div>
+                <!-- </div>
+              </div> -->
 </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect

@@ -67,16 +67,30 @@ return $query;
 
 function getwhychoose(){
 $dml =" SELECT
-    `whychoose_deskripsi`
-    , `whychoose_judul`
-    , `whychoose_tagline`
+  `whychoose_tagline`,
+  `service_tagline`
 FROM
-    `dbdreamworld`.`profilweb_config` LIMIT 4;";
+    `dbdreamworld`.`profilweb_config` LIMIT 1;";
     $query =$this->db->query($dml)->row();
      return$query;
 
 
 }
+
+function getdatachose(){
+$dml =" SELECT
+    `whychoose_deskripsi`
+    , `whychoose_judul`,
+    `service_deskripsi`
+    , `service_judul`
+FROM
+    `dbdreamworld`.`profilweb_config` LIMIT 4;";
+    $query =$this->db->query($dml)->result();
+     return$query;
+
+
+}
+
 function getprofil(){
 $dml = " SELECT * From `dbdreamworld`.`profilweb`;";
 $query =$this->db->query($dml)->result();

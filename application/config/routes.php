@@ -54,3 +54,5 @@ $route['movies']='front/movies';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['about']='front/about';
+$route['tour']='front/tour';
+$route['contact']='front/contact';

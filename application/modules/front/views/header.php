@@ -67,15 +67,16 @@
                                         <li class="drop"><a href="<?php echo base_url();?>">home</a>
 
                                         </li>
+                                            <li><a href="<?php echo base_url();?>tour">tours</a></li>
                                             <li><a href="<?php echo base_url();?>about">about</a></li>
-                                        <li><a href="<?php echo base_url();?>assetsfront/service.html">services</a></li>
-                                            <li><a href="<?php echo base_url();?>assetsfront/tour-details.html">tour </a></li>
+                                        <!-- <li><a href="<?php echo base_url();?>assetsfront/service.html">services</a></li> -->
 
 
-                                        <li><a href="<?php echo base_url();?>assetsfront/gallery.html">gallery</a></li>
-                                        <li><a href="<?php echo base_url();?>assetsfront/blog-left-sidebar.html">Blog </a></li>
 
-                                        <li><a href="<?php echo base_url();?>assetsfront/contact-us.html">contact</a></li>
+                                        <!-- <li><a href="<?php echo base_url();?>assetsfront/gallery.html">gallery</a></li>
+                                        <li><a href="<?php echo base_url();?>assetsfront/blog-left-sidebar.html">Blog </a></li> -->
+
+                                        <li><a href="<?php echo base_url();?>contact">contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

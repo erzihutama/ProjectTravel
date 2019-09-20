@@ -1,7 +1,24 @@
+<!-- End Header Style -->
 
+<style type="text/css">
+
+.slider__bg--1 {
+background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage1"; ?>) no-repeat scroll 0 0 / cover ;
+}
+.slider__bg--2 {
+background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>) no-repeat scroll 0 0 / cover ;
+}
+
+.slider__bg--3 {
+background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage3"; ?>) no-repeat scroll 0 0 / cover ;
+}
+
+
+</style>
         <!-- End Header Style -->
-        <!-- Start Bradcaump area -->
-        <div class="ht__bradcaump__area bg-5" data-black-overlay="7">
+        <!-- Start Bradcaump area           <div class="ht__bradcaump__area bg-5" data-black-overlay="7">
+-->
+          <div class="hslide slider__bg--3 htc__slider__animation--center" data-black-overlay="9">
             <div class="ht__bradcaump__wrap">
                 <div class="container">
                     <div class="row">
@@ -9,7 +26,7 @@
                             <div class="bradcaump__inner text-center">
                                 <h2 class="bradcaump-title">About US</h2>
                                 <nav class="bradcaump-inner">
-                                  <a class="breadcrumb-item" href="<?php echo base_url();?>front/index">Home</a>
+                                  <a class="breadcrumb-item" href="<?php echo base_url();?>">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">About US</span>
                                 </nav>
@@ -19,9 +36,10 @@
                 </div>
             </div>
         </div>
+
         <!-- End Bradcaump area -->
         <!-- Start About Area -->
-        <section class="htc__about__area bg-6">
+        <section class="htc__about__area ">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
@@ -31,7 +49,7 @@
                                   <p><?php echo $deskperusahaan->deskripsi_perusahaan?></p>
                             </div>
                             <div class="about__sig">
-                                <img src="" alt="images">
+                                <!-- <img src="" alt="images"> --> tandatangan
                             </div>
                         </div>
                     </div>
@@ -43,6 +61,7 @@
                 </div>
             </div>
         </section>
+        <hr>
         <!-- End About Area -->
         <!-- Start Our Service area -->
         <section class="our__service__area pt-100 bg-white">
@@ -51,50 +70,16 @@
                     <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                         <!-- Start Our Service -->
                         <div class="service__inner">
-                            <!-- Start Single Service -->
-                            <div class="service">
-                                <div class="service__icon">
-                                    <i class="flaticon-telephone icon"></i>
-                                </div>
-                                <div class="service__details">
-                                    <h4><a href="#">Online Booking Services</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                </div>
-                            </div>
-                            <!-- End Single Service -->
-                            <!-- Start Single Service -->
-                            <div class="service">
-                                <div class="service__icon">
-                                    <i class="flaticon-shape icon"></i>
-                                </div>
-                                <div class="service__details">
-                                    <h4><a href="#">Book Cheap Online</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                </div>
-                            </div>
-                            <!-- End Single Service -->
-                            <!-- Start Single Service -->
-                            <div class="service">
-                                <div class="service__icon">
-                                    <i class="flaticon-sleeping icon"></i>
-                                </div>
-                                <div class="service__details">
-                                    <h4><a href="#">Hotel Booking</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                </div>
-                            </div>
-                            <!-- End Single Service -->
-                            <!-- Start Single Service -->
-                            <div class="service">
-                                <div class="service__icon">
-                                    <i class="flaticon-transport icon"></i>
-                                </div>
-                                <div class="service__details">
-                                    <h4><a href="#">Taxi Cap Booking</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dliluptatem sequi nesciunt. Neque porro quisquam est</p>
-                                </div>
-                            </div>
-                            <!-- End Single Service -->
+                          <P>
+                            Assalamualaikum Warahmatullah Wabarakatuh</p>
+                            <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elementum erat, ut ultricies elit. Morbi et justo ut magna pulvinar faucibus vel id ante. Ut non nibh volutpat, imperdiet ligula rhoncus, placerat lacus. Curabitur maximus justo tortor, feugiat maximus turpis placerat non. Suspendisse tempor nibh ipsum, quis dignissim nisl consectetur sodales. Phasellus condimentum lectus non ligula eleifend gravida. Ut ut ante purus. Aenean ultrices magna dictum, placerat ipsum in, lobortis ex. Etiam accumsan luctus sapien non lacinia. Duis ac aliquet ipsum. Nullam non quam at nunc sollicitudin tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elementum erat, ut ultricies elit. Morbi et justo ut magna pulvinar faucibus vel id ante. Ut non nibh volutpat, imperdiet ligula rhoncus, placerat lacus. Curabitur maximus justo tortor, feugiat maximus turpis placerat non. Suspendisse tempor nibh ipsum, quis dignissim nisl consectetur sodales. Phasellus condimentum lectus non ligula eleifend gravida. Ut ut ante purus. Aenean ultrices magna dictum, placerat ipsum in, lobortis ex. Etiam accumsan luctus sapien non lacinia. Duis ac aliquet ipsum. Nullam non quam at nunc sollicitudin tempus.
+                            <p>
+                              <hr>
+                            (nama pemilik)
+                          </p>
+                            Direktur DreamWorld
+                          </p>
+                          </p>
                         </div>
                         <!-- End Our Service -->
                     </div>
@@ -111,7 +96,7 @@
                             <!-- Start Single Content -->
                             <div role="tabpanel" id="about" class="single__tab__content tab-pane fade in active bg-cat-1">
                                 <div class="tab__content__inner">
-                                    <h2>Dreamwordl</h2>
+                                    <h2>DreamWorld</h2>
                                     <p><?php echo $deskperusahaan->deskripsi_perusahaan?></p>
                                     <ul class="tab__list">
 
@@ -122,7 +107,7 @@
                             <!-- Start Single Content -->
                             <div role="tabpanel" id="mission" class="single__tab__content tab-pane fade bg-cat-1">
                                 <div class="tab__content__inner">
-                                    <h2>Dreamwordl</h2>
+                                    <h2>DreamWorld</h2>
                                                 <p><?php echo $getvisimisi->misi?></p>
                                     <ul class="tab__list">
 
@@ -133,7 +118,7 @@
                             <!-- Start Single Content -->
                             <div role="tabpanel" id="vision" class="single__tab__content tab-pane fade bg-cat-1">
                                 <div class="tab__content__inner">
-                                    <h2>Dreamwordl</h2>
+                                    <h2>DreamWorld</h2>
                                     <p><?php echo $getvisimisi->visi?></p>
                                     <ul class="tab__list">
 
@@ -231,13 +216,10 @@
                         <!-- End Single Team -->
                     </div>
                 </div>
-            </div>  
+            </div>
         </section>
         <!-- End our Team Area -->
-        <label>Google Map</label>
-   <textarea name="google_map" rows="5" class="form-control" placeholder="Kode dari Google Map"><p><?php echo $maps->maps?></p>
-</textarea>
-   </div>
+      
         <!-- Start Brand Area -->
         <div class="brand__area pb-100 bg-white">
             <div class="container">
@@ -317,122 +299,6 @@
             </div>
         </div>
         <!-- End Contact Area -->
-        <!-- Start Footer Area -->
-        <footer class="footer__area bg-4">
-            <div class="footer__top ptb-70" data-black-overlay="8">
-                <div class="container">
-                    <div class="row">
-                        <div class="footer__wrap clearfix">
-                            <!-- Start Single Footer -->
-                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                                <div class="footer__wedget">
-                                    <div class="footer__logo">
-                                        <a href="#">
-                                            <img src="images/logo/ramble.png" alt="logo">
-                                        </a>
-                                    </div>
-                                    <p class="footer__dtl">Lorem ipsum dolor sit amet, consectetur adipisicing ejlit, sed do eiusmod tempor incididunt ut labore egtt dolore magna aliqua. Ut enim ad minim veniam, quisgt nostrud exercitation ullamco laboris.</p>
-                                    <ul class="footer__social__icon">
-                                        <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                        <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
-                                        <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                                        <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Single Footer -->
-                            <!-- Start Single Footer -->
-                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 xs--mt--40">
-                                <div class="footer__wedget">
-                                    <div class="footer__inner">
-                                        <h2 class="footer__title">latest tweets</h2>
-                                        <!-- Start tweets Feed -->
-                                        <div class="tweets">
-                                            <div class="tweets__icon">
-                                                <i class="zmdi zmdi-twitter"></i>
-                                            </div>
-                                            <div class="tweets__details">
-                                                <p>Lorem ipsum dolor sit am ectetur adip isicing elit, sed eiusmod ipsum dolo hgtfed</p>
-                                                <a href="#">https://tweeterhrad.com</a>
-                                            </div>
-                                        </div>
-                                        <!-- End tweets Feed -->
-                                        <!-- Start tweets Feed -->
-                                        <div class="tweets">
-                                            <div class="tweets__icon">
-                                                <i class="zmdi zmdi-twitter"></i>
-                                            </div>
-                                            <div class="tweets__details">
-                                                <p>Lorem ipsum dolor sit am ectetur adip isicing elit, sed eiusmod ipsum dolo hgtfed</p>
-                                                <a href="#">https://tweeterhrad.com</a>
-                                            </div>
-                                        </div>
-                                        <!-- End tweets Feed -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Footer -->
-                            <!-- Start Single Footer -->
-                            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 xs--mt--40">
-                                <div class="footer__wedget sm--mt--40">
-                                    <div class="footer__inner">
-                                        <h2 class="footer__title">tag</h2>
-                                        <ul class="tag_menu">
-                                            <li><a href="#">Adventure</a></li>
-                                            <li><a href="#">Traveling</a></li>
-                                            <li><a href="#">Countries</a></li>
-                                            <li><a href="#">Beach</a></li>
-                                            <li><a href="#">Honeymoon</a></li>
-                                            <li><a href="#">Island</a></li>
-                                            <li><a href="#">Parks</a></li>
-                                            <li><a href="#">Family</a></li>
-                                            <li><a href="#">Travel</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Footer -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright__arera" data-black-overlay="9">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
-                            <div class="copyright__inner">
-                                <div class="copyright__text">
-                                    <p>Copyright © 2017<a href="https://devitems.com">devitems.com</a> All Right Reserved.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer Area -->
-        <!-- Start Newsletter Letter -->
-        <div class="newsletter__area bg-cat-2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                        <div class="newsletter__wrap">
-                            <div class="newsletter__inner">
-                                <h4>join the newsletter</h4>
-                                <input type="email" placeholder="Enter your E-mail">
-                                <div class="news__letter__btn">
-                                    <a class="rm__btn btn--transparent" href="#">subcribes</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Newsletter Letter -->
-    </div>
-    <!-- Body main wrapper end -->
 
     <!--Start of Login Form-->
     <div id="login__form__wrap">
@@ -503,6 +369,7 @@
             </div>
         </div>
     </div>
+
     <!--End of Registration Form-->
 
     <!-- Placed js at the end of the document so the pages load faster -->

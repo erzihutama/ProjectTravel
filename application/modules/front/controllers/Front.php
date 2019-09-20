@@ -21,6 +21,8 @@ class Front extends MY_Controller{
     $data['alamat'] = $this->Dbs->getalamat();
     $data['title'] = $this->Dbs->getprofil();
     $data['telepon'] = $this->Dbs->gettelepon();
+    $data['datachose'] = $this->Dbs->getdatachose();
+    // $data['datachose'] = $this->Dbs->getdatachose()
     // $data['imgservice'] = $this->Dbs->get_imgser();
 
      // var_dump($data);die;
@@ -33,6 +35,8 @@ class Front extends MY_Controller{
 
   function about()
   {
+    $data['datachose'] = $this->Dbs->getdatachose();
+
     $data['getvisimisi'] = $this->Dbs->getvisimisi();
     $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
     $data['tagline'] = $this->Dbs->gettagline();
@@ -53,6 +57,56 @@ class Front extends MY_Controller{
         $this->load->view('front/about',$data);//melempar data dari view
         $this->load->view('front/footer');
   }
+
+      function contact()
+      {
+        $data['datachose'] = $this->Dbs->getdatachose();
+
+        $data['getvisimisi'] = $this->Dbs->getvisimisi();
+        $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
+        $data['tagline'] = $this->Dbs->gettagline();
+        $data['whychoose'] = $this->Dbs->getwhychoose();
+        $data['taglineimg'] = $this->Dbs->gettaglineimg();
+        $data['alamat'] = $this->Dbs->getalamat();
+        $data['title'] = $this->Dbs->getprofil();
+        $data['telepon'] = $this->Dbs->gettelepon();
+        $data['config'] = $this->Dbs->getconfig();
+        $data['maps'] = $this->Dbs->getmaps();
+
+        // $data['imgservice'] = $this->Dbs->get_imgser();
+
+         // var_dump($data);die;
+        // $data['name']='Kostlab';
+
+            $this->load->view('front/header',$data);
+            $this->load->view('front/contact',$data);//melempar data dari view
+            $this->load->view('front/footer');
+      }
+  function tour()
+  {
+    $data['datachose'] = $this->Dbs->getdatachose();
+
+    $data['getvisimisi'] = $this->Dbs->getvisimisi();
+    $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
+    $data['tagline'] = $this->Dbs->gettagline();
+    $data['whychoose'] = $this->Dbs->getwhychoose();
+    $data['taglineimg'] = $this->Dbs->gettaglineimg();
+    $data['alamat'] = $this->Dbs->getalamat();
+    $data['title'] = $this->Dbs->getprofil();
+    $data['telepon'] = $this->Dbs->gettelepon();
+    $data['config'] = $this->Dbs->getconfig();
+    $data['maps'] = $this->Dbs->getmaps();
+
+    // $data['imgservice'] = $this->Dbs->get_imgser();
+
+     // var_dump($data);die;
+    // $data['name']='Kostlab';
+
+        $this->load->view('front/header',$data);
+        $this->load->view('front/tour',$data);//melempar data dari view
+        $this->load->view('front/footer');
+  }
+
 
 
 
