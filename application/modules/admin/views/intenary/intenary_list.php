@@ -20,14 +20,16 @@
                                  <table class="table crudtable">
                                      <thead>
                                        <tr>
-                                           <?php foreach ($datafield as $d): ?>
-                                             <th><?php echo str_replace("_"," ",$d) ?></th>
-                                           <?php endforeach; ?>
+                                             <th>no</th>
+                                             <th>Hari</th>
+                                             <th>Keterangan</th>
+                                             <th>Nama Paket</th>
+                                             <th>Aksi</th>
                                            <th>aksi</th>
                                        </tr>
                                      </thead>
                                      <tbody>
-                                       <?php foreach ($dataintenary as $d): ?>
+                                       <?php foreach ($dataintenary as $d): ?> //catetan 
                                          <tr>
                                            <?php foreach ($datafield as $df): ?>
                                              <td><?php echo $d->$df ?></td>
