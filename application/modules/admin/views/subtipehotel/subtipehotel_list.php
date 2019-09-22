@@ -20,34 +20,33 @@
                                  <table class="table crudtable">
                                      <thead>
                                        <tr>
-                                           <?php foreach ($datafield as $d): ?>
-                                             <th><?php echo str_replace("_"," ",$d) ?></th>
-                                           <?php endforeach; ?>
-                                           <th>aksi</th>
+                                             <th>no</th>
+                                             <th>Nama Subtipe</th>
+                                             <th>Harga tipe regular</th>
+                                             <th>Harga tipe high session</th>
+                                             <th>Tipe Hotel</th>
+                                             <th>Nama Kota</th>
+                                             <th>Aksi</th>
                                        </tr>
                                      </thead>
                                      <tbody>
-                                       <?php foreach ($datasubtipehotel as $d): ?>
+                                       <?php $no = 1;foreach ($data_subtipehotel as $d): ?>
                                          <tr>
-                                           <?php foreach ($datafield as $df): ?>
-                                             <td><?php echo $d->$df ?></td>
-                                           <?php endforeach; ?>
+                                               <td><?php echo $no ?></td>
+                                               <td><?php echo $d->nama_subtipe ?></td>
+                                               <td><?php echo $d->harga_tipe_regular ?></td>
+                                               <td><?php echo $d->harga_high_session ?></td>
+                                               <td><?php echo $d->namatipe ?></td>
+                                               <td><?php echo $d->nama_kota ?></td>
                                            <td>
                                              <a href="<?php echo base_url().$module?>/subtipehotel/edit/<?php echo $d->id_subtipe ?>"><i class="m-1 feather icon-edit-2"></i></a>
                                              <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_subtipe ?>" href="#"><i class="feather icon-trash"></i></a>
                                            </td>
 
                                          </tr>
+                                         <?php $no++ ?>
                                        <?php endforeach; ?>
                                        </tbody>
-                                     <tfoot>
-                                       <tr>
-                                           <?php foreach ($datafield as $d): ?>
-                                             <th><?php echo str_replace("_"," ",$d) ?></th>
-                                           <?php endforeach; ?>
-                                           <th>aksi</th>
-                                       </tr>
-                                     </tfoot>
                                  </table>
                              </div>
                          </div>

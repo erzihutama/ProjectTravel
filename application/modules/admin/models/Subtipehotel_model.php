@@ -22,7 +22,7 @@
 							$this->column_search[]='nama_subtipe';
 							$this->column_search[]='hargatipe';
 							$this->column_search[]='id_tipehotel';
-							
+
         }
 
         // get all
@@ -30,6 +30,12 @@
         {
             $this->db->order_by($this->id, 'DESC');
             return $this->db->get($this->table)->result();
+        }
+
+        function get_subtipehotel(){
+          $dml = "SELECT kota_hotel.nama_kota,tipehotel.namatipe, subtipehotel.* FROM subtipehotel join kota_hotel join tipehotel where subtipehotel.id_tipehotel = tipehotel.id_tipehotel and subtipehotel.id_kota = kota_hotel.id_kota";
+          $query = $this->db->query($dml)->result();
+          return $query;
         }
 
         function getDataTable(){

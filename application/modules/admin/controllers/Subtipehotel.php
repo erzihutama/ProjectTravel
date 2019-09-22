@@ -20,6 +20,7 @@
         public function index()
         {$datasubtipehotel=$this->Subtipehotel_model->get_all();//panggil ke modell
           $datafield=$this->Subtipehotel_model->get_field();//panggil ke modell
+          $data_subtipehotel = $this->Subtipehotel_model->get_subtipehotel();
 
            $data = array(
              'content'=>'admin/subtipehotel/subtipehotel_list',
@@ -30,7 +31,8 @@
              'datafield'=>$datafield,
              'module'=>'admin',
              'titlePage'=>'subtipehotel',
-             'controller'=>'subtipehotel'
+             'controller'=>'subtipehotel',
+             'data_subtipehotel' => $data_subtipehotel
             );
           $this->template->load($data);
         }
@@ -48,7 +50,7 @@
 							$row[] = $Subtipehotel_model->nama_subtipe;
 							$row[] = $Subtipehotel_model->hargatipe;
 							$row[] = $Subtipehotel_model->id_tipehotel;
-							
+
               $row[] ="
               <a href='subtipehotel/edit/$Subtipehotel_model->id_subtipe'><i class='m-1 feather icon-edit-2'></i></a>
               <a class='modalDelete' data-toggle='modal' data-target='#responsive-modal' value='$Subtipehotel_model->id_subtipe' href='#'><i class='feather icon-trash'></i></a>";
@@ -102,7 +104,7 @@ public function create_action()
 					'nama_subtipe' => $this->input->post('nama_subtipe',TRUE),
 					'hargatipe' => $this->input->post('hargatipe',TRUE),
 					'id_tipehotel' => $this->input->post('id_tipehotel',TRUE),
-					
+
 );
 
             $this->Subtipehotel_model->insert($data);
@@ -125,7 +127,7 @@ public function create_action()
 					'nama_subtipe' => $this->input->post('nama_subtipe',TRUE),
 					'hargatipe' => $this->input->post('hargatipe',TRUE),
 					'id_tipehotel' => $this->input->post('id_tipehotel',TRUE),
-					
+
 );
 
             $this->Subtipehotel_model->update($this->input->post('id_subtipe', TRUE), $data);
