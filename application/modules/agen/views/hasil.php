@@ -114,9 +114,9 @@
                                      </thead>
                                      <tbody>
                                          <tr>
-                                             <td><?php echo $quad ?></td>
-                                           <td><?php echo $triple ?></td>
-                                           <td><?php echo $double ?></td>
+                                             <td><?php echo "Coming Soon" ?></td>
+                                           <td><?php echo "Coming Soon" ?></td>
+                                           <td><?php echo "Coming Soon" ?></td>
                                          </tr>
                                        </tbody>
                                      <tfoot>
