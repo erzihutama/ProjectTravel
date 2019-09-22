@@ -54,16 +54,6 @@ public function login_act(){
     $this->session->set_userdata($data_session);
 
     redirect(base_url("admin"));
-  }else if($this->Dbs->cek_login("agen",$where)->num_rows()>0){
-    $nama = $this->Dbs->getUserIdagen($username);
-    $data_session = array(
-    'username' => $username,
-    'nama'=>  $nama->nama,
-    'user' => 'agen',
-    );
-    $this->session->set_userdata($data_session);
-
-    redirect(base_url("agen"));
   }else{
     echo "<script type='text/javascript'>alert('Username atau password Salah!!!'); document.location='http://localhost/ProjectTravel/login' </script>";
 
