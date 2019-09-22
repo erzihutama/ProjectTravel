@@ -79,6 +79,7 @@
         $nigh_in_mekah_quad   = ($data_quad_mekah->harga_tipe_regular * $this->input->post('malammekah'))/4;
         $nigh_in_mekah_triple = ($data_triple_mekah->harga_tipe_regular * $this->input->post('malammekah'))/3;
         $nigh_in_mekah_double = ($data_double_mekah->harga_tipe_regular * $this->input->post('malammekah'))/2;
+
         // pembulatan
         $nigh_in_mekah_quad_round   = round($nigh_in_mekah_quad);
         $nigh_in_mekah_triple_round = round($nigh_in_mekah_triple);
@@ -93,10 +94,11 @@
         $nigh_in_madinah_triple_round = round($nigh_in_madinah_triple);
         $nigh_in_madinah_double_round = round($nigh_in_madinah_double);
 
+
         //menghitung Quad Triple dan Double yaitu dengan harga hotel dikali sama banyaknya malam dan dibagi sesuai roomnya
-        $nigh_in_jeddah_quad   = ($data_quad_madinah->harga_tipe_regular * $this->input->post('malamjeddah'))/4;
-        $nigh_in_jeddah_triple = ($data_triple_madinah->harga_tipe_regular * $this->input->post('malamjeddah'))/3;
-        $nigh_in_jeddah_double = ($data_double_madinah->harga_tipe_regular * $this->input->post('malamjeddah'))/2;
+        $nigh_in_jeddah_quad   = ($data_quad_jeddah->harga_tipe_regular * $this->input->post('malamjeddah'))/4;
+        $nigh_in_jeddah_triple = ($data_triple_jeddah->harga_tipe_regular * $this->input->post('malamjeddah'))/3;
+        $nigh_in_jeddah_double = ($data_double_jeddah->harga_tipe_regular * $this->input->post('malamjeddah'))/2;
         // pembulatan
         $nigh_in_jeddah_quad_round   = round($nigh_in_jeddah_quad);
         $nigh_in_jeddah_triple_round = round($nigh_in_jeddah_triple);
@@ -118,6 +120,7 @@
         $mutawwifa                         = ($data_umrah->mutawwifa / $this->input->post('banyak_jamaah'));
         $muassasa                          = $data_umrah->muassasa / $this->input->post('banyak_jamaah');
         $visa                              = $data_umrah->visa;
+
 
         //menghitung total Quad Triple dan Double
         $total_quad   = (($nigh_in_mekah_quad_round + $nigh_in_madinah_quad_round + $nigh_in_jeddah_quad_round + $bus + $drver_tip + $hotel_handling_quad + $billboy + $mutawwif + $mutawwifa + $muassasa + $visa + $airport_handling_checkin_checkout + $snack_ziarah_mekah_madinah)/3.73)+20+10;

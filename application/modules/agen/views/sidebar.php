@@ -2,8 +2,6 @@
             <ul class="navigation navigation-main" id="sidebar" data-menu="menu-navigation">
                 <li class="nav-item"><a href="<?= base_url()?>Alamat"><i class="feather icon-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
                 </li>
-                <li class="nav-item"><a href="<?= base_url()?>admin/admincontroller"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="">Data hotel</span></a>
-                </li>
                 <li class="nav-item"><a href="<?= base_url()?>agen/simulasi"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="">Simulasi harga</span></a>
                 </li>
                 <!-- Jika ingin menggunakan sidebar sub menu -->
