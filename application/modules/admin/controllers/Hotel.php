@@ -20,6 +20,7 @@
         public function index()
         {$datahotel=$this->Hotel_model->get_all();//panggil ke modell
           $datafield=$this->Hotel_model->get_field();//panggil ke modell
+          $data_hotel = $this->Hotel_model->get_hotel();
 
            $data = array(
              'content'=>'admin/hotel/hotel_list',
@@ -28,6 +29,7 @@
              'js'=>'admin/hotel/js',
              'datahotel'=>$datahotel,
              'datafield'=>$datafield,
+             'data_hotel' => $data_hotel,
              'module'=>'admin',
              'titlePage'=>'hotel',
              'controller'=>'hotel'
@@ -48,7 +50,7 @@
 							$row[] = $Hotel_model->namahotel;
 							$row[] = $Hotel_model->deskripsi;
 							$row[] = $Hotel_model->maps;
-							
+
               $row[] ="
               <a href='hotel/edit/$Hotel_model->id_hotel'><i class='m-1 feather icon-edit-2'></i></a>
               <a class='modalDelete' data-toggle='modal' data-target='#responsive-modal' value='$Hotel_model->id_hotel' href='#'><i class='feather icon-trash'></i></a>";
@@ -102,7 +104,7 @@ public function create_action()
 					'namahotel' => $this->input->post('namahotel',TRUE),
 					'deskripsi' => $this->input->post('deskripsi',TRUE),
 					'maps' => $this->input->post('maps',TRUE),
-					
+
 );
 
             $this->Hotel_model->insert($data);
@@ -125,7 +127,7 @@ public function create_action()
 					'namahotel' => $this->input->post('namahotel',TRUE),
 					'deskripsi' => $this->input->post('deskripsi',TRUE),
 					'maps' => $this->input->post('maps',TRUE),
-					
+
 );
 
             $this->Hotel_model->update($this->input->post('id_hotel', TRUE), $data);

@@ -22,7 +22,7 @@
 							$this->column_search[]='namahotel';
 							$this->column_search[]='deskripsi';
 							$this->column_search[]='maps';
-							
+
         }
 
         // get all
@@ -36,6 +36,12 @@
             $this->db->select($this->select);
             $this->db->order_by($this->id, 'DESC');
             return $this->db->get($this->table)->result();
+        }
+
+        function get_hotel(){
+          $dml = "SELECT kota_hotel.nama_kota,hotel.* FROM kota_hotel join hotel WHERE hotel.id_kota = kota_hotel.id_kota";
+          $query = $this->db->query($dml)->result();
+          return $query;
         }
 
         //get field

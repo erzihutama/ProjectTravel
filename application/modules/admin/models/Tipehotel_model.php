@@ -36,6 +36,12 @@
             return $this->db->get($this->table)->result();
         }
 
+        function get_hotel(){
+          $dml = "select hotel.namahotel, tipehotel.* from hotel join tipehotel where hotel.id_hotel = tipehotel.id_hotel";
+          $query = $this->db->query($dml)->result();
+          return $query;
+        }
+
         //get field
 
         // get id profilweb

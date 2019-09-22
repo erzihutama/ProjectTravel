@@ -20,7 +20,7 @@
         public function index()
         {$datatipehotel=$this->Tipehotel_model->get_all();//panggil ke modell
           $datafield=$this->Tipehotel_model->get_field();//panggil ke modell
-
+          $data_tipe_hotel = $this->Tipehotel_model->get_hotel();
            $data = array(
              'content'=>'admin/tipehotel/tipehotel_list',
              'sidebar'=>'admin/sidebar',
@@ -28,6 +28,7 @@
              'js'=>'admin/tipehotel/js',
              'datatipehotel'=>$datatipehotel,
              'datafield'=>$datafield,
+             'data_tipe_hotel' => $data_tipe_hotel,
              'module'=>'admin',
              'titlePage'=>'tipehotel',
              'controller'=>'tipehotel'
