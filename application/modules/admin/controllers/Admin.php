@@ -7,7 +7,7 @@
       {
         parent::__construct();
 
-        if(!$this->session->userdata("user")=='admin'){
+        if(!$this->session->userdata("user") !='admin'){
           redirect('login');
         }
         //KostLab : Write Less Do More coba

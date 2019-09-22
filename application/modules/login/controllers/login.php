@@ -54,7 +54,6 @@ public function login_act(){
     $this->session->set_userdata($data_session);
 
     redirect(base_url("admin"));
-    echo "berhasil login";
   }else if($this->Dbs->cek_login("agen",$where)->num_rows()>0){
     $nama = $this->Dbs->getUserIdagen($username);
     $data_session = array(
@@ -65,11 +64,37 @@ public function login_act(){
     $this->session->set_userdata($data_session);
 
     redirect(base_url("agen"));
-    echo "berhasil login";
   }else{
     echo "<script type='text/javascript'>alert('Username atau password Salah!!!'); document.location='http://localhost/ProjectTravel/login' </script>";
 
     }
+}
+
+function login_agen(){
+  $username=$this->input->post('username');
+  $password=$this->input->post('password');
+
+  $where=array(
+  'username' => $username,
+  'password' => sha1($password)
+
+  );
+
+  if($this->Dbs->cek_login("agen",$where)->num_rows()>0){
+    $nama = $this->Dbs->getUserIdagen($username);
+    $data_session = array(
+    'username' => $username,
+    'nama'=>  $nama->nama,
+    'user' => 'agen',
+    );
+    $this->session->set_userdata($data_session);
+
+    redirect(base_url("agen"));
+  }else{
+    echo "<script type='text/javascript'>alert('Username atau password Salah!!!'); document.location='http://localhost/ProjectTravel/login' </script>";
+
+    }
+
 }
 
 
