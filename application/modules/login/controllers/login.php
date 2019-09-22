@@ -45,7 +45,8 @@ public function login_act(){
     $nama = $this->Dbs->getUserId($username);
     $data_session = array(
     'username' => $username,
-    'nama'=>  $nama->nama
+    'nama'=>  $nama->nama,
+    'user' => 'admin',
     );
     // var_dump($data_session); die;
 
@@ -58,7 +59,8 @@ public function login_act(){
     $nama = $this->Dbs->getUserIdagen($username);
     $data_session = array(
     'username' => $username,
-    'nama'=>  $nama->nama
+    'nama'=>  $nama->nama,
+    'user' => 'agen',
     );
     $this->session->set_userdata($data_session);
 

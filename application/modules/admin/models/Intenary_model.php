@@ -26,7 +26,7 @@
         }
 
         function get_intenary(){
-          $dml = "select paket.nama_paket, intenary.hari, intenary.keterangan from paket join intenary where paket.id_paket = intenary.id_paket";
+          $dml = "select paket.nama_paket,intenary.id_intenary, intenary.hari, intenary.keterangan from paket join intenary where paket.id_paket = intenary.id_paket";
           $query = $this->db->query($dml)->result();
           return $query;
         }
