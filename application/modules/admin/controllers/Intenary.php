@@ -69,12 +69,14 @@
 
 
         public function create(){
+          $data_itenerary = $this->Intenary_model->get_paket();
            $data = array(
              'content'=>'admin/intenary/intenary_create',
              'sidebar'=>'admin/sidebar',
              'action'=>'admin/intenary/create_action',
              'module'=>'admin',
              'titlePage'=>'intenary',
+             'data_paket' => $data_itenerary,
              'controller'=>'intenary'
             );
           $this->template->load($data);
@@ -82,12 +84,14 @@
 
         public function edit($id_intenary){
           $dataedit=$this->Intenary_model->get_by_id($id_intenary);
+            $data_itenerary = $this->Intenary_model->get_paket();
            $data = array(
              'content'=>'admin/intenary/intenary_edit',
              'sidebar'=>'admin/sidebar',
              'action'=>'admin/intenary/update_action',
              'dataedit'=>$dataedit,
              'module'=>'admin',
+             'data_paket' => $data_itenerary,
              'titlePage'=>'intenary',
              'controller'=>'intenary'
             );

@@ -17,12 +17,16 @@
                   <input type="text" name="keterangan" class="form-control">
                 </div>
               </div>
-						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">id_paket</label>
-                <div class="col-sm-10">
-                  <input type="text" name="id_paket" class="form-control">
+              <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Nama Paket</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" name="program_hari">
+                      <?php foreach ($data_paket as $d): ?>
+                        <option value="<?php echo $d->id_paket ?>"><?php echo $d->nama_paket ?></option>
+                      <?php endforeach; ?>
+                    </select>
+                  </div>
                 </div>
-              </div>
 </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect

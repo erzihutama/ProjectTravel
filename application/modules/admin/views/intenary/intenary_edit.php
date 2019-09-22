@@ -23,12 +23,16 @@
                 <input type="text" name="keterangan" class="form-control" value="<?php echo $dataedit->keterangan?>">
               </div>
               </div>
-						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">id_paket</label>
-              <div class="col-sm-10">
-                <input type="text" name="id_paket" class="form-control" value="<?php echo $dataedit->id_paket?>">
-              </div>
-              </div>
+              <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Nama Paket</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" name="id_paket">
+                      <?php foreach ($data_paket as $d): ?>
+                        <option value="<?php echo $d->id_paket ?>"><?php echo $d->nama_paket ?></option>
+                      <?php endforeach; ?>
+                    </select>
+                  </div>
+                </div>
 
         </div>
         <input type="hidden" id="deleteFiles" name="deleteFiles">
