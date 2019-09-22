@@ -14,8 +14,10 @@
         // if($this->session->userdata('role')!=1){
         //   redirect(redirect($_SERVER['HTTP_REFERER']));
         // }
-        if(!$this->session->userdata("user") != 'agen'){
+        if(!$this->session->userdata("user") == 'agen'){
           redirect('login');
+        }else if($this->session->userdata("user") == 'admin'){
+          redirect('admin');
         }
       }
 
