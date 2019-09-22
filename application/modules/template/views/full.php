@@ -9,7 +9,7 @@
     <meta name="description" content="Kostlab admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Kostlab admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Dream World</title>
+    <title>KostLab</title>
     <link rel="apple-touch-icon" href="<?= base_url()?>assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url()?>assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
@@ -58,7 +58,7 @@
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="#">
                         <div class="brand-logo"></div>
-                        <h2 class="brand-text mb-0">DWorld</h2>
+                        <h2 class="brand-text mb-0">KostLab</h2>
                     </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block primary" data-ticon="icon-disc"></i></a></li>
             </ul>
@@ -88,67 +88,63 @@
                                 <!-- li.nav-item.mobile-menu.d-xl-none.mr-auto-->
                                 <!--   a.nav-link.nav-menu-main.menu-toggle.hidden-xs(href='#')-->
                                 <!--     i.ficon.feather.icon-menu-->
-                                <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-1-column.html" data-toggle="tooltip" data-placement="top" title="1-Column"><i class="ficon feather icon-file-text"></i></a></li>
+                                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-1-column.html" data-toggle="tooltip" data-placement="top" title="1-Column"><i class="ficon feather icon-file-text"></i></a></li>
                                 <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-2-columns.html" data-toggle="tooltip" data-placement="top" title="2-Columns"><i class="ficon feather icon-sidebar"></i></a></li>
-                                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-static.html" data-toggle="tooltip" data-placement="top" title="Static Layout"><i class="ficon feather icon-sliders"></i></a></li> -->
+                                <li class="nav-item d-none d-lg-block"><a class="nav-link" href="sk-layout-static.html" data-toggle="tooltip" data-placement="top" title="Static Layout"><i class="ficon feather icon-sliders"></i></a></li>
                             </ul>
                             <ul class="nav navbar-nav">
-                              <div class="col-12">
-                                  <h2 class="content-header-title float-left mb-0">Selamat Bekerja  -</h2> <h2 class="content-header-title float-left mb-0" ><?php echo $this->session->userdata("nama")?>-</h2>
-                                  <div class="breadcrumb-wrapper col-12">
-                                <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a> -->
-                                    <!-- <div class="bookmark-input search-input">
+                                <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon feather icon-star warning"></i></a>
+                                    <div class="bookmark-input search-input">
                                         <div class="bookmark-input-icon"><i class="feather icon-search primary"></i></div>
                                         <input class="form-control input" type="text" placeholder="Explore Kostlab..." tabindex="0" data-search="starter-list" />
-                                        <ul class="search-list">
-                                        </ul>
-                                    </div> -->
+                                        <ul class="search-list"></ul>
+                                    </div>
                                     <!-- select.bookmark-select-->
                                     <!--   option 1-Column-->
                                     <!--   option 2-Column-->
                                     <!--   option Static Layout-->
-                                <!-- </li> -->
+                                </li>
                             </ul>
                         </div>
-                          <ul class="nav navbar-nav float-right">
-                              <!-- <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
-                                  <!-- <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div> -->
-                              <!-- </li> -->
-                              <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
-                              <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i></a>
-                                  <div class="search-input">
-                                      <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
-                                      <input class="input" type="text" placeholder="Explore Kostlab..." tabindex="-1" data-search="starter-list" />
-                                      <div class="search-input-close"><i class="feather icon-x"></i></div>
-                                      <ul class="search-list"></ul>
-                                  </div>
-                              </li>
-                              <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
-                                  <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
-                                      <li class="dropdown-menu-header">
-                                          <div class="dropdown-header m-0 p-2">
-                                              <h3 class="white">5 New</h3><span class="grey darken-2">App Notifications</span>
-                                          </div>
-                                      </li>
-                                      <li class="scrollable-container media-list">
-                                          <!-- a(href='javascript:void(0)').d-flex.justify-content-between-->
-                                          <!--   .d-flex.align-items-start-->
-                                          <!--       i.feather.icon-plus-square-->
-                                          <!--       .mx-1-->
-                                          <!--         .font-medium.block.notification-title New Message-->
-                                          <!--         small Are your going to meet me tonight?-->
-                                          <!--   small 62 Days ago--><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                              <div class="media d-flex align-items-start">
-                                                  <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
-                                                  <div class="media-body">
-                                                      <h6 class="primary media-heading">You have new order!</h6><small class="notification-text"> Are your going to meet me tonight?</small>
-                                                  </div><small>
-                                                      <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
-                                              </div>
-                                          </a><a class="d-flex justify-content-between" href="javascript:void(0)">
-                                              <div class="media d-flex align-items-start">
-                                                  <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
-                                                  <div class="media-body">
+                        <ul class="nav navbar-nav float-right">
+                            <li class="dropdown dropdown-language nav-item"><a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="#" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="#" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
+                            </li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand"><i class="ficon feather icon-maximize"></i></a></li>
+                            <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon feather icon-search"></i></a>
+                                <div class="search-input">
+                                    <div class="search-input-icon"><i class="feather icon-search primary"></i></div>
+                                    <input class="input" type="text" placeholder="Explore Kostlab..." tabindex="-1" data-search="starter-list" />
+                                    <div class="search-input-close"><i class="feather icon-x"></i></div>
+                                    <ul class="search-list"></ul>
+                                </div>
+                            </li>
+                            <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
+                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                    <li class="dropdown-menu-header">
+                                        <div class="dropdown-header m-0 p-2">
+                                            <h3 class="white">5 New</h3><span class="grey darken-2">App Notifications</span>
+                                        </div>
+                                    </li>
+                                    <li class="scrollable-container media-list">
+                                        <!-- a(href='javascript:void(0)').d-flex.justify-content-between-->
+                                        <!--   .d-flex.align-items-start-->
+                                        <!--       i.feather.icon-plus-square-->
+                                        <!--       .mx-1-->
+                                        <!--         .font-medium.block.notification-title New Message-->
+                                        <!--         small Are your going to meet me tonight?-->
+                                        <!--   small 62 Days ago--><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                            <div class="media d-flex align-items-start">
+                                                <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="primary media-heading">You have new order!</h6><small class="notification-text"> Are your going to meet me tonight?</small>
+                                                </div><small>
+                                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
+                                            </div>
+                                        </a><a class="d-flex justify-content-between" href="javascript:void(0)">
+                                            <div class="media d-flex align-items-start">
+                                                <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
+                                                <div class="media-body">
                                                     <h6 class="success media-heading red darken-1">99% Server load</h6><small class="notification-text">You got new order of goods.</small>
                                                 </div><small>
                                                     <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">5 hour ago</time></small>
@@ -183,10 +179,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
-                                    <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600"><?php echo $this->session->userdata("nama")?></span><span class="user-status">Available</span></div><span><img class="round" src="<?= base_url() ?>assets/images/portrait/small/avatar-s-11.png" alt="avatar" height="40" width="40" /></span>
+                                    <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">Admin</span><span class="user-status">Available</span></div><span><img class="round" src="<?= base_url() ?>assets/images/portrait/small/avatar-s-11.png" alt="avatar" height="40" width="40" /></span>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="<?php base_url() ?>login/logout"><i class="feather icon-power"></i> Logout</a>
+                                <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="#"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="#"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="feather icon-message-square"></i> Chats</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="<?= base_url() ?>login/logout"><i class="feather icon-power"></i> Logout</a>
                                 </div>
                             </li>
                         </ul>
@@ -201,10 +197,15 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <!-- <h2 class="content-header-title float-left mb-0">Selamat Bekerja</h2><h2 class="content-header-title float-left mb-0"><?php echo $this->session->userdata("nama")?></h2> -->
+                            <h2 class="content-header-title float-left mb-0">Floating Navbar</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
-
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#">Starter Kit</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">Floating Navbar
+                                    </li>
                                 </ol>
                             </div>
                         </div>

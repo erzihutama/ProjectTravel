@@ -12,8 +12,11 @@ function getUserid($username){
   $dml = "SELECT id_user, nama from admin where username = '$username'";
   $query = $this->db->query($dml)->row();
   return $query;
+}
 
-
-
+function getUserIdagen($username){
+  $dml = "SELECT id_agen, nama_agen from agen where username = '$username'";
+  $query = $this->db->query($dml)->row();
+  return $query;
 }
 }
