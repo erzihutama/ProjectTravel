@@ -47,10 +47,27 @@ class Dbs extends CI_Model{
       $query =$this->db->query($dml)->row();
        return$query;
   }
+
   function getpaket9(){
     $dml ="SELECT*FROM `dbdreamworld`.`paket` WHERE id_paket = 1;";
     $query =$this->db->query($dml)->row();
      return$query;
+}
+
+function getpaket10(){
+  $dml ="SELECT*FROM `dbdreamworld`.`paket` WHERE id_paket = 2;";
+  $query =$this->db->query($dml)->row();
+   return$query;
+}
+function getpaket11(){
+  $dml ="SELECT*FROM `dbdreamworld`.`paket` WHERE id_paket = 3;";
+  $query =$this->db->query($dml)->row();
+   return$query;
+}
+function getpaket12(){
+  $dml ="SELECT*FROM `dbdreamworld`.`paket` WHERE id_paket = 4;";
+  $query =$this->db->query($dml)->row();
+   return$query;
 }
 
       function getpaket(){
@@ -60,7 +77,7 @@ class Dbs extends CI_Model{
     }
 
           function getpaketidx(){
-            $dml ="SELECT*FROM `dbdreamworld`.`paket`;";
+            $dml ="SELECT*FROM `dbdreamworld`.`paket` limit 3;";
             $query =$this->db->query($dml)->result();
              return$query;
         }

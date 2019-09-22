@@ -107,7 +107,7 @@
                                     <div class="text-center">
                                         <h2 class="modal-title">Login Hare</h2>
                                     </div>
-                                      <form class="form" action="<?php base_url() ?>login/login_act" method="POST">
+                                      <form class="form" action="<?php base_url() ?>login/login_agen" method="POST">
                                         <div class="form-box">
                                             <input type="text" name="username" placeholder="User Name">
                                             <input type="password" name="password" placeholder="Password">

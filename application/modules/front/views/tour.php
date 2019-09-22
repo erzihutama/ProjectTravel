@@ -74,18 +74,17 @@
                                 <!-- Start Single Overview -->
                                 <div class="single__overview">
                                     <div class="overview__days">
-                                        <span>2 days</span>
-                                        <span>3 nights</span>
+
                                     </div>
                                     <div class="overview__dewtails">
-                                        <h2><a href="#">Sydney Australia</a></h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, gkiht skjied do eiusmod tempor incididunt ut labore egbnvt dolore magna aliqua. Uht enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorexplicabo.</p>
+                                        <h2><a href="#"><?php echo $paket10->nama_paket?></a></h2>
+                                        <p><?php echo $paket10->keterangan?></p>
                                     </div>
                                     <div class="overview__thumd">
                                         <div class="overview__inner">
-                                            <img src="images/tour-details/2.jpg" alt="overview images">
+                                          <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage1"; ?>" alt="about images">
                                             <div class="overview__hover__info">
-                                                <a class="rm__btn btn--transparent" href="book-the-tour.html">book now</a>
+                                                <a class="rm__btn btn--transparent" href="<?php echo base_url();?>detail10hari">Detail Tour</a>
                                             </div>
                                         </div>
                                     </div>
@@ -94,63 +93,45 @@
                                 <!-- Start Single Overview -->
                                 <div class="single__overview">
                                     <div class="overview__days">
-                                        <span>2 days</span>
-                                        <span>3 nights</span>
+
                                     </div>
                                     <div class="overview__dewtails">
-                                        <h2><a href="#">Sydney Australia</a></h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, gkiht skjied do eiusmod tempor incididunt ut labore egbnvt dolore magna aliqua. Uht enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorexplicabo.</p>
+                                        <h2><a href="#"><?php echo $paket11->nama_paket?></a></h2>
+                                        <p><?php echo $paket11->keterangan?></p>
                                     </div>
                                     <div class="overview__thumd">
                                         <div class="overview__inner">
-                                            <img src="images/tour-details/3.jpg" alt="overview images">
+                                          <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage3"; ?>" alt="about images">
                                             <div class="overview__hover__info">
-                                                <a class="rm__btn btn--transparent" href="book-the-tour.html">book now</a>
+                                                <a class="rm__btn btn--transparent" href="<?php echo base_url();?>detail10hari">Detail Tour</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End Single Overview -->
+
                                 <!-- Start Single Overview -->
                                 <div class="single__overview">
                                     <div class="overview__days">
-                                        <span>2 days</span>
-                                        <span>3 nights</span>
+
                                     </div>
                                     <div class="overview__dewtails">
-                                        <h2><a href="#">Sydney Australia</a></h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, gkiht skjied do eiusmod tempor incididunt ut labore egbnvt dolore magna aliqua. Uht enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorexplicabo.</p>
+                                        <h2><a href="#"><?php echo $paket12->nama_paket?></a></h2>
+                                        <p><?php echo $paket12->keterangan?></p>
                                     </div>
                                     <div class="overview__thumd">
                                         <div class="overview__inner">
-                                            <img src="images/tour-details/4.jpg" alt="overview images">
+                                          <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage1"; ?>" alt="about images">
                                             <div class="overview__hover__info">
-                                                <a class="rm__btn btn--transparent" href="book-the-tour.html">book now</a>
+                                                <a class="rm__btn btn--transparent" href="<?php echo base_url();?>detail10hari">Detail Tour</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End Single Overview -->
-                                <!-- Start Single Overview -->
-                                <div class="single__overview">
-                                    <div class="overview__days">
-                                        <span>2 days</span>
-                                        <span>3 nights</span>
-                                    </div>
-                                    <div class="overview__dewtails">
-                                        <h2><a href="#">Sydney Australia</a></h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, gkiht skjied do eiusmod tempor incididunt ut labore egbnvt dolore magna aliqua. Uht enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolorexplicabo.</p>
-                                    </div>
-                                    <div class="overview__thumd">
-                                        <div class="overview__inner">
-                                            <img src="images/tour-details/5.jpg" alt="overview images">
-                                            <div class="overview__hover__info">
-                                                <a class="rm__btn btn--transparent" href="book-the-tour.html">book now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Overview -->
+
+
+
                             </div>
                         </div>
                         <!-- End Tour Overview Area -->

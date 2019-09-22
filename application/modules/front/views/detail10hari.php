@@ -20,11 +20,11 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="bradcaump__inner text-center">
-                    <h2 class="bradcaump-title"><?php echo $datapaket->nama_paket?></h2>
+                    <h2 class="bradcaump-title"><?php echo $paket10->nama_paket?></h2>
                     <nav class="bradcaump-inner">
                       <a class="breadcrumb-item" href="<?php echo base_url();?>">Home</a>
                       <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i><i class="zmdi zmdi-chevron-right"></i></span>
-                      <span class="breadcrumb-item active"><?php echo $datapaket->nama_paket?></span>
+                      <span class="breadcrumb-item active"><?php echo $paket10->nama_paket?></span>
                     </nav>
                 </div>
             </div>
@@ -39,15 +39,15 @@
     <div class="row">
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
             <div class="section__title text-center">
-                <h2 class="title__line"><span class="text-theme"><?php echo $datapaket->nama_paket?></span></h2>
-                <p><?php echo $datapaket->keterangan?> </p>
+                <h2 class="title__line"><span class="text-theme"><?php echo $paket10->nama_paket?></span></h2>
+                <p><?php echo $paket10->keterangan?> </p>
             </div>
         </div>
     </div>
     <div class="map-responsive">
 
 
-        <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>" alt="about images">
+        <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage1"; ?>" alt="about images">
        </div>
 
 </div>
@@ -136,12 +136,10 @@
 
   <div class="tab-pane" id="3a">
     <hr>
-    <h2>Hubungi Contact Dreamworld</h2>
+    <h2>Hubungi <a href="<?php echo base_url();?>contact"> Contact Dreamworld</h2>
 <hr>
   </div>
-    <div class="tab-pane" id="4a">
-    <h3>We use css to change the background color of the content to be equal to the tab</h3>
-  </div>
+  
 </div>
 </div>
 

@@ -57,3 +57,4 @@ $route['about']='front/about';
 $route['tour']='front/tour';
 $route['contact']='front/contact';
 $route['detail9hari']='front/detail9hari';
+$route['detail10hari']='front/detail10hari';

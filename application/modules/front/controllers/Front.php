@@ -15,7 +15,7 @@ class Front extends MY_Controller{
   {
 
 
-    
+
     $data['paketidx'] = $this->Dbs->getpaketidx();
     // var_dump($data);die;
     $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
@@ -134,6 +134,9 @@ class Front extends MY_Controller{
   {
     $data['datachose'] = $this->Dbs->getdatachose();
     $data['paket9'] = $this->Dbs->getpaket9();
+    $data['paket10'] = $this->Dbs->getpaket10();
+    $data['paket11'] = $this->Dbs->getpaket11();
+    $data['paket12'] = $this->Dbs->getpaket12();
     $data['whychoose'] = $this->Dbs->getwhychoose();
 
     // var_dump($data);die;
@@ -192,7 +195,8 @@ class Front extends MY_Controller{
       $data['datapaket'] = $this->Dbs->getpaket();
       $data['dataintenerary'] = $this->Dbs->getinrenerary();
       $data['datahotel'] = $this->Dbs->gethotel();
-
+      $data['paket10'] = $this->Dbs->getpaket10();
+      // var_dump($data);die;
       $data['getvisimisi'] = $this->Dbs->getvisimisi();
       $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
       $data['tagline'] = $this->Dbs->gettagline();
@@ -210,7 +214,7 @@ class Front extends MY_Controller{
       // $data['name']='Kostlab';
 
           $this->load->view('front/header',$data);
-          $this->load->view('front/detail9hari',$data);//melempar data dari view
+          $this->load->view('front/detail10hari',$data);//melempar data dari view
           $this->load->view('front/footer');
     }
 
