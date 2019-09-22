@@ -56,7 +56,7 @@
                             <div class="header__top__right">
                                 <ul class="login__regester">
                                     <li><a class="modal-view button" href="#" data-toggle="modal" data-target="#loginform"><i class="zmdi zmdi-account"></i>Login</a></li>
-                                    <li><a  class="modal-view button" href="#" data-toggle="modal" data-target="#registrationform"><i class="zmdi zmdi-account-add"></i>Register</a></li>
+                                    <!-- <li><a  class="modal-view button" href="#" data-toggle="modal" data-target="#registrationform"><i class="zmdi zmdi-account-add"></i>Register</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -84,15 +84,53 @@
                     </div>
                     <div class="col-md-2 col-lg-2 col-sm-2 hidden-sm">
                         <ul class="social__icon icon--position">
-                            <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
-                            <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                            <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
-                            <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                            <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
+                            <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
+                            <li><a href="#"><i class="zmdi zmdi-tumblr"></i></a></li>
+                            <li><a href="#"><i class="zmdi zmdi-google"></i></a></li>
+                            <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <!--Start of Login Form-->
+            <div id="login__form__wrap">
+                <!-- Modal -->
+                <div class="modal fade" id="loginform" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-pop-up-content">
+                                    <div class="text-center">
+                                        <h2 class="modal-title">Login Hare</h2>
+                                    </div>
+                                      <form class="form" action="<?php base_url() ?>login/login_act" method="POST">
+                                        <div class="form-box">
+                                            <input type="text" name="username" placeholder="User Name">
+                                            <input type="password" name="password" placeholder="Password">
+                                        </div>
+                                        <div class="clearfix">
+                                            <span class="remember pull-left">
+                                              <input type="checkbox" id="pass_chack" value="pass_remb">
+                                              <label for="pass_chack">Remember Me</label>
+                                            </span>
+                                            <span class="pull-right"><a href="#">Forget Password?</a></span>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="text-uppercase login__btn">login now</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Login Form-->
+
             <!-- Mobile-menu-area start -->
             <div class="mobile-menu-area hidden-md hidden-lg hidden-sm">
                 <div class="fluid-container mobile-menu-container">

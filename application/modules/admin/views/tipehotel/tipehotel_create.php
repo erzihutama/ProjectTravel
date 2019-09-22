@@ -6,13 +6,13 @@
         <div class="card-body">
           <form method="post" action="<?php echo base_url().$action ?>" enctype="multipart/form-data">
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">namatipe</label>
+                <label class="col-sm-2 col-form-label">Nama Tipe</label>
                 <div class="col-sm-10">
-                  <input type="text" name="namatipe" class="form-control">
+                  <input type="text" name="namatipe" class="form-control" required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">id_hotel</label>
+                <label class="col-sm-2 col-form-label">Nama Hotel</label>
                 <div class="col-sm-10">
                   <select class="form-control" name="id_hotel" >
                     <?php foreach ($datahotel as $d ): ?>

@@ -25,6 +25,11 @@
 
         }
 
+        function getkota(){
+          $dml="select * from kota_hotel";
+          $query = $this->db->query($dml)->result();
+          return $query;
+        }
         // get all
         function get_all()
         {

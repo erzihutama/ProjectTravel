@@ -187,217 +187,31 @@
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="section__title text-center">
                             <h2 class="title__line">SPECIAL <span class="text-theme">PACKAGES</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt utllaf </p>
+                            <p>Berbagai pilihan paket umroh dengan yang kalian inginkan</p>
                         </div>
                     </div>
                 </div>
                 <!-- End Our Section Title area -->
                 <div class="row">
                     <div class="special__package__container clearfix mt-10">
-                        <!-- Start Single Packages -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="packages">
-                                <div class="package__thumb">
-                                    <img src="images/special/1.jpg" alt="packages images">
-                                    <div class="packages__hover__info">
-                                        <div class="package__hover__inner">
-                                            <h4><a href="#">australia</a></h4>
-                                            <h6><i class="zmdi zmdi-alarm"></i>5 days 4 nights</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididuntq thgf</p>
-                                            <div class="package--rating--btn">
-                                                <ul class="rating">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                                <div class="packages__btn">
-                                                    <a class="view__btn" href="tour-details.html">view more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="package__details">
-                                    <div class="package__details__inner">
-                                        <p>Offer Available</p>
-                                        <p class="packg__prize">$300</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Packages -->
-                        <!-- Start Single Packages -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="packages">
-                                <div class="package__thumb">
-                                    <img src="images/special/8.jpg" alt="packages images">
-                                    <div class="packages__hover__info">
-                                        <div class="package__hover__inner">
-                                            <h4><a href="#">australia</a></h4>
-                                            <h6><i class="zmdi zmdi-alarm"></i>5 days 4 nights</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididuntq thgf</p>
-                                            <div class="package--rating--btn">
-                                                <ul class="rating">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                                <div class="packages__btn">
-                                                    <a class="view__btn" href="tour-details.html">view more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="package__details">
-                                    <div class="package__details__inner">
-                                        <p>Offer Available</p>
-                                        <p class="packg__prize">$300</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Packages -->
-                        <!-- Start Single Packages -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="packages">
-                                <div class="package__thumb">
-                                    <img src="images/special/3.jpg" alt="packages images">
-                                    <div class="packages__hover__info">
-                                        <div class="package__hover__inner">
-                                            <h4><a href="#">australia</a></h4>
-                                            <h6><i class="zmdi zmdi-alarm"></i>5 days 4 nights</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididuntq thgf</p>
-                                            <div class="package--rating--btn">
-                                                <ul class="rating">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                                <div class="packages__btn">
-                                                    <a class="view__btn" href="tour-details.html">view more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="package__details">
-                                    <div class="package__details__inner">
-                                        <p>Offer Available</p>
-                                        <p class="packg__prize">$300</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Packages -->
-                        <!-- Start Single Packages -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="packages">
-                                <div class="package__thumb">
-                                    <img src="images/special/4.jpg" alt="packages images">
-                                    <div class="packages__hover__info">
-                                        <div class="package__hover__inner">
-                                            <h4><a href="#">australia</a></h4>
-                                            <h6><i class="zmdi zmdi-alarm"></i>5 days 4 nights</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididuntq thgf</p>
-                                            <div class="package--rating--btn">
-                                                <ul class="rating">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                                <div class="packages__btn">
-                                                    <a class="view__btn" href="tour-details.html">view more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="package__details">
-                                    <div class="package__details__inner">
-                                        <p>Offer Available</p>
-                                        <p class="packg__prize">$300</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Packages -->
-                        <!-- Start Single Packages -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="packages">
-                                <div class="package__thumb">
-                                    <img src="images/special/5.jpg" alt="packages images">
-                                    <div class="packages__hover__info">
-                                        <div class="package__hover__inner">
-                                            <h4><a href="#">australia</a></h4>
-                                            <h6><i class="zmdi zmdi-alarm"></i>5 days 4 nights</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididuntq thgf</p>
-                                            <div class="package--rating--btn">
-                                                <ul class="rating">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                                <div class="packages__btn">
-                                                    <a class="view__btn" href="tour-details.html">view more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="package__details">
-                                    <div class="package__details__inner">
-                                        <p>Offer Available</p>
-                                        <p class="packg__prize">$300</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Packages -->
-                        <!-- Start Single Packages -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="packages">
-                                <div class="package__thumb">
-                                    <img src="images/special/6.jpg" alt="packages images">
-                                    <div class="packages__hover__info">
-                                        <div class="package__hover__inner">
-                                            <h4><a href="#">australia</a></h4>
-                                            <h6><i class="zmdi zmdi-alarm"></i>5 days 4 nights</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididuntq thgf</p>
-                                            <div class="package--rating--btn">
-                                                <ul class="rating">
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                    <li><i class="zmdi zmdi-star"></i></li>
-                                                </ul>
-                                                <div class="packages__btn">
-                                                    <a class="view__btn" href="tour-details.html">view more</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="package__details">
-                                    <div class="package__details__inner">
-                                        <p>Offer Available</p>
-                                        <p class="packg__prize">$300</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Packages -->
+
+
+
+                        <<?php foreach ($paketidx as $d): ?>
+                          <!-- Start Single Packages -->
+                          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                              <div class="packages">
+
+                                  <div class="package__details">
+                                      <div class="package__details__inner">
+                                          <p><?php echo $d->nama_paket ?></p>
+                                          <p class="packg__prize"><?php echo $d->keterangan ?></p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                              <?php endforeach; ?>
+                          <!-- End Single Packages -->
                     </div>
                 </div>
             </div>
@@ -528,73 +342,5 @@
     </div>
     <!-- Body main wrapper end -->
 
-    <!--Start of Login Form-->
-    <div id="login__form__wrap">
-        <!-- Modal -->
-        <div class="modal fade" id="loginform" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-pop-up-content">
-                            <div class="text-center">
-                                <h2 class="modal-title">Login Hare</h2>
-                            </div>
-                            <form method="post"  action="<?php base_url() ?>login/login_act">
-                                <div class="form-box">
-                                    <input type="text" name="username" placeholder="User Name">
-                                    <input type="password" name="pass" placeholder="Password">
-                                </div>
-                                <div class="clearfix">
-                                    <span class="remember pull-left">
-                                      <input type="checkbox" id="pass_chack" value="pass_remb">
-                                      <label for="pass_chack">Remember Me</label>
-                                    </span>
-                                    <span class="pull-right"><a href="#">Forget Password?</a></span>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="text-uppercase login__btn">login now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End of Login Form-->
-
-    <!--Start of Registration Form-->
-    <div id="register__form__wrap">
-        <!-- Modal -->
-        <div class="modal fade" id="registrationform" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-pop-up-content">
-                            <div class="area-title text-center">
-                                <h2>Register Now</h2>
-                            </div>
-                            <form method="post" action="#">
-                                <div class="form-box">
-                                    <input type="text" name="username" placeholder="Name">
-                                    <input type="text" name="email" placeholder="Email">
-                                    <input type="password" name="pass" placeholder="Password">
-                                    <input type="text" name="age" placeholder="Age">
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="text-uppercase register__btn">register</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  
     <!--End of Registration Form-->

@@ -69,24 +69,29 @@
 
 
         public function create(){
+          $data_kota = $this->Hotel_model->getkota();
+
            $data = array(
              'content'=>'admin/hotel/hotel_create',
              'sidebar'=>'admin/sidebar',
              'action'=>'admin/hotel/create_action',
              'module'=>'admin',
              'titlePage'=>'hotel',
+              'datakota' => $data_kota,
              'controller'=>'hotel'
             );
           $this->template->load($data);
         }
 
         public function edit($id_hotel){
+            $data_kota = $this->Hotel_model->getkota();
           $dataedit=$this->Hotel_model->get_by_id($id_hotel);
            $data = array(
              'content'=>'admin/hotel/hotel_edit',
              'sidebar'=>'admin/sidebar',
              'action'=>'admin/hotel/update_action',
              'dataedit'=>$dataedit,
+             'datakota' => $data_kota,
              'module'=>'admin',
              'titlePage'=>'hotel',
              'controller'=>'hotel'
@@ -104,6 +109,7 @@ public function create_action()
 					'namahotel' => $this->input->post('namahotel',TRUE),
 					'deskripsi' => $this->input->post('deskripsi',TRUE),
 					'maps' => $this->input->post('maps',TRUE),
+          'id_kota' => $this->input->post('pilihkota',TRUE),
 
 );
 
@@ -127,6 +133,8 @@ public function create_action()
 					'namahotel' => $this->input->post('namahotel',TRUE),
 					'deskripsi' => $this->input->post('deskripsi',TRUE),
 					'maps' => $this->input->post('maps',TRUE),
+          'id_kota' => $this->input->post('pilihkota',TRUE),
+
 
 );
 

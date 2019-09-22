@@ -6,21 +6,21 @@
         <div class="card-body">
           <form method="post" action="<?php echo base_url().$action ?>" enctype="multipart/form-data">
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">nama_subtipe</label>
+                <label class="col-sm-2 col-form-label">Nama Subtipe</label>
                 <div class="col-sm-10">
-                  <input type="text" name="nama_subtipe" class="form-control">
+                  <input type="text" name="nama_subtipe" class="form-control" required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">hargatipe</label>
+                <label class="col-sm-2 col-form-label">Harga Tipe</label>
                 <div class="col-sm-10">
-                  <input type="text" name="hargatipe" class="form-control">
+                  <input type="text" name="hargatipe" class="form-control" required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">id_tipehotel</label>
+                <label class="col-sm-2 col-form-label">Tipe Hotel</label>
                 <div class="col-sm-10">
-                  <input type="text" name="id_tipehotel" class="form-control">
+                  <input type="text" name="id_tipehotel" class="form-control" required>
                 </div>
               </div>
 </div>

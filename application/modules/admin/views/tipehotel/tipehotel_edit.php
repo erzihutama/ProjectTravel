@@ -12,23 +12,22 @@
               </div>
             </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">namatipe</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Nama Tipe</label>
               <div class="col-sm-10">
-                <input type="text" name="namatipe" class="form-control" value="<?php echo $dataedit->namatipe?>">
+                <input type="text" name="namatipe" class="form-control" value="<?php echo $dataedit->namatipe?>" required>
               </div>
               </div>
-						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">id_hotel</label>
-              <div class="col-sm-10">
-                <!-- <select class="form-control" name="id_hotel" >
-                  <option  value="<?php echo $dataedit->id_hotel?>"><?php echo $dataedit->namahotel?></option>
-                  <?php foreach ($datahotel as $d ): ?>
-                    <option  value="<?php echo $dataedit->id_hotel?>"><?php echo $d->namahotel ?></option>
-                  <?php endforeach; ?>
-                </select> -->
-                <input type="text" name="id_hotel" class="form-control" value="<?php echo $dataedit->id_hotel?>">
-              </div>
-              </div>
+              <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Nama Hotel</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" name="id_hotel" >
+                      <?php foreach ($datahotel as $d ): ?>
+                        <option  value="<?php echo $d->id_hotel ?>"><?php echo $d->namahotel ?></option>
+                      <?php endforeach; ?>
+
+                    </select>
+                  </div>
+                </div>
 
         </div>
         <input type="hidden" id="deleteFiles" name="deleteFiles">

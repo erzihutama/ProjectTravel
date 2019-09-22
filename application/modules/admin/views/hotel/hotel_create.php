@@ -17,10 +17,20 @@
                   <input type="text" name="deskripsi" class="form-control">
                 </div>
               </div>
-						<div class="form-group row">
+              <div class="form-group row">
+                  <label class="col-sm-2 col-form-label">Pilih Kota</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" name="pilihkota">
+                      <?php foreach ($datakota as $d): ?>
+                        <option value="<?php echo $d->id_kota ?>"><?php echo $d->nama_kota ?></option>
+                      <?php endforeach; ?>
+                    </select>
+                  </div>
+                </div>
+						<div class="form-group row" hidden>
                 <label class="col-sm-2 col-form-label">maps</label>
                 <div class="col-sm-10">
-                  <input type="text" name="maps" class="form-control">
+                  <input type="text" name="maps" class="form-control" value="maps" >
                 </div>
               </div>
 </div>

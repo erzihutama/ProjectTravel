@@ -47,6 +47,48 @@ class Dbs extends CI_Model{
       $query =$this->db->query($dml)->row();
        return$query;
   }
+  function getpaket9(){
+    $dml ="SELECT*FROM `dbdreamworld`.`paket` WHERE id_paket = 1;";
+    $query =$this->db->query($dml)->row();
+     return$query;
+}
+
+      function getpaket(){
+        $dml ="SELECT*FROM `dbdreamworld`.`paket`;";
+        $query =$this->db->query($dml)->row();
+         return$query;
+    }
+
+          function getpaketidx(){
+            $dml ="SELECT*FROM `dbdreamworld`.`paket`;";
+            $query =$this->db->query($dml)->result();
+             return$query;
+        }
+
+
+    function getperusahaan(){
+      $dml ="SELECT*FROM `dbdreamworld`.`profil_alamat`;";
+      $query =$this->db->query($dml)->result();
+       return$query;
+    }
+
+    function getinrenerary(){
+      $dml ="  SELECT
+            `hari`
+            , `keterangan`
+        FROM
+            `dbwordl`.`intenary`;";
+      $query =$this->db->query($dml)->result();
+       return$query;
+  }
+
+
+
+        function gethotel(){
+          $dml ="SELECT hotel.namahotel,kota_hotel.nama_kota,hotel.deskripsi FROM hotel JOIN kota_hotel WHERE hotel.id_hotel = kota_hotel.id_kota limit 15;";
+          $query =$this->db->query($dml)->result();
+           return$query;
+      }
 
   // get image services
             //

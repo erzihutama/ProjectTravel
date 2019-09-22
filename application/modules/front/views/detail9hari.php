@@ -1,6 +1,4 @@
-
-
-        <!-- End Header Style -->
+    <!-- End Header Style -->
         <style type="text/css">
 
         .slider__bg--1 {
@@ -13,33 +11,20 @@
         .slider__bg--3 {
         background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage3"; ?>) no-repeat scroll 0 0 / cover ;
         }
+<?php echo $tagline->taglineweb3?>
 
-        .map-responsive{
-            overflow:hidden;
-            padding-bottom:40%;
-            position:relative;
-            height:0;
-        }
-        .map-responsive iframe{
-            left:0;
-            top:0;
-            height:100%;
-            width:100%;
-            position:absolute;
-        }
         </style>
-<!-- Start Bradcaump area -->
-<div class="hslide slider__bg--1  " data-black-overlay="7">
+<div class="hslide slider__bg--2 htc__slider__animation--center" data-black-overlay="9">
     <div class="ht__bradcaump__wrap">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="bradcaump__inner text-center">
-                        <h2 class="bradcaump-title">Contact Us</h2>
+                        <h2 class="bradcaump-title"><?php echo $datapaket->nama_paket?></h2>
                         <nav class="bradcaump-inner">
                           <a class="breadcrumb-item" href="<?php echo base_url();?>">Home</a>
                           <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i><i class="zmdi zmdi-chevron-right"></i></span>
-                          <span class="breadcrumb-item active">Contact Us</span>
+                          <span class="breadcrumb-item active"><?php echo $datapaket->nama_paket?></span>
                         </nav>
                     </div>
                 </div>
@@ -48,69 +33,119 @@
     </div>
 </div>
 <!-- End Bradcaump area -->
-<br>
-<!-- Start Our Information Area -->
-<section class="our__information__area pb-100 bg-white">
+<!-- Start Service Area -->
+<section class="service__area ptb-100 bg-white">
     <div class="container">
-        <!-- Start Our Section Title area -->
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="section__title text-center">
-                    <h2 class="title__line">Alamat  <span class="text-theme">DreamWorld</span></h2>
-
-
-                      <p>Jl. Hegarmanah No.20A, Hegarmanah, Kec. Cidadap, Kota Bandung, Jawa Barat 40141</p>
-
+                    <h2 class="title__line"><span class="text-theme"><?php echo $datapaket->nama_paket?></span></h2>
+                    <p><?php echo $datapaket->keterangan?> </p>
                 </div>
             </div>
         </div>
-        <!-- End Our Section Title area -->
-        <div class="row">
-            <div class="our__information__team clearfix mt-50 xs--mt--10">
-                <!-- Start Single Staf -->
-                <<?php foreach ($perusahaan as $d): ?>
+        <div class="map-responsive">
 
-                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                    <div class="information__inner text-center">
-                        <div class="information_details">
-                            <h4><a href="#">kolince jon</a></h4>
-                            <h6><?php echo $d->alamat_perusahaan?></h6>
-                            <p><i class="zmdi zmdi-phone-paused"></i>Phone :<a href="phone:+66025644424857"><?php echo $d->telepon_perusahaan?></a></p>
-                            <p><i class="zmdi zmdi-email"></i><a href="mailto:www.anikamollik@outlook.com"><?php echo $d->email_perusahaan?></a></p>
-                        </div>
 
+            <img src="<?= base_url() ?>xfile/taglineimg/<?php echo "$taglineimg->taglineimage2"; ?>" alt="about images">
+           </div>
+
+    </div>
+
+</section>
+<!-- End Service Area -->
+<!-- Start Funfact Area -->
+
+
+<div id="exTab1" class="container">
+<ul  class="nav nav-pills">
+    <li class="active">
+      <a  href="#1a" data-toggle="tab">INTENERARY</a>
+    </li>
+    <li><a href="#2a" data-toggle="tab">HOTEL</a>
+    </li>
+    <li><a href="#3a" data-toggle="tab">PEMESANAN</a>
+    </li>
+
+  </ul>
+
+    <div class="tab-content clearfix">
+      <div class="tab-pane active" id="1a">
+        <div class="card-content">
+
+            <div class="card-body card-dashboard">
+                <div class="table-responsive">
+                    <table class="table crudtable">
+                        <thead>
+                          <tr>
+                                <th>HARI</th>
+                                <th>KETERANGAN</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <?php foreach ($dataintenerary as $d): ?>
+                            <tr>
+                                <td><?php echo $d->hari?> </td>
+                                <td><?php echo $d->keterangan?> </td>
+                            </tr>
+                                <?php endforeach; ?>
+                          </tbody>
+
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="tab-pane" id="2a">
+        <div class="tab-content clearfix">
+
+
+                <div class="card-body card-dashboard">
+                    <div class="table-responsive">
+                        <table class="table crudtable">
+                            <thead>
+                              <tr>
+                                    <th>NAMA HOTEL</th>
+                                    <th>KOTA</th>
+                                      <th>KETERANGAN</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <?php foreach ($datahotel as $d): ?>
+                                <tr>
+                                    <td><?php echo $d->namahotel?> </td>
+                                    <td><?php echo $d->nama_kota?> </td>
+                                    <td><?php echo $d->deskripsi?> </td>
+                                </tr>
+                                    <?php endforeach; ?>
+                              </tbody>
+
+                            <tfoot>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
-                  <?php endforeach; ?>
-                <!-- End Single Staf -->
+            </div>
 
-                <!-- End Single Staf -->
-            </div>
-        </div>
+          </div>
+
+      <div class="tab-pane" id="3a">
+        <hr>
+        <h2>Hubungi <a href="<?php echo base_url();?>contact"> Contact Dreamworld</h2>
+<hr>
+      </div>
+
     </div>
-</section>
-<!-- End Our Information Area -->
-<!-- Start Map Area -->
-<!-- <div class="map-contacts">
-    <div id="googleMap"></div>
-    <div class="map__hover__info">
-        <div class="map__hover__inner">
-            <h2 class="finds__title">how to <span class="text-theme">find us</span></h2>
-            <h4 class="text-theme">ramble travel agency</h4>
-            <p>House No 08, Road No 08,<br>
-            Mah Hya, Dhaka, Bangladesh</p>
-            <div class="single__find__address">
-                <p><a href="mailto:www.anikamollik@outlook.com">anikamollik@outlook.com</a></p>
-                <p><a href="mailto:www.anikamollik@outlook.com">anikamollik@outlook.com</a></p>
-            </div>
-            <div class="single__find__address">
-                <p><a href="phone:+66025644424857">+660 256444 24857</a></p>
-                <p><a href="phone:+66025644424857">+660 256444 24857</a></p>
-            </div>
-     </div>
-    </div>
- </div> -->
-<!-- End Map Area --><!-- Body main wrapper end -->
+</div>
+
+
+
+<!-- End Funfact Area -->
 
 <!--Start of Login Form-->
 <div id="login__form__wrap">
@@ -149,7 +184,10 @@
 </div>
 </div>
 <!--End of Login Form-->
-
+<br>
+<br>
+<br>
+<br>
 <!--Start of Registration Form-->
 <div id="register__form__wrap">
 <!-- Modal -->
@@ -182,7 +220,3 @@
 </div>
 </div>
 <!--End of Registration Form-->
-<div class="map-responsive">
-<!-- Placed js at the end of the document so the pages load faster -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0871443662795!2d107.59926281388238!3d-6.880163095028257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6f3afb900a7%3A0x2c5eeca05d826561!2sJl.%20Hegarmanah%20No.20A%2C%20Hegarmanah%2C%20Kec.%20Cidadap%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040141!5e0!3m2!1sid!2sid!4v1568956381168!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
