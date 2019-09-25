@@ -3,10 +3,10 @@
     if (!defined('BASEPATH'))
         exit('No direct script access allowed');
 
-    class Tipehotel_model extends CI_Model
+    class Kota_model extends CI_Model
     {
-        public $table = 'tipehotel';
-        public $id = 'id_tipehotel';
+        public $table = 'kota_hotel';
+        public $id = 'id_kota';
         public $order = array('id' => 'asc');
         public $select='*';
 
@@ -16,11 +16,9 @@
             $this->column_order=[];
             $this->column_search=[];
             $this->column_order[]=null;
-							$this->column_order[]='namatipe';
-							$this->column_order[]='id_hotel';
-							$this->column_search[]='namatipe';
-							$this->column_search[]='id_hotel';
-
+							$this->column_order[]='nama_kota';
+							$this->column_search[]='nama_kota';
+							
         }
 
         // get all
@@ -36,21 +34,7 @@
             return $this->db->get($this->table)->result();
         }
 
-        function get_hotel(){
-          $dml = "select hotel.namahotel, tipehotel.* from hotel join tipehotel where hotel.id_hotel = tipehotel.id_hotel";
-          $query = $this->db->query($dml)->result();
-          return $query;
-        }
-
         //get field
-
-        // get id profilweb
-        function getdatahotel(){
-          $dml="SELECT * from Hotel";
-          $query = $this->db->query($dml);
-          return $query->result();
-        }
-
 
         function get_field(){
           $table=$this->table;

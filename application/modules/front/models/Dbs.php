@@ -99,6 +99,16 @@ function getpaket12(){
        return$query;
   }
 
+  function getintenerary10(){
+    $dml ="  SELECT
+          `hari`
+          , `keterangan`
+      FROM
+          `dbwordl`.`intenary` where id_paket = 2;";
+    $query =$this->db->query($dml)->result();
+     return$query;
+}
+
 
 
         function gethotel(){

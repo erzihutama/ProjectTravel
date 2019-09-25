@@ -3,6 +3,25 @@
     <script src="<?= base_url()?>assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="<?= base_url()?>assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
     <script src="<?= base_url()?>assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   		 <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+   		 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/dataTables.buttons.min.js"></script>
+   		 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.flash.min.js"></script>
+   		 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.html5.min.js"></script>
+   		 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.4/js/buttons.print.min.js"></script>
+
+   		 <script type="text/javascript">
+   		 	$(document).ready(function() {
+   		 		$('#data').DataTable( {
+   		 			dom: 'Bfrtip',
+   		 			buttons: [
+   		 			'copy',  'print'
+   		 			]
+   		 		} );
+   		 	} );
+   		 </script>
+
     <!-- END: Page Vendor JS-->
     <!-- BEGIN: Dropify JS -->
     <script src="<?= base_url()?>assets/dropify/dist/js/dropify.js" charset="utf-8"></script>
@@ -48,4 +67,3 @@
       });
       });
     </script>
-    

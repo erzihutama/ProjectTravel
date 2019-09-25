@@ -6,27 +6,27 @@
         <div class="card-body">
           <form method="post" action="<?php echo base_url().$action ?>" enctype="multipart/form-data">
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">nama</label>
+                <label class="col-sm-2 col-form-label">Nama</label>
                 <div class="col-sm-10">
-                  <input type="text" name="nama" class="form-control">
+                  <input type="text" name="nama" class="form-control" required placeholder="Isi Nama Admin">
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">email</label>
+                <label class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                  <input type="text" name="email" class="form-control">
+                  <input type="email" name="email" class="form-control" placeholder="coba@email.com" required>
                 </div>
               </div>
 						<div class="form-group row">
                 <label class="col-sm-2 col-form-label">username</label>
                 <div class="col-sm-10">
-                  <input type="text" name="username" class="form-control">
+                  <input type="text" name="username" class="form-control" required placeholder="isi username">
                 </div>
               </div>
 						<div class="form-group row">
                 <label class="col-sm-2 col-form-label">password</label>
                 <div class="col-sm-10">
-                  <input type="text" name="password" class="form-control">
+                  <input type="password" name="password" class="form-control" required placeholder="isi password">
                 </div>
               </div>
 </div>

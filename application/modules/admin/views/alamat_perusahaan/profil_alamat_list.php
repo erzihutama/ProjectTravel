@@ -7,7 +7,7 @@
              <div class="col-12">
                  <div class="card">
                      <div class="card-header">
-                         <h4 class="card-title">Data alamat_perusahaan</h4>
+                         <h4 class="card-title">Data Alamat Perusahaan</h4>
       		    		<a href="<?= site_url($module.'/alamat_perusahaan/create') ?>"><button type="button" class="btn btn-primary round waves-effect waves-light">
       	               	 Tambah Data
       	              	</button>

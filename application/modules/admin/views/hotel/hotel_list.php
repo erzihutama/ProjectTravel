@@ -17,29 +17,42 @@
 
                          <div class="card-body card-dashboard">
                              <div class="table-responsive">
-                                 <table class="table crudtable">
+                               <!-- tabel---------------------- baru -->
+
+                               <table class="table crudtable table-striped">
                                    <thead>
                                      <tr>
-                                           <th>no</th>
+                                           <th>No</th>
                                            <th>Nama Hotel</th>
+                                           <th>Nama Kota</th>
                                            <th>Deskripsi</th>
-                                           <th>Maps</th>
-                                           <th>Kota</th>
+                                           <th>Reguler Quad</th>
+                                           <th>Reguler Triple</th>
+                                           <th>Reguler Double</th>
+                                           <th>High Quad</th>
+                                           <th>High Triple</th>
+                                           <th>High Double</th>
                                            <th>Aksi</th>
                                      </tr>
                                    </thead>
-                                     <tbody>
-                                       <?php $no = 1; foreach ($data_hotel as $d): ?>
+                                     <tbody >
+                                       <?php $no = 1; foreach ($datatabel as $d): ?>
                                          <tr>
                                            <td><?php echo $no?></td>
                                            <td><?php echo $d->namahotel?></td>
+                                           <td><?php echo $d->nama_kota?></td>
                                            <td><?php echo $d->deskripsi?></td>
-                                           <td><?php echo $d->maps?></td>
-                                            <td><?php echo $d->nama_kota?></td>
-                                           <td>
-                                             <a href="<?php echo base_url().$module?>/hotel/edit/<?php echo $d->id_hotel ?>"><i class="m-1 feather icon-edit-2"></i></a>
-                                             <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_hotel ?>" href="#"><i class="feather icon-trash"></i></a>
-                                           </td>
+                                            <td><?php echo $d->reguler_quad?></td>
+                                            <td><?php echo $d->requler_triple	?></td>
+                                            <td><?php echo $d->reguler_double?></td>
+                                            <td><?php echo $d->high_quad?></td>
+                                            <td><?php echo $d->high_triple?></td>
+                                            <td><?php echo $d->high_double?></td>
+
+                                            <td>
+                                              <a href="<?php echo base_url().$module?>/hotel/edit/<?php echo $d->id_hotel ?>"><i class="m-1 feather icon-edit-2"></i></a>
+                                              <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_hotel ?>" href="#"><i class="feather icon-trash"></i></a>
+                                            </td>
                                          </tr>
                                          <?php $no++ ?>
                                        <?php endforeach; ?>
@@ -55,6 +68,39 @@
                                        </tr>
                                      </tfoot>
                                  </table>
+                                 <!-- tabel baru -->
+                                 <!-- <table class="table crudtable">
+                                     <thead>
+                                       <tr>
+                                           <?php foreach ($datafield as $d): ?>
+                                             <th><?php echo str_replace("_"," ",$d) ?></th>
+                                           <?php endforeach; ?>
+                                           <th>aksi</th>
+                                       </tr>
+                                     </thead>
+                                     <tbody>
+                                       <?php foreach ($datahotel as $d): ?>
+                                         <tr>
+                                           <?php foreach ($datafield as $df): ?>
+                                             <td><?php echo $d->$df ?></td>
+                                           <?php endforeach; ?>
+                                           <td>
+                                             <a href="<?php echo base_url().$module?>/hotel/edit/<?php echo $d->id_hotel ?>"><i class="m-1 feather icon-edit-2"></i></a>
+                                             <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_hotel ?>" href="#"><i class="feather icon-trash"></i></a>
+                                           </td>
+
+                                         </tr>
+                                       <?php endforeach; ?>
+                                       </tbody>
+                                     <tfoot>
+                                       <tr>
+                                           <?php foreach ($datafield as $d): ?>
+                                             <th><?php echo str_replace("_"," ",$d) ?></th>
+                                           <?php endforeach; ?>
+                                           <th>aksi</th>
+                                       </tr>
+                                     </tfoot>
+                                 </table> -->
                              </div>
                          </div>
                      </div>

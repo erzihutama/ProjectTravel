@@ -7,8 +7,8 @@
              <div class="col-12">
                  <div class="card">
                      <div class="card-header">
-                         <h4 class="card-title">Data subtipehotel</h4>
-      		    		<a href="<?= site_url($module.'/subtipehotel/create') ?>"><button type="button" class="btn btn-primary round waves-effect waves-light">
+                         <h4 class="card-title">Data kota</h4>
+      		    		<a href="<?= site_url($module.'/kota/create') ?>"><button type="button" class="btn btn-primary round waves-effect waves-light">
       	               	 Tambah Data
       	              	</button>
                       </a>
@@ -20,33 +20,34 @@
                                  <table class="table crudtable">
                                      <thead>
                                        <tr>
-                                             <th>no</th>
-                                             <th>Nama Subtipe</th>
-                                             <th>Harga tipe regular</th>
-                                             <th>Harga tipe high session</th>
-                                             <th>Tipe Hotel</th>
-                                             <th>Nama Kota</th>
-                                             <th>Aksi</th>
+                                           <?php foreach ($datafield as $d): ?>
+                                             <th><?php echo str_replace("_"," ",$d) ?></th>
+                                           <?php endforeach; ?>
+                                           <th>aksi</th>
                                        </tr>
                                      </thead>
                                      <tbody>
-                                       <?php $no = 1;foreach ($data_subtipehotel as $d): ?>
+                                       <?php foreach ($datakota as $d): ?>
                                          <tr>
-                                               <td><?php echo $no ?></td>
-                                               <td><?php echo $d->nama_subtipe ?></td>
-                                               <td><?php echo $d->harga_tipe_regular ?></td>
-                                               <td><?php echo $d->harga_high_session ?></td>
-                                               <td><?php echo $d->namatipe ?></td>
-                                               <td><?php echo $d->nama_kota ?></td>
+                                           <?php foreach ($datafield as $df): ?>
+                                             <td><?php echo $d->$df ?></td>
+                                           <?php endforeach; ?>
                                            <td>
-                                             <a href="<?php echo base_url().$module?>/subtipehotel/edit/<?php echo $d->id_subtipe ?>"><i class="m-1 feather icon-edit-2"></i></a>
-                                             <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_subtipe ?>" href="#"><i class="feather icon-trash"></i></a>
+                                             <a href="<?php echo base_url().$module?>/kota/edit/<?php echo $d->id_kota ?>"><i class="m-1 feather icon-edit-2"></i></a>
+                                             <a class="modalDelete" data-toggle="modal" data-target="#responsive-modal" value="<?php echo $d->id_kota ?>" href="#"><i class="feather icon-trash"></i></a>
                                            </td>
 
                                          </tr>
-                                         <?php $no++ ?>
                                        <?php endforeach; ?>
                                        </tbody>
+                                     <tfoot>
+                                       <tr>
+                                           <?php foreach ($datafield as $d): ?>
+                                             <th><?php echo str_replace("_"," ",$d) ?></th>
+                                           <?php endforeach; ?>
+                                           <th>aksi</th>
+                                       </tr>
+                                     </tfoot>
                                  </table>
                              </div>
                          </div>
@@ -56,7 +57,7 @@
          </div>
      </section>
 
-    <div id="responsive-modal" class="modal fade" tabindex="-1" subtipehotel="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div id="responsive-modal" class="modal fade" tabindex="-1" kota="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

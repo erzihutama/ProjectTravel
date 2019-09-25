@@ -7,7 +7,7 @@
              <div class="col-12">
                  <div class="card">
                      <div class="card-header">
-                         <h4 class="card-title">Data admincontroller</h4>
+                         <h4 class="card-title">Data Admin</h4>
       		    		<a href="<?= site_url($module.'/admincontroller/create') ?>"><button type="button" class="btn btn-primary round waves-effect waves-light">
       	               	 Tambah Data
       	              	</button>

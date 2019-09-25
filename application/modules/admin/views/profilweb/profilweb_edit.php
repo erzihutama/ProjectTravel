@@ -5,44 +5,44 @@
       <div class="card-content">
         <div class="card-body">
           <form method="post" action="<?php echo base_url().$action ?>" enctype="multipart/form-data">
-            <div class="form-group row">
+            <div class="form-group row" hidden>
               <label class="col-sm-2 col-form-label">id_profil</label>
               <div class="col-sm-10">
                 <input type="text" name="id_profil" class="form-control" placeholder="" value="<?php echo $dataedit->id_profil?>" readonly>
               </div>
             </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">judul_perusahaan</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Nama Perusahaan</label>
               <div class="col-sm-10">
-                <input type="text" name="judul_perusahaan" class="form-control" value="<?php echo $dataedit->judul_perusahaan?>">
+                <input type="text" name="judul_perusahaan" class="form-control" value="<?php echo $dataedit->judul_perusahaan?>" required>
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">deskripsi_perusahaan</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Deskripsi Perusahaan</label>
               <div class="col-sm-10">
                 <input type="text" name="deskripsi_perusahaan" class="form-control" value="<?php echo $dataedit->deskripsi_perusahaan?>">
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">taglineweb1</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Tagline 1</label>
               <div class="col-sm-10">
                 <input type="text" name="taglineweb1" class="form-control" value="<?php echo $dataedit->taglineweb1?>">
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">taglineweb2</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Tagline 2</label>
               <div class="col-sm-10">
                 <input type="text" name="taglineweb2" class="form-control" value="<?php echo $dataedit->taglineweb2?>">
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">taglineweb3</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Tagline 3</label>
               <div class="col-sm-10">
                 <input type="text" name="taglineweb3" class="form-control" value="<?php echo $dataedit->taglineweb3?>">
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage1</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Tagline image 1</label>
               <div class="col-sm-10">
                     <input type="file" name="taglineimage1" class="form-control" value="<?php echo $dataedit->taglineimage1?>" required>
                 	<!-- <input type="file" id="input-file-now" name="gambar" class="dropify"> -->
@@ -50,13 +50,13 @@
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage2</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Tagline Image 2</label>
               <div class="col-sm-10">
                 <input type="file" name="taglineimage2" class="form-control" value="<?php echo $dataedit->taglineimage2?>" required>
               </div>
               </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">taglineimage3</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">Tagline image 3</label>
               <div class="col-sm-10">
                 <input type="file" name="taglineimage3" class="form-control" value="<?php echo $dataedit->taglineimage3?>"required>
               </div>

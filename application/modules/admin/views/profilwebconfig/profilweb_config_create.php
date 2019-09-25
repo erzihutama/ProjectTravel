@@ -5,53 +5,53 @@
       <div class="card-content">
         <div class="card-body">
           <form method="post" action="<?php echo base_url().$action ?>" enctype="multipart/form-data">
-						<div class="form-group row">
+						<div class="form-group row" hidden>
 
                 <div class="col-sm-10">
                   <input type="hidden" name="id_profil" value="<?php echo $id_profil->id_profil ?>" class="form-control">
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">service_tagline</label>
+                <label class="col-sm-2 col-form-label">Service Tagline</label>
                 <div class="col-sm-10">
-                  <input type="text" name="service_tagline" class="form-control">
+                  <input type="text" name="service_tagline" class="form-control" required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">service_judul</label>
+                <label class="col-sm-2 col-form-label">Service Judul</label>
                 <div class="col-sm-10">
-                  <input type="text" name="service_judul" class="form-control">
+                  <input type="text" name="service_judul" class="form-control"required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">service_deskripsi</label>
+                <label class="col-sm-2 col-form-label">Serice Deskripsi</label>
                 <div class="col-sm-10">
-                  <input type="text" name="service_deskripsi" class="form-control">
+                  <input type="text" name="service_deskripsi" class="form-control"required>
                 </div>
               </div>
 						<!-- <div class="form-group row">
                 <label class="col-sm-2 col-form-label">servicegambar</label>
                 <div class="col-sm-10">
                	<input type="file" id="input-file-now" name="servicegambar" class="dropify">
-                  <!-- <input type="file" name="servicegambar" class="dropify" > --> 
+                  <!-- <input type="file" name="servicegambar" class="dropify" > -->
                 <!-- </div>
               </div> -->
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">whychoose_tagline</label>
+                <label class="col-sm-2 col-form-label">Whychoose Tagline</label>
                 <div class="col-sm-10">
-                  <input type="text" name="whychoose_tagline" class="form-control">
+                  <input type="text" name="whychoose_tagline" class="form-control"required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">whychoose_judul</label>
+                <label class="col-sm-2 col-form-label">whychoose judul</label>
                 <div class="col-sm-10">
-                  <input type="text" name="whychoose_judul" class="form-control">
+                  <input type="text" name="whychoose_judul" class="form-control"required>
                 </div>
               </div>
 						<div class="form-group row">
-                <label class="col-sm-2 col-form-label">whychoose_deskripsi</label>
+                <label class="col-sm-2 col-form-label">whychoose deskripsi</label>
                 <div class="col-sm-10">
-                  <input type="text" name="whychoose_deskripsi" class="form-control">
+                  <input type="text" name="whychoose_deskripsi" class="form-control"required>
                 </div>
               </div>
 						<!-- <div class="form-group row">

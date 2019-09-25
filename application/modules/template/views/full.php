@@ -36,6 +36,10 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/pages/dashboard-analytics.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/pages/card-analytics.min.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url()?>assets/css/plugins/tour/tour.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.4/css/buttons.dataTables.min.css">
     <!-- END: Page CSS-->
     <?php if(isset($css)){$this->load->view($css);} ?>
 

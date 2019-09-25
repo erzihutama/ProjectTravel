@@ -18,18 +18,25 @@
             $this->column_order[]=null;
 							$this->column_order[]='namahotel';
 							$this->column_order[]='deskripsi';
-							$this->column_order[]='maps';
+							$this->column_order[]='id_kota';
+							$this->column_order[]='reguler_quad';
+							$this->column_order[]='requler_triple';
+							$this->column_order[]='reguler_double';
+							$this->column_order[]='high_quad';
+							$this->column_order[]='high_triple';
+							$this->column_order[]='high_double';
 							$this->column_search[]='namahotel';
 							$this->column_search[]='deskripsi';
-							$this->column_search[]='maps';
+							$this->column_search[]='id_kota';
+							$this->column_search[]='reguler_quad';
+							$this->column_search[]='requler_triple';
+							$this->column_search[]='reguler_double';
+							$this->column_search[]='high_quad';
+							$this->column_search[]='high_triple';
+							$this->column_search[]='high_double';
 
         }
 
-        function getkota(){
-          $dml="select * from kota_hotel";
-          $query = $this->db->query($dml)->result();
-          return $query;
-        }
         // get all
         function get_all()
         {
@@ -41,12 +48,6 @@
             $this->db->select($this->select);
             $this->db->order_by($this->id, 'DESC');
             return $this->db->get($this->table)->result();
-        }
-
-        function get_hotel(){
-          $dml = "SELECT kota_hotel.nama_kota,hotel.* FROM kota_hotel join hotel WHERE hotel.id_kota = kota_hotel.id_kota";
-          $query = $this->db->query($dml)->result();
-          return $query;
         }
 
         //get field
@@ -85,6 +86,32 @@
             $this->db->delete($this->table);
         }
 
+
+        function gettabelkota(){
+          $dml="SELECT
+    `hotel`.`id_hotel`
+    , `hotel`.`namahotel`
+      , `kota_hotel`.`nama_kota`
+    , `hotel`.`deskripsi`
+    , `hotel`.`reguler_quad`
+    , `hotel`.`requler_triple`
+    , `hotel`.`reguler_double`
+    , `hotel`.`high_quad`
+    , `hotel`.`high_triple`
+    , `hotel`.`high_double`
+FROM
+    `dbdreamworld`.`hotel`
+    INNER JOIN `dbdreamworld`.`kota_hotel`
+        ON (`hotel`.`id_kota` = `kota_hotel`.`id_kota`)";
+          $query = $this->db->query($dml)->result();
+          return $query;
+        }
+
+        function getkota(){
+              $dml="select * from kota_hotel";
+              $query = $this->db->query($dml)->result();
+              return $query;
+            }
         //Datatable
         private function _get_datatables_query()
           {
