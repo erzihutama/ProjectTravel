@@ -92,7 +92,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="section__title text-center">
-                            <h2 class="title__line">why  <span class="text-theme">choose us</span></h2>
+                            <h2 class="title__line">kenapa   <span class="text-theme">memilih kami</span></h2>
                             <p><?php echo $whychoose->whychoose_tagline ?> </p>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                 <div class="row">
                     <div class="col-md-offset-6">
                         <div class="welcome__inner">
-                            <h2 class="title__line">welcome to <span class="text-theme"><?php echo $deskperusahaan->judul_perusahaan?></span></h2>
+                            <h2 class="title__line">Selamat Datang Di <span class="text-theme"><?php echo $deskperusahaan->judul_perusahaan?></span></h2>
                           <p><?php echo $deskperusahaan->deskripsi_perusahaan?></p>
                             <ul class="social__icon social--bg--color">
                                 <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
@@ -153,7 +153,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="section__title text-center">
-                            <h2 class="title__line">OUR  <span class="text-theme">Services</span></h2>
+                            <h2 class="title__line">LAYANAN  <span class="text-theme">KAMI</span></h2>
                             <p><?php echo $whychoose->service_tagline ?> </p>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                         <div class="section__title text-center">
-                            <h2 class="title__line">SPECIAL <span class="text-theme">PACKAGES</span></h2>
+                            <h2 class="title__line">PAKET <span class="text-theme">KAMI</span></h2>
                             <p>Berbagai pilihan paket umroh dengan yang kalian inginkan</p>
                         </div>
                     </div>
@@ -216,6 +216,22 @@
                 </div>
             </div>
         </section>
+        <!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+628986160843", // WhatsApp number
+            greeting_message:"hello word",
+            call_to_action: "Hubungi Kami", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
         <!-- End Special Packages Area -->
         <!-- Start Countdown Area -->
         <!-- <section class="countdown__area ptb-100 bg-2" data-black-overlay="7">
@@ -342,5 +358,5 @@
     </div>
     <!-- Body main wrapper end -->
 
-  
+
     <!--End of Registration Form-->

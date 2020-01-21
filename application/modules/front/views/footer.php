@@ -1,6 +1,6 @@
 <!-- Start Footer Area -->
 <footer class="footer__area ">
-    <div class="footer__top ptb-70" data-black-overlay>
+        <div class="footer__top ptb-70" data-black-overlay>
         <div class="container">
             <div class="row">
                 <div class="footer__wrap clearfix">
@@ -9,16 +9,16 @@
                         <div class="footer__wedget">
                             <div class="footer__logo">
                                 <a href="#">
-                                    <img src="images/logo/ramble.png" alt="logo">
+                                  <img src="<?php echo base_url();?>assetsfront/images/logo/logo.png" alt="logo">
                                 </a>
                             </div>
-                            <p class="footer__dtl">Lorem ipsum dolor sit amet, consectetur adipisicing ejlit, sed do eiusmod tempor incididunt ut labore egtt dolore magna aliqua. Ut enim ad minim veniam, quisgt nostrud exercitation ullamco laboris.</p>
+                            <p class="footer__dtl">DreamWorld dan Ewaagate Merupakan suatu perusahaan Penyedia Travel haji dan umarah.</p>
                             <ul class="footer__social__icon">
-                                <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
+                                <!-- <li><a href="https://www.linkedin.com/"><i class="zmdi zmdi-linkedin"></i></a></li>
                                 <li><a href="https://www.pinterest.com/"><i class="zmdi zmdi-pinterest"></i></a></li>
                                 <li><a href="https://www.tumblr.com/"><i class="zmdi zmdi-tumblr"></i></a></li>
                                 <li><a href="https://plus.google.com/"><i class="zmdi zmdi-google"></i></a></li>
-                                <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/"><i class="zmdi zmdi-facebook"></i></a></li> -->
                             </ul>
                         </div>
                     </div>

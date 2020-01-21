@@ -12,63 +12,63 @@
               </div>
             </div>
 						<div class="form-group row">
-              <label for="example-text-input" class="col-sm-2 col-form-label">airport_price</label>
+              <label for="example-text-input" class="col-sm-2 col-form-label">airport price</label>
               <div class="col-sm-10">
-                <input type="text" name="airport_price" class="form-control" value="<?php echo $dataedit->airport_price?>">
+                <input type="number" name="airport_price" class="form-control" value="<?php echo $dataedit->airport_price?>"required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">logistik</label>
               <div class="col-sm-10">
-                <input type="text" name="logistik" class="form-control" value="<?php echo $dataedit->logistik?>">
+                <input type="number" name="logistik" class="form-control" value="<?php echo $dataedit->logistik?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">bus</label>
               <div class="col-sm-10">
-                <input type="text" name="bus" class="form-control" value="<?php echo $dataedit->bus?>">
+                <input type="number" name="bus" class="form-control" value="<?php echo $dataedit->bus?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">driver_tip</label>
               <div class="col-sm-10">
-                <input type="text" name="driver_tip" class="form-control" value="<?php echo $dataedit->driver_tip?>">
+                <input type="number" name="driver_tip" class="form-control" value="<?php echo $dataedit->driver_tip?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">hotel_handling</label>
               <div class="col-sm-10">
-                <input type="text" name="hotel_handling" class="form-control" value="<?php echo $dataedit->hotel_handling?>">
+                <input type="number" name="hotel_handling" class="form-control" value="<?php echo $dataedit->hotel_handling?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">billboy</label>
               <div class="col-sm-10">
-                <input type="text" name="billboy" class="form-control" value="<?php echo $dataedit->billboy?>">
+                <input type="number" name="billboy" class="form-control" value="<?php echo $dataedit->billboy?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">mutawwif</label>
               <div class="col-sm-10">
-                <input type="text" name="mutawwif" class="form-control" value="<?php echo $dataedit->mutawwif?>">
+                <input type="number" name="mutawwif" class="form-control" value="<?php echo $dataedit->mutawwif?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">mutawwifa</label>
               <div class="col-sm-10">
-                <input type="text" name="mutawwifa" class="form-control" value="<?php echo $dataedit->mutawwifa?>">
+                <input type="number" name="mutawwifa" class="form-control" value="<?php echo $dataedit->mutawwifa?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">muassasa</label>
               <div class="col-sm-10">
-                <input type="text" name="muassasa" class="form-control" value="<?php echo $dataedit->muassasa?>">
+                <input type="number" name="muassasa" class="form-control" value="<?php echo $dataedit->muassasa?>" required>
               </div>
               </div>
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">visa</label>
               <div class="col-sm-10">
-                <input type="text" name="visa" class="form-control" value="<?php echo $dataedit->visa?>">
+                <input type="number" name="visa" class="form-control" value="<?php echo $dataedit->visa?>" required>
               </div>
               </div>
 

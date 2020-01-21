@@ -72,12 +72,19 @@ background: rgba(0, 0, 0, 0) url(<?= base_url() ?>xfile/taglineimg/<?php echo "$
                         <div class="service__inner">
                           <P>
                             Assalamualaikum Warahmatullah Wabarakatuh</p>
-                            <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elementum erat, ut ultricies elit. Morbi et justo ut magna pulvinar faucibus vel id ante. Ut non nibh volutpat, imperdiet ligula rhoncus, placerat lacus. Curabitur maximus justo tortor, feugiat maximus turpis placerat non. Suspendisse tempor nibh ipsum, quis dignissim nisl consectetur sodales. Phasellus condimentum lectus non ligula eleifend gravida. Ut ut ante purus. Aenean ultrices magna dictum, placerat ipsum in, lobortis ex. Etiam accumsan luctus sapien non lacinia. Duis ac aliquet ipsum. Nullam non quam at nunc sollicitudin tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac elementum erat, ut ultricies elit. Morbi et justo ut magna pulvinar faucibus vel id ante. Ut non nibh volutpat, imperdiet ligula rhoncus, placerat lacus. Curabitur maximus justo tortor, feugiat maximus turpis placerat non. Suspendisse tempor nibh ipsum, quis dignissim nisl consectetur sodales. Phasellus condimentum lectus non ligula eleifend gravida. Ut ut ante purus. Aenean ultrices magna dictum, placerat ipsum in, lobortis ex. Etiam accumsan luctus sapien non lacinia. Duis ac aliquet ipsum. Nullam non quam at nunc sollicitudin tempus.
-                            <p>
+                            <p align="justify">
+                              Segala puji bagi Allah SWT yang senantiasa mencurahkan rahmat dan ridhonya kepada kita sebagai hambanya yang berharap karunianya. Shalawat dan salam semoga selalu dilimpahkan kepada junjunan alam Nabi Muhammad Saw.
+
+                              Dreamworld  Tours & Travel adalah usaha berkah milik dari PT. Simasoeraka    yang bergerak di bidang tour dan travel Khususnya dibidang Umrah & Haji Plus. Dreamworld  Tours didirikan dengan Ikhlas dan komitmen untuk melayani Tamu-tamu Allah, Haji dan Umrah adalah satu ibadah utama dalam Islam, bahkan Haji adalah salah satu Rukun Islam, Oleh karena itu pengelolaan dan pengembangannya harus dimulai dari hati yang tulus dengan meluruskan niat bahwa kita ingin melayani, membantu dan berkhidmat untuk Tamu-tamu Allah, kita meminta kepada seluruh tim Dreamworld  dan juga mitra-mitra kita untuk tidak terlalu mengkomersilkan program pelayanan ini, kita pecaya dengan ketulusan dalam bimbingan dan pelayanan kepada tamu-tamu Allah SWT, tentunya Allah akan selalu menjaga Usaha dan niat tulus kita dengan keuntungan Dunia dan Akhirat, menjauhkan kita dari kerugian.
+
+                              Di era Modern ini kita dituntut untuk menjadi perusahaan profesional di bidang bisnis apapun. Demikian pula bagi Dreamworld  Tours & Travel yang telah menunjukkan keberanian dan profesionalisme dalam melayani jamaah/pengguna jasa, Majlis Ta’lim, KBIH, Pon-Pes, Instansi pemerintah dan juga perusahaan-perusahaan travel yang mempercayakan Program-programnya kita kelola baik full paket atau hanya tiket, Land Arrangement atau Visanya saja kita kelola.
+
+                              Dreamworld  Tours & Travel dipercaya berbagai mitra kerja yang loyal, baik dikalangan jamaah Haji & Umrah, intsansi pemerintah, perusahaan swasta maupun dari kalangan pendidikan, baik di Jakarta, bandung, maupun kota besar lainnya di Indonesia untuk melayani dan memberikan yang terbaik, sehingga perwakilan dan mitra kita menyebar mulai dari Aceh, Medan, Palembang, Jakarta, Bandung, Semarang, Jogja, Malang, Jombang, Makassar, Samarinda dll Komitmen kami adalah memberikan pelayanan yang terbaik demi kepuasan tamu-tamu Allah sehingga berbagai upaya peningkatan mutu pelayanan selalu kami tingkatkan demi mencapai tujuan tersebut dengan Semboyan kami ” Berkhidmat untuk tamu-tamu Allah”
+                              <p>
                               <hr>
-                            (nama pemilik)
+
                           </p>
-                            Direktur DreamWorld
+                            PT.DreamWorld
                           </p>
                           </p>
                         </div>

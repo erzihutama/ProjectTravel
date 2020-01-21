@@ -44,19 +44,20 @@
                 <div class="row">
                     <div class="col-md-2 col-lg-2 col-sm-12">
                         <div class="logo">
-                                <a href="ProjectTravel.php"><img src="<?php echo base_url();?>assetsfront/images/logo/ramble.png" alt="logo"></a>
+                                <a href="<?php echo base_url()?>"><img src="<?php echo base_url();?>assetsfront/images/logo/logo.png" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-md-8 col-sm-12 col-lg-8">
                         <div class="header__top">
                             <div class="header__top__left">
                                 <p><span class="text-theme">Contact:</span><a href="#"><?php echo $telepon->telepon_perusahaan?></a></p>
-                                <p class="hidden-sm"><span class="text-theme">Opening Hours:</span> Mon - Sat 8.00 - 18.00. Sunday CLOSED</p>
+                                <!-- <p class="hidden-sm"><span class="text-theme">Jam Buka</span> senin - jumat  09:00 - 16:00</p> -->
+                                <p></p>
                             </div>
                             <div class="header__top__right">
                                 <ul class="login__regester">
-                                    <li><a class="modal-view button" href="#" data-toggle="modal" data-target="#loginform"><i class="zmdi zmdi-account"></i>Login</a></li>
-                                    <!-- <li><a  class="modal-view button" href="#" data-toggle="modal" data-target="#registrationform"><i class="zmdi zmdi-account-add"></i>Register</a></li> -->
+                                  <span class="text-theme">Jam Buka</span> <font color="white">   senin - jumat  09:00 - 16:00</font></p>
+                       <!-- <li><a  class="modal-view button" href="#" data-toggle="modal" data-target="#registrationform"><i class="zmdi zmdi-account-add"></i>Register</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -67,7 +68,9 @@
                                         <li class="drop"><a href="<?php echo base_url();?>">home</a>
 
                                         </li>
-                                            <li><a href="<?php echo base_url();?>tour">tours</a></li>
+                                            <li><a href="<?php echo base_url();?>tour">Umroh</a></li>
+                                            <li><a href="<?php echo base_url();?>front/comingsoon">Haji</a></li>
+
                                             <li><a href="<?php echo base_url();?>about">about</a></li>
                                         <!-- <li><a href="<?php echo base_url();?>assetsfront/service.html">services</a></li> -->
 
@@ -82,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-lg-2 col-sm-2 hidden-sm">
+                    <!-- <div class="col-md-2 col-lg-2 col-sm-2 hidden-sm">
                         <ul class="social__icon icon--position">
                             <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
                             <li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
@@ -92,7 +95,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!--Start of Login Form-->
             <div id="login__form__wrap">
                 <!-- Modal -->
@@ -112,13 +115,7 @@
                                             <input type="text" name="username" placeholder="User Name">
                                             <input type="password" name="password" placeholder="Password">
                                         </div>
-                                        <div class="clearfix">
-                                            <span class="remember pull-left">
-                                              <input type="checkbox" id="pass_chack" value="pass_remb">
-                                              <label for="pass_chack">Remember Me</label>
-                                            </span>
-                                            <span class="pull-right"><a href="#">Forget Password?</a></span>
-                                        </div>
+
                                         <div class="text-center">
                                             <button type="submit" class="text-uppercase login__btn">login now</button>
                                         </div>

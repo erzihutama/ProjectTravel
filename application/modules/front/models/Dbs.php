@@ -91,20 +91,20 @@ function getpaket12(){
 
     function getinrenerary(){
       $dml ="  SELECT
-            `hari`
-            , `keterangan`
-        FROM
-            `dbwordl`.`intenary`;";
+    `hari`
+    , `keterangan`
+FROM
+    `dbdreamworld`.`intenary` WHERE id_paket = '1';";
       $query =$this->db->query($dml)->result();
        return$query;
   }
 
   function getintenerary10(){
     $dml ="  SELECT
-          `hari`
-          , `keterangan`
-      FROM
-          `dbwordl`.`intenary` where id_paket = 2;";
+  `hari`
+  , `keterangan`
+FROM
+  `dbdreamworld`.`intenary` WHERE id_paket = '2';";
     $query =$this->db->query($dml)->result();
      return$query;
 }

@@ -4,7 +4,7 @@
                 </li>
 
 
-                <li class=" nav-item"><a href="#"><i class="feather "></i><span class="menu-title" data-i18n="">Master Data Hotel</span></a>
+                <li class=" nav-item"><a href="#"><i class="feather "></i><span class="menu-title" data-i18n="">Master Data </span></a>
                     <ul class="menu-content">
                         <li class="sub-item"><a href="<?= base_url()?>admin/Paket"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation"> Data Paket Umroh</span></a>
                         </li>
@@ -14,7 +14,10 @@
                           </li>
                         <li class="sub-item"><a href="<?= base_url()?>admin/kota"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation">Data Kota</span></a>
                         </li>
-
+                        <li class="sub-item"><a href="<?= base_url()?>admin/data_umrah"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation">Data harga umroh</span></a>
+                        </li>
+                        <li class="sub-item"><a href="<?= base_url()?>admin/Haji"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="nav.sk_starter_kit.fixed_navigation">Data Haji</span></a>
+                        </li>
 
 
 
@@ -50,4 +53,5 @@
 
 
             </ul>
+
         </div>

@@ -66,6 +66,27 @@ FROM
         $query = $this->db->query($dml);
         return $query->result();
               }
+
+              function gethoteljedah1(){
+                $dml="SELECT
+    `hotel`.`namahotel`
+    , `hotel`.`id_hotel`
+    , `hotel`.`reguler_quad`
+    , `hotel`.`requler_triple`
+    , `hotel`.`reguler_double`
+    , `hotel`.`high_quad`
+    , `hotel`.`high_triple`
+    , `hotel`.`high_double`
+    , `kota_hotel`.`nama_kota`
+  FROM
+    `dbdreamworld`.`hotel`
+    INNER JOIN `dbdreamworld`.`kota_hotel`
+        ON (`hotel`.`id_kota` = `kota_hotel`.`id_kota`)
+        WHERE nama_kota = 'JEDDAH'";
+        $query = $this->db->query($dml);
+        return $query->row();
+              }
+
             function gethotelmadinah(){
               $dml = "SELECT
     `hotel`.`namahotel`
@@ -106,6 +127,26 @@ FROM
         return $query->result();
       }
 
+      function gethotelmekah1(){
+        $dml = "SELECT
+        `hotel`.`namahotel`
+        , `hotel`.`id_hotel`
+        , `hotel`.`reguler_quad`
+        , `hotel`.`requler_triple`
+        , `hotel`.`reguler_double`
+        , `hotel`.`high_quad`
+        , `hotel`.`high_triple`
+        , `hotel`.`high_double`
+        , `kota_hotel`.`nama_kota`
+    FROM
+        `dbdreamworld`.`hotel`
+        INNER JOIN `dbdreamworld`.`kota_hotel`
+            ON (`hotel`.`id_kota` = `kota_hotel`.`id_kota`)
+            WHERE nama_kota = 'MEKAH'";
+        $query = $this->db->query($dml);
+        return $query->row();
+      }
+
       function get_data_umrah(){
         $dml = "SELECT * FROM data_umrah";
         $query = $this->db->query($dml);
@@ -118,8 +159,11 @@ FROM
         return $query->row();
       }
 
-
-
+// tambah ini
+      function get_hotel_by_id($id_hotel){
+        $dml = $this->db->get_where('hotel', array('id_hotel' => $id_hotel ));
+        return $dml->row();
+      }
 
     }
 

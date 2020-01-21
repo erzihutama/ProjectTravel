@@ -2,12 +2,25 @@
       $flashMessage=$this->session->flashdata('message');
     echo "<script>alert('$flashMessage')</script>";
     } ?>
+
+      <div class="card-header">
+        <h4>KURS HARI INI</h4>
+        <div class="card-body " id="kurswebid"></div>
+<script src="https://api.kurs.web.id/widget.js"></script>
+<script>
+bank='bi';
+kurs(bank);
+</script>
+         </button>
+       </a>
+      </div>
+
      <section id="basic-datatable">
          <div class="row">
              <div class="col-12">
                  <div class="card">
                      <div class="card-header">
-                         <h4 class="card-title">Data data_umrah</h4>
+                         <h4 class="card-title">Data umrah</h4>
       		    		<a href="<?= site_url($module.'/data_umrah/create') ?>"><button type="button" class="btn btn-primary round waves-effect waves-light">
       	               	 Tambah Data
       	              	</button>

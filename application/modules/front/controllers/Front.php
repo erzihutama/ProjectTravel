@@ -130,6 +130,33 @@ class Front extends MY_Controller{
             $this->load->view('front/contact',$data);//melempar data dari view
             $this->load->view('front/footer');
       }
+
+      function comingsoon()
+      {
+        $data['datachose'] = $this->Dbs->getdatachose();
+
+        $data['getvisimisi'] = $this->Dbs->getvisimisi();
+        $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
+        $data['tagline'] = $this->Dbs->gettagline();
+        $data['whychoose'] = $this->Dbs->getwhychoose();
+        $data['taglineimg'] = $this->Dbs->gettaglineimg();
+        $data['alamat'] = $this->Dbs->getalamat();
+        $data['title'] = $this->Dbs->getprofil();
+        $data['telepon'] = $this->Dbs->gettelepon();
+        $data['config'] = $this->Dbs->getconfig();
+        $data['maps'] = $this->Dbs->getmaps();
+        $data['perusahaan'] = $this->Dbs->getperusahaan();
+
+
+        // $data['imgservice'] = $this->Dbs->get_imgser();
+
+         // var_dump($data);die;
+        // $data['name']='Kostlab';
+
+            $this->load->view('front/header',$data);
+            $this->load->view('front/comingsoon',$data);//melempar data dari view
+            $this->load->view('front/footer');
+      }
   function tour()
   {
     $data['datachose'] = $this->Dbs->getdatachose();
@@ -166,8 +193,8 @@ class Front extends MY_Controller{
     $data['datachose'] = $this->Dbs->getdatachose();
     $data['datapaket'] = $this->Dbs->getpaket();
     $data['dataintenerary'] = $this->Dbs->getinrenerary();
+    // var_dump($data);die;
     $data['datahotel'] = $this->Dbs->gethotel();
-
     $data['getvisimisi'] = $this->Dbs->getvisimisi();
     $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
     $data['tagline'] = $this->Dbs->gettagline();
@@ -193,10 +220,11 @@ class Front extends MY_Controller{
     {
       $data['datachose'] = $this->Dbs->getdatachose();
       $data['datapaket'] = $this->Dbs->getpaket();
-      $data['dataintenerary'] = $this->Dbs->getinrenerary();
+      $data['dataintenerary'] = $this->Dbs->getintenerary10();
+      // var_dump($data);die;
+
       $data['datahotel'] = $this->Dbs->gethotel();
       $data['paket10'] = $this->Dbs->getpaket10();
-      // var_dump($data);die;
       $data['getvisimisi'] = $this->Dbs->getvisimisi();
       $data['deskperusahaan'] = $this->Dbs->getdeskperusahaan();
       $data['tagline'] = $this->Dbs->gettagline();

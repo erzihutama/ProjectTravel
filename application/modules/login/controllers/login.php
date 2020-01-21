@@ -41,7 +41,7 @@ public function login_act(){
     'password' => sha1($password)
 
     );
-    if($this->Dbs->cek_login("admin",$where)->num_rows()>0){// cek ke tabel user
+      if($this->Dbs->cek_login("admin",$where)->num_rows()>0){// cek ke tabel user
     $nama = $this->Dbs->getUserId($username);
     $data_session = array(
     'username' => $username,
@@ -81,11 +81,101 @@ function login_agen(){
 
     redirect(base_url("agen"));
   }else{
-    echo "<script type='text/javascript'>alert('Username atau password Salah!!!'); document.location='http://localhost/ProjectTravel/login' </script>";
+    echo "<script type='text/javascript'>alert('Username atau password Salah!!!'); document.location='http://localhost/ProjectTravel/login/loginagen' </script>";
 
     }
 
 }
+
+function loginagen(){
+
+
+
+
+          $this->load->view('login/loginagen');//melempar data dari view
+
+
+
+}
+
+
+function lupapass(){
+          $this->load->view('login/forgotpass');//melempar data dari view
+}
+
+    function lupa_password_act(){
+      $email = $this->input->post('email');
+      $data = array(
+        'email' => $email
+      );
+      $data_email = $this->Dbs->cek_login("admin",$data);
+      // var_dump($email);die;
+
+      if ($data_email->num_rows()>0) {
+        $this->kirimEmail($email);
+        echo "<script type='text/javascript'>alert('Email Berhasil terkirim, Cek email'); document.location='http://localhost/ProjectTravel/login' </script>";
+      }else{
+        echo "<script type='text/javascript'>alert('Email Tidak terdaftar atau email salah'); document.location='http://localhost/ProjectTravel/login/lupapass' </script>";
+      }
+}
+
+function reset_password($code){
+      $data = array(
+        'kode' => $code
+      );
+      $this->load->view('resetpass',$data);
+    }
+
+    function reset_password_act(){
+          $password = $this->input->post('password');
+          $kode = $this->input->post('kode');
+          $data_password = array(
+            'password' => sha1($password)
+          );
+           // var_dump($kode);die;
+
+          if($this->Dbs->resetpasswordUser($data_password,'admin','forgotten_password_code',$kode)){
+            echo "<script type='text/javascript'>alert('Password Berhasil DI reset'); document.location='http://localhost/ProjectTravel/login' </script>";
+        }else {
+          echo "<script type='text/javascript'>alert('Password gagal di reset'); document.location='http://localhost/ProjectTravel/login' </script>";
+        }}
+
+
+function kirimEmail($emailtujuan){
+      $pass="129FAasdsk25kwBjakjDlff";
+      $panjang='8';
+      $len=strlen($pass);
+      $start=$len-$panjang;
+      $xx=rand('0',$start);
+      $yy=str_shuffle($pass);
+      $randomString=substr($yy, $xx, $panjang);
+      $data = array(
+        'forgotten_password_code' => $randomString,
+      );
+      //update ke kolom forgoten
+      $this->Dbs->ubahpasswordUser($data,'admin','email',$emailtujuan);
+      $link=base_url()."login/reset_password/".$randomString;
+      //ekseksusi kirim email berdasarkan params
+      //isi email berupa link
+      $config['protocol'] = 'smtp';
+      $config['smtp_host'] = 'ssl://smtp.gmail.com';
+      $config['smtp_port'] = '465';
+      $config['smtp_user'] = 'dreamworldbdg@gmail.com';
+      $config['smtp_pass'] = 'Indonesia1'; //ini pake akun pass google email
+      $config['mailtype'] = 'html';
+      $config['charset'] = 'iso-8859-1';
+      $config['wordwrap'] = 'TRUE';
+      $config['newline'] = "\r\n";
+      $this->load->library('email', $config);
+      $this->email->initialize($config);
+      $this->email->from('erzihutama@gmail.com');
+      $this->email->to($emailtujuan);
+      $this->email->subject('Reset Password');
+      $this->email->message('Silahkan klik link berikut untuk mereset password anda '.$link);
+      $this->email->set_mailtype('html');
+      $this->email->send();
+   }
+
 
 
 public function _rules()

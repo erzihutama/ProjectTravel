@@ -136,7 +136,9 @@
 
   <div class="tab-pane" id="3a">
     <hr>
-    <h2>Hubungi <a href="<?php echo base_url();?>contact"> Informasi Dreamworld</h2>
+    <h2>Untuk melakukan pemesanan dan custom Umrah </h2>
+    <hr>
+    <h4>SILAHKAN KLIK  <a href="<?php echo base_url();?>contact"> <a href="https://wa.widget.web.id/0c5cd4" target="_blank"><span class="text-theme">Disini</a></h2>
 <hr>
   </div>
 

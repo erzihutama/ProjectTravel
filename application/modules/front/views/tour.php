@@ -22,11 +22,14 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="bradcaump__inner text-center">
-                                <h2 class="bradcaump-title">tour package details</h2>
+                                <h2 class="bradcaump-title">Paket Tour Umrah</h2>
                                 <nav class="bradcaump-inner">
                                   <a class="breadcrumb-item" href="<?php echo base_url()?>">Home</a>
                                   <span class="brd-separetor"><i class="zmdi zmdi-chevron-right"></i><i class="zmdi zmdi-chevron-right"></i></span>
                                   <span class="breadcrumb-item active">package</span>
+                                </nav>
+                                <nav class="bradcaump-inner">
+                                  <!-- <a class="breadcrumb-item" href="<?php echo base_url()?>">Home</a> -->
                                 </nav>
                             </div>
                         </div>
@@ -48,9 +51,16 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Start Tour Overview Area -->
+                        <!-- <h2 class="section__title__3"> Custom Paket</h2>
+                        <hr>
+                        <p><h2  > Untuk menjadi bagian dari Kami dan Memperoleh Layanan Custom Paket dan simulasi Harga Silahkan Melakukan Pendaftaran  <a href="<?php echo base_url();?>contact"> <a href="https://wa.widget.web.id/0c5cd4" target="_blank"><span class="text-theme">DI Sini</a>
+                          <!-- Start Tour Overview Area --> -->
                         <div class="tour__overview__wrap">
                             <h2 class="section__title__3">Tour Overview</h2>
+                            <p>
+                                <h2 class="section__title__3"></h2>
+                              <p>
+
                             <div class="tour__overview__inner">
                                 <!-- Start Single Overview -->
                                 <div class="single__overview">
@@ -134,11 +144,16 @@
 
                             </div>
                         </div>
+                        <hr>
                         <!-- End Tour Overview Area -->
+                        <h2 > Custom Paket</h2>
+                        <hr>
+                        <p><h3  class="section__title__3"> Untuk menjadi bagian dari Kami dan Memperoleh Layanan Custom Paket dan simulasi Harga Silahkan Kontak Kami  <a href="<?php echo base_url();?>contact"> <a href="https://wa.widget.web.id/0c5cd4" target="_blank"><span class="text-theme">DI Sini</a>
+                          <!-- Start Tour Overview Area -->
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Tour Details -->
-        
+
     <!--End of Registration Form-->

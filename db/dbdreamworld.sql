@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 25 Sep 2019 pada 15.47
+-- Generation Time: 21 Jan 2020 pada 15.25
 -- Versi Server: 5.7.19
 -- PHP Version: 5.6.31
 
@@ -35,16 +35,18 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `email` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(60) NOT NULL,
+  `forgotten_password_code` varchar(120) NOT NULL,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `admin`
 --
 
-INSERT INTO `admin` (`id_user`, `nama`, `email`, `username`, `password`) VALUES
-(1, 'erzi', 'erzihutama1@gmail.com', 'erzi', 'adea130ec676587fc109401ebca7a91cf71528ce'),
-(3, 'harrid', 'harrid@gmail.com', 'harrid', 'a317baa5e464a055801c250df6b30c03f754c754');
+INSERT INTO `admin` (`id_user`, `nama`, `email`, `username`, `password`, `forgotten_password_code`) VALUES
+(1, 'erzi', 'erzihutama1@gmail.com', 'erzi', 'd92f6b7a048044374b42816ac5edd3ef5f404b18', 'kdk51jaw'),
+(2, 'Erzi hutama', 'Erzihutama@gmail.com', 'erzihutama', 'b521caa6e1db82e5a01c924a419870cb72b81635', 'fwjkBkf2'),
+(4, 'Iqbal', 'Erzihutama@email.unikom.ac.id', 'iqbal', '23e638e46fcecede468000e6e74a816f2199350e', '');
 
 -- --------------------------------------------------------
 
@@ -62,14 +64,15 @@ CREATE TABLE IF NOT EXISTS `agen` (
   `email` varchar(35) NOT NULL,
   `no_telp` int(13) NOT NULL,
   PRIMARY KEY (`id_agen`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `agen`
 --
 
 INSERT INTO `agen` (`id_agen`, `nama_agen`, `username`, `password`, `jenis_kelamin`, `email`, `no_telp`) VALUES
-(1, 'erzi', 'erziagen', 'adea130ec676587fc109401ebca7a91cf71528ce', 'L', 'erzi@gmail.com', 18237812);
+(1, 'erzi', 'erziagen', 'adea130ec676587fc109401ebca7a91cf71528ce', 'L', 'erzi@gmail.com', 18237812),
+(2, 'ilhamagen', 'ilham', 'd677e7933c6096aff7078724da268899d8fca27f', 'L', 'ilham@gmail.com', 89898877);
 
 -- --------------------------------------------------------
 
@@ -103,6 +106,26 @@ INSERT INTO `data_umrah` (`id_data_umrah`, `airport_price`, `logistik`, `bus`, `
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `haji`
+--
+
+DROP TABLE IF EXISTS `haji`;
+CREATE TABLE IF NOT EXISTS `haji` (
+  `id_haji` int(10) NOT NULL AUTO_INCREMENT,
+  `harga` int(200) NOT NULL,
+  `persyaratan` varchar(225) NOT NULL,
+  `jadwal` date NOT NULL,
+  `fasilitas` varchar(200) NOT NULL,
+  `id_hotel` int(11) NOT NULL,
+  `id_paket` int(11) NOT NULL,
+  PRIMARY KEY (`id_haji`),
+  KEY `id_hotel` (`id_hotel`),
+  KEY `id_paket` (`id_paket`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `hotel`
 --
 
@@ -127,7 +150,7 @@ CREATE TABLE IF NOT EXISTS `hotel` (
 --
 
 INSERT INTO `hotel` (`id_hotel`, `namahotel`, `deskripsi`, `id_kota`, `reguler_quad`, `requler_triple`, `reguler_double`, `high_quad`, `high_triple`, `high_double`) VALUES
-(1, 'Al Marwah Rayhaan By Rotana', 'Hotel Al Marwah Rayhaan By Rotana', 1, 440, 540, 640, 560, 710, 860),
+(1, 'Al Marwah Rayhaan By Rotana', 'Hotel Al Marwah Rayhaan By Rotanaaaa', 1, 440, 540, 640, 560, 710, 860),
 (2, 'Swissotel Maqam', 'Hotel Swissotel maqam', 1, 440, 540, 640, 560, 710, 860),
 (3, 'Safwah Royale Orchid', 'hotel Safwah Royale Orchid', 1, 650, 800, 950, 670, 820, 970),
 (4, 'Conrad Makkah', 'Hotel Conrad Makkah', 1, 630, 750, 870, 650, 770, 890),
@@ -154,24 +177,34 @@ CREATE TABLE IF NOT EXISTS `intenary` (
   `id_paket` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_intenary`),
   KEY `id_paket` (`id_paket`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `intenary`
 --
 
 INSERT INTO `intenary` (`id_intenary`, `hari`, `keterangan`, `id_paket`) VALUES
-(1, 'HARI 1', 'JALAN- JALAN', 1),
-(2, 'HARI 2 ', 'JALAN', 1),
-(3, 'HARI 3', 'JALAN', 1),
-(4, 'HARI 4', 'JALAN', 1),
-(5, 'HARI 5 ', 'JALAN', 1),
-(6, 'HARI 6', 'JALAN', 1),
-(7, 'HARI 7', 'JALAN', 1),
-(8, 'HARI 8 ', 'JALAN', 1),
-(9, 'HARI 9 ', 'JALAN', 1),
-(10, 'Hari 1', 'Qiyamul Lail dengan ustad', 2),
-(11, 'hari 2', 'berjalan ke kota madinah', 2);
+(1, 'HARI 1', 'JAKARTA - JEDDAH - MAKKAH', 1),
+(2, 'HARI 2', 'MAKKAH', 1),
+(3, 'HARI 3', 'MAKKAH', 1),
+(4, 'HARI 4', 'MAKKAH', 1),
+(5, 'HARI 5 ', 'MAKKAH - MADINAH', 1),
+(6, 'HARI 6', 'MADINAH', 1),
+(7, 'HARI 7', 'MADINAH', 1),
+(8, 'HARI 8 ', 'MADINAH - JAKARTA', 1),
+(9, 'HARI 9 ', 'JAKARTA', 1),
+(10, 'HARI 1', 'JAKARTA - MADINAH', 2),
+(11, 'HARI 2', 'MADINAH', 2),
+(12, 'HARI 3', 'MADINAH', 2),
+(13, 'HARI 4', 'MADINAH', 2),
+(14, 'HARI 5', 'MADINAH', 2),
+(16, 'HARI 6', 'MADINAH - MAKKAH', 2),
+(17, 'HARI 7', 'MAKKAH', 2),
+(18, 'HARI 8', 'MAKKAH', 2),
+(19, 'HARI 9', 'MAKKAH', 2),
+(22, 'HARI 10', 'JAKARTA', 2),
+(23, 'Hari 1', 'MADINAH', 3),
+(24, 'HARI 1', 'Berjalan menuju mekah ', 5);
 
 -- --------------------------------------------------------
 
@@ -207,17 +240,18 @@ CREATE TABLE IF NOT EXISTS `paket` (
   `nama_paket` varchar(255) NOT NULL,
   `keterangan` varchar(255) NOT NULL,
   PRIMARY KEY (`id_paket`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `paket`
 --
 
 INSERT INTO `paket` (`id_paket`, `nama_paket`, `keterangan`) VALUES
-(1, 'PAKET 9 HARI', '3 MALAM DI MEKAH DAN 4 MALAM DI MADINAH'),
+(1, 'PAKET 9 HARI', '3 MALAM DI MADINAH DAN 4 MALAM DI MEKAH'),
 (2, 'paket 10 hari', '4 MALAM DI MADINAH DAN 4 MALAM DI MEKAH'),
 (3, 'Paket 11 Hari', '4 MALAM DI MADINAH DAN 5 MALAM DI MEKAH'),
-(4, 'PAKET 12 HARI', '5 MALAM DI MADINAH 5 MALAM DI MEKAH');
+(4, 'PAKET 12 HARI', '5 MALAM DI MADINAH DAN 5 MALAM DI MEKAH'),
+(5, 'Paket Haji', 'paket untuk naik haji\r\n');
 
 -- --------------------------------------------------------
 
@@ -273,7 +307,7 @@ CREATE TABLE IF NOT EXISTS `profilweb` (
 --
 
 INSERT INTO `profilweb` (`id_profil`, `judul_perusahaan`, `deskripsi_perusahaan`, `taglineweb1`, `taglineweb2`, `taglineweb3`, `taglineimage1`, `taglineimage2`, `taglineimage3`, `visi`, `misi`, `website`, `id_user`) VALUES
-(4, 'Dreamworld', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget po', 'SELAMAT DATANG', 'TOUR DENGAN AMAN DAN NYAMAN', 'TOUR DAN TRAVEL DENGAN  HARGA MURAH', 'asset2-min.jpg', 'is.jpg', 'asset3-min.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget po', 'menjadikan dreamworld lebih baik', 'DreamWorld.com', 1);
+(4, 'Dreamworld', 'DreamWorld dan Ewaagate Merupakan suatu perusahaan Penyedia Travel haji dan umarah.', 'SELAMAT DATANG', 'TOUR DENGAN AMAN DAN NYAMAN', 'TOUR DAN TRAVEL DENGAN  HARGA MURAH', 'asset2-min1.jpg', 'is1.jpg', 'asset3-min1.jpg', 'Menjadikan agen - agen haji dan umrah nyaman selama menunaikan haji', 'menjadikan dreamworld layanan travel umarah dan haji terbaik ', 'DreamWorld.com', 1);
 
 -- --------------------------------------------------------
 
@@ -300,9 +334,9 @@ CREATE TABLE IF NOT EXISTS `profilweb_config` (
 --
 
 INSERT INTO `profilweb_config` (`id_config`, `id_profil`, `service_tagline`, `service_judul`, `service_deskripsi`, `whychoose_tagline`, `whychoose_judul`, `whychoose_deskripsi`) VALUES
-(1, 4, 'melayani sepenuh hati', 'judull choeses', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget po', 'travel dan haji terbaik di indonesia', 'chose', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget po'),
-(7, 4, 'melayani umat', 'service 3', 'dLorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget p', 'karena kami yang terbaik', 'why 3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget po'),
-(8, 4, 'dreamworld', 'pelayanan terbaik', 'mendapatkan pelayanan terbaik di masanya', 'lebih nyaman', 'mantapp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, eros nec molestie bibendum, diam sapien eleifend nunc, sed malesuada dolor lacus id metus. Proin imperdiet sodales erat eget po');
+(1, 4, 'Melayani Umat Dengan Sepenuh Hati', 'Pelayana terbaik', 'Dreamworld menyediakan  pelayanan maksimal dengan berbagai program yang menarik agar jamaah menjadi nyaman', 'travel umrah dan haji terbaik di indonesia', 'Penyedia paket Menarik', 'Dreamworld menyediakan paket menarik seputar biaya haji dan umrah dengan hotel berbintang 5.'),
+(7, 4, 'travel umrah dan haji terbaik di indonesia', 'melayani umat dengan 3 s', 'Dreamworld akan melyani dengan salam sapa dan senyum  .', 'melayani umat dengan sepenuh hati', 'Simulasi Harga dengan nyata', 'Dreamworld menyediakan simulasi harga dengan transparan dan mampu di hitung sendiri oleh agen'),
+(8, 4, 'dreamworld', 'Kualitas di utamakan', 'Dreamworld mengedepankan kualitas dan kenyamanan untuk jamaah sehingga jamaah menjadi nyaman.', 'Naik haji semudah jentikan jari', 'Umrah dengan mudah', 'dreamworld mewujudkan umrah  semudah jentikan jari');
 
 -- --------------------------------------------------------
 
@@ -327,9 +361,9 @@ CREATE TABLE IF NOT EXISTS `profil_alamat` (
 --
 
 INSERT INTO `profil_alamat` (`id_alamat`, `id_profil`, `alamat_perusahaan`, `telepon_perusahaan`, `email_perusahaan`, `maps`) VALUES
-(19, 4, 'bandung', '087777272727', 'dreamwordl@dw.co', 'asda'),
-(20, 4, 'ewaa gate', '0889898989', 'EWAGATE', 'ASD'),
-(21, 4, 'HENGARAMANA', '098738', 'DEREAEA', 'ADFSAD');
+(19, 4, 'bandung', '082180373931', 'dreamwordl@gmail.com', 'asda'),
+(20, 4, 'Jakarta', '081289874840', 'dreamworldjkt@gmail.com', 'ASD'),
+(21, 4, 'Makasar', '089837808779', 'Dreamworldmkr@gmail.com', 'ADFSAD');
 
 -- --------------------------------------------------------
 
@@ -367,6 +401,13 @@ INSERT INTO `tipehotel` (`id_tipehotel`, `reguler_quad`, `requler_triple`, `regu
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
+
+--
+-- Ketidakleluasaan untuk tabel `haji`
+--
+ALTER TABLE `haji`
+  ADD CONSTRAINT `haji_ibfk_1` FOREIGN KEY (`id_hotel`) REFERENCES `hotel` (`id_hotel`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `haji_ibfk_2` FOREIGN KEY (`id_paket`) REFERENCES `paket` (`id_paket`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ketidakleluasaan untuk tabel `hotel`

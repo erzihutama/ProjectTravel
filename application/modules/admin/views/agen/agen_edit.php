@@ -26,7 +26,7 @@
 						<div class="form-group row">
               <label for="example-text-input" class="col-sm-2 col-form-label">password</label>
               <div class="col-sm-10">
-                <input type="text" name="password" class="form-control" value="<?php echo $dataedit->password?>"required>
+                <input type="password" name="password" class="form-control" value="<?php echo $dataedit->password?>"required>
               </div>
               </div>
 						<div class="form-group row">

@@ -8,7 +8,7 @@
 -----------------------------------------------------------------------------------*/
 
 
- 
+
 /*======================================
 
 [  Table of contents  ]
@@ -522,19 +522,19 @@ body {
     height: 80%;
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
     /* FF3.6+ */
-    
+
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #232323));
     /* Chrome,Safari4+ */
-    
+
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
     /* Chrome10+,Safari5.1+ */
-    
+
     background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
     /* Opera 11.10+ */
-    
+
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #232323 100%);
     /* IE10+ */
-    
+
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #232323 100%);
     bottom: 0;
     left: 0;
@@ -597,19 +597,19 @@ body {
     height: 80%;
     background: -moz-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
     /* FF3.6+ */
-    
+
     background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, #232323), color-stop(100%, rgba(0, 0, 0, 0)));
     /* Chrome,Safari4+ */
-    
+
     background: -webkit-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
     /* Chrome10+,Safari5.1+ */
-    
+
     background: -o-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
     /* Opera 11.10+ */
-    
+
     background: -ms-linear-gradient(bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
     /* IE10+ */
-    
+
     background: linear-gradient(to bottom, #232323 0%, rgba(0, 0, 0, 0) 100%);
     top: 0;
     left: 0;
@@ -678,7 +678,7 @@ input[type=password]{
 }
 select {
     width: 100%;
-    
+
 }
 input:focus {
     background: transparent;
@@ -803,7 +803,7 @@ input::-moz-placeholder {
 
 
 /***************************
-    Page section padding 
+    Page section padding
 ****************************/
 
 .ptb-0 { padding: 0 }
@@ -824,7 +824,7 @@ input::-moz-placeholder {
 .ptb-150 { padding: 150px 0 }
 
 /***************************
-    Page section margin 
+    Page section margin
 ****************************/
 
 .mtb-0 { margin: 0 }
@@ -880,17 +880,17 @@ input::-moz-placeholder {
 .col-10{
     width: 100%;
 }
- 
+
 .full-screen{
   height: 100vh;
 }
 
-[data-black-overlay] p, 
-[data-black-overlay] h1, 
-[data-black-overlay] h2, 
-[data-black-overlay] h3, 
-[data-black-overlay] h4, 
-[data-black-overlay] h5, 
+[data-black-overlay] p,
+[data-black-overlay] h1,
+[data-black-overlay] h2,
+[data-black-overlay] h3,
+[data-black-overlay] h4,
+[data-black-overlay] h5,
 [data-black-overlay] h6{
   color: #fff;
 }

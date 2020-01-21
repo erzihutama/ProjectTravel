@@ -1,7 +1,7 @@
 <?php
     defined('BASEPATH') OR exit('No direct script access allowed');
 
-    class agen extends MY_Controller{
+    class Agen extends MY_Controller{
 
       public function __construct()
       {
@@ -36,6 +36,8 @@
         $hotel_jedah = $this->agen_model->gethoteljedah();
         $hotel_madinah = $this->agen_model->gethotelmadinah();
         $hotel_mekah = $this->agen_model->gethotelmekah();
+        $hotel_mekah1 = $this->agen_model->gethotelmekah1();
+
         $data_paket = $this->agen_model->get_paket();
         $data = array(
           'content'=>'agen/simulasi',
@@ -61,9 +63,15 @@
       }
 
 
-
       function hasil(){
-        
+//  ini
+        $id_hotel_mekah = $this->input->post('hotelmekah');
+        $id_hotel_madinah = $this->input->post('hotelmadinah');
+        $id_hotel_jeddah = $this->input->post('hoteljeddah');
+
+        $nama_mekah = $this->agen_model->get_hotel_by_id($id_hotel_mekah);
+        $nama_madinah = $this->agen_model->get_hotel_by_id($id_hotel_madinah);
+        $nama_jeddah = $this->agen_model->get_hotel_by_id($id_hotel_jeddah);
 
         // --------------------------MEKAH START---------------------------------------------
         //mengambil data harga hotel untuk kota mekah
@@ -247,6 +255,10 @@
           'quad_high' => $total_quad_round_high,
           'triple_high' => $total_triple_round_high,
           'double_high' => $total_double_round_high,
+          // ini
+          'nama_mekah' => $nama_mekah->namahotel,
+          'nama_madinah' => $nama_madinah->namahotel,
+          'nama_jeddah' => $nama_jeddah->namahotel,
          );
         $this->template->load($data);
       }

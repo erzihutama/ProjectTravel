@@ -73,7 +73,7 @@
                 <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                     <div class="information__inner text-center">
                         <div class="information_details">
-                            <h4><a href="#">kolince jon</a></h4>
+                            
                             <h6><?php echo $d->alamat_perusahaan?></h6>
                             <p><i class="zmdi zmdi-phone-paused"></i>Phone :<a href="phone:+66025644424857"><?php echo $d->telepon_perusahaan?></a></p>
                             <p><i class="zmdi zmdi-email"></i><a href="mailto:www.anikamollik@outlook.com"><?php echo $d->email_perusahaan?></a></p>
